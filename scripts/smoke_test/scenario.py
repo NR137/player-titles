@@ -62,8 +62,8 @@ def with_client(server, name: str, check) -> None:
 		'CanPickUpLoot:1b,PersistenceRequired:1b,Tags:["smoke_merchant"]}', r'Summoned new', 'a nitwit is summoned')
 	server.run(f'summon minecraft:item {MERCHANT} {{Item:{{id:"minecraft:name_tag",count:1}},PickupDelay:0s}}', r'Summoned new',
 		'a name tag lies at its feet')
-	server.run('data get entity @e[type=minecraft:villager,tag=smoke_merchant,limit=1] CustomName', r'has the following entity data',
-		'the nitwit took it and is a Title Merchant (it has a name)', seconds=20)
+	ask_until(server, check, 'data get entity @e[type=minecraft:villager,tag=smoke_merchant,limit=1] CustomName',
+		r'has the following entity data', 'the nitwit took it and is a Title Merchant (it has a name)')
 	time.sleep(2)
 	# A title name tag from a loot chest: its name, lore and glint exist only in the packets; the client must take them.
 	server.run(f'give {name} minecraft:name_tag[minecraft:custom_data={{player_titles:{{title_tag:1b}}}}]',
@@ -71,10 +71,23 @@ def with_client(server, name: str, check) -> None:
 	time.sleep(3)
 
 
+def ask_until(server, check, command: str, expect: str, what: str, tries: int = 10) -> None:
+	"""Runs a command again (every 2 seconds) until an output line matches: for what the game does a moment later."""
+	for _ in range(tries):
+		with server.lock:
+			start = len(server.output)
+		server.command(command)
+		if server.wait_for(expect, 2, start) is not None:
+			check(True, f'{what} (/{command})')
+			return
+	check(False, f'{what} (/{command})')
+
+
 def on_vanilla(server, check) -> None:
 	server.run(f'data get block {CHEST} Items[0]', r'player_titles', 'vanilla keeps the mod\'s custom_data on the item')
-	server.run('data get entity @e[type=minecraft:villager,tag=smoke_merchant,limit=1] equipment.mainhand.id', r'minecraft:name_tag',
-		'the Title Merchant is an ordinary villager holding its name tag')
+	# The game loads a chunk's entities a moment after the chunk: ask again until the villager is there.
+	ask_until(server, check, 'data get entity @e[type=minecraft:villager,tag=smoke_merchant,limit=1] equipment.mainhand.id',
+		r'minecraft:name_tag', 'the Title Merchant is an ordinary villager holding its name tag')
 
 
 def expected_problems(lines: list[str]) -> list[str]:
