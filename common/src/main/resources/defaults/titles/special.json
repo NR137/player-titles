@@ -1,0 +1,28 @@
+{
+	"name": "Special",
+	"enabled": true,
+	"titles": [
+		{
+			"id": "special.merchant_killer",
+			"text": {
+				"en_us": "Bad for Business",
+				"de_de": "Geschäftsschädigend"
+			},
+			"description": {
+				"en_us": "Killed a Title Merchant, and got something out of it.",
+				"de_de": "Hat einen Titelhändler getötet und etwas davon gehabt."
+			},
+			"style": {
+				"gradient": [
+					"#FF6B6B",
+					"#8B0000"
+				],
+				"sides": "magic"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant_kill"
+			]
+		}
+	]
+}

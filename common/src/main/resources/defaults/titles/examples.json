@@ -1,0 +1,292 @@
+{
+	"name": "Examples",
+	"enabled": true,
+	"titles": [
+		{
+			"id": "example_plain",
+			"text": {
+				"en_us": "Wanderer",
+				"de_de": "Wanderer",
+				"de_de/female": "Wanderin",
+				"de_de/neutral": "Wandernde"
+			},
+			"description": {
+				"en_us": "Never stays in one place for long.",
+				"de_de": "Bleibt nie lange an einem Ort."
+			},
+			"style": {
+				"color": "#A0A0A0"
+			},
+			"rarity": "common",
+			"sources": [
+				"admin"
+			]
+		},
+		{
+			"id": "example_gradient",
+			"text": {
+				"en_us": "Deep Diver",
+				"de_de": "Tiefseetaucher",
+				"de_de/female": "Tiefseetaucherin",
+				"de_de/neutral": "Tiefseetauchende"
+			},
+			"description": {
+				"en_us": "At home where the light ends.",
+				"de_de": "Zu Hause, wo das Licht endet."
+			},
+			"style": {
+				"gradient": [
+					"#2E86DE",
+					"#48DBFB"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"admin"
+			]
+		},
+		{
+			"id": "example_pulse",
+			"text": {
+				"en_us": "Ember",
+				"de_de": "Glut"
+			},
+			"description": {
+				"en_us": "Still glowing long after the fire.",
+				"de_de": "Glüht noch lange nach dem Feuer."
+			},
+			"style": {
+				"color": "#FF6B35",
+				"animation": "pulse"
+			},
+			"rarity": "rare",
+			"sources": [
+				"admin"
+			]
+		},
+		{
+			"id": "example_wave",
+			"text": {
+				"en_us": "Tidecaller",
+				"de_de": "Gezeitenrufer",
+				"de_de/female": "Gezeitenruferin",
+				"de_de/neutral": "Gezeitenrufende"
+			},
+			"description": {
+				"en_us": "The sea answers when called.",
+				"de_de": "Das Meer antwortet, wenn man es ruft."
+			},
+			"style": {
+				"gradient": [
+					"#00B894",
+					"#0984E3",
+					"#6C5CE7"
+				],
+				"animation": "wave"
+			},
+			"rarity": "epic",
+			"sources": [
+				"admin"
+			]
+		},
+		{
+			"id": "example_rainbow",
+			"text": {
+				"en_us": "Prismatic",
+				"de_de": "Prismatisch"
+			},
+			"description": {
+				"en_us": "Every colour at once.",
+				"de_de": "Alle Farben zugleich."
+			},
+			"style": {
+				"animation": "rainbow"
+			},
+			"rarity": "epic",
+			"sources": [
+				"admin"
+			]
+		},
+		{
+			"id": "example_fire",
+			"text": {
+				"en_us": "Firestarter",
+				"de_de": "Feuerteufel",
+				"de_de/female": "Feuerteufelin",
+				"de_de/neutral": "Feuerteufel"
+			},
+			"description": {
+				"en_us": "Where they go, things burn.",
+				"de_de": "Wo sie hingehen, brennt es."
+			},
+			"style": {
+				"gradient": [
+					"#FFD200",
+					"#FF4E00"
+				],
+				"icon": "block/fire_0"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			]
+		},
+		{
+			"id": "example_star",
+			"text": {
+				"en_us": "Starborn",
+				"de_de": "Sternenkind"
+			},
+			"description": {
+				"en_us": "Holds what the Wither left behind.",
+				"de_de": "Hält, was der Wither zurückließ."
+			},
+			"style": {
+				"color": "#FFF6A0",
+				"icon": "item/nether_star",
+				"bold": true
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			]
+		},
+		{
+			"id": "example_magic",
+			"text": {
+				"en_us": "Arcanist",
+				"de_de": "Arkanist",
+				"de_de/female": "Arkanistin",
+				"de_de/neutral": "Arkankundige"
+			},
+			"description": {
+				"en_us": "More knowledge than words.",
+				"de_de": "Mehr Wissen als Worte."
+			},
+			"style": {
+				"gradient": [
+					"#7F00FF",
+					"#E100FF"
+				],
+				"sides": "magic"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			]
+		},
+		{
+			"id": "example_runes",
+			"text": {
+				"en_us": "Enchanter",
+				"de_de": "Verzauberer",
+				"de_de/female": "Verzauberin",
+				"de_de/neutral": "Verzaubernde"
+			},
+			"description": {
+				"en_us": "Reads the enchanting table's runes like a book.",
+				"de_de": "Liest die Runen des Zaubertischs wie ein Buch."
+			},
+			"style": {
+				"color": "#B983FF",
+				"sides": "runes"
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			]
+		},
+		{
+			"id": "example_illager_runes",
+			"text": {
+				"en_us": "Raid Breaker",
+				"de_de": "Überfallbrecher",
+				"de_de/female": "Überfallbrecherin",
+				"de_de/neutral": "Überfallbrechende"
+			},
+			"description": {
+				"en_us": "Has turned back a raid on a village.",
+				"de_de": "Hat einen Überfall auf ein Dorf abgewehrt."
+			},
+			"style": {
+				"gradient": [
+					"#9AA89A",
+					"#5E6E63"
+				],
+				"sides": "illager_runes"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			]
+		},
+		{
+			"id": "example_unspoken",
+			"text": {
+				"en_us": "Unspoken",
+				"de_de": "Unausgesprochen"
+			},
+			"description": {
+				"en_us": "A name only the enchanting table can read.",
+				"de_de": "Ein Name, den nur der Zaubertisch lesen kann."
+			},
+			"style": {
+				"color": "#B983FF",
+				"font": "alt"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			]
+		},
+		{
+			"id": "example_nameless",
+			"text": {
+				"en_us": "Nameless",
+				"de_de": "Namenlos"
+			},
+			"description": {
+				"en_us": "Whatever this name once was, it has been lost.",
+				"de_de": "Was dieser Name einmal war, ist verloren."
+			},
+			"style": {
+				"color": "#C8C8C8",
+				"obfuscated": true
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			]
+		},
+		{
+			"id": "example_oathsworn",
+			"text": {
+				"en_us": "Oathsworn",
+				"de_de": "Eidgebunden"
+			},
+			"description": {
+				"en_us": "Sworn in the illagers' tongue, and nobody knows to what.",
+				"de_de": "In der Sprache der Illager geschworen, und niemand weiß, worauf."
+			},
+			"style": {
+				"gradient": [
+					"#9AA89A",
+					"#5E6E63"
+				],
+				"font": "illageralt"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			]
+		}
+	]
+}

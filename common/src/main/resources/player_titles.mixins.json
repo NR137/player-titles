@@ -1,0 +1,29 @@
+{
+	"required": true,
+	"package": "de.nr137.playertitles.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"DisplayAccessor",
+		"ItemMixin",
+		"LootTableMixin",
+		"MerchantMenuMixin",
+		"MobAccessor",
+		"MobMixin",
+		"PlayerAdvancementsMixin",
+		"PlayerInfoPacketAccessor",
+		"ServerCommonPacketListenerImplMixin",
+		"ServerEntityMixin",
+		"ServerGamePacketListenerImplMixin",
+		"ServerPlayerMixin",
+		"SetPassengersPacketMixin",
+		"TextDisplayAccessor",
+		"VillagerAccessor",
+		"VillagerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

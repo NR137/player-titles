@@ -1,0 +1,16 @@
+{
+	"schemaVersion": 1,
+	"id": "player_titles_gametest",
+	"version": "1.0.0",
+	"name": "Player Titles game tests",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-gametest": [
+			"de.nr137.playertitles.fabric.gametest.FabricGameTests"
+		]
+	},
+	"depends": {
+		"player_titles": "*",
+		"fabric-gametest-api-v1": "*"
+	}
+}

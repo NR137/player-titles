@@ -1,0 +1,6092 @@
+{
+	"name": "Advancements",
+	"enabled": true,
+	"titles": [
+		{
+			"id": "adv.story.cure_zombie_villager",
+			"text": {
+				"en_us": "Zombie Healer",
+				"de_de": "Zombieheiler",
+				"de_de/female": "Zombieheilerin",
+				"de_de/neutral": "Zombieheilende"
+			},
+			"description": {
+				"en_us": "Weakened and cured a Zombie Villager.",
+				"de_de": "Hat einen Zombiedorfbewohner geschwächt und geheilt."
+			},
+			"style": {
+				"gradient": [
+					"#7FDBDA",
+					"#2E8B8B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"advancement:minecraft:story/cure_zombie_villager"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.cure_zombie_villager",
+			"text": {
+				"en_us": "Veteran Zombie Healer",
+				"de_de": "Altgedienter Zombieheiler",
+				"de_de/female": "Altgediente Zombieheilerin",
+				"de_de/neutral": "Altgediente Zombieheilende"
+			},
+			"description": {
+				"en_us": "Weakened and cured a Zombie Villager. The first on this server.",
+				"de_de": "Hat einen Zombiedorfbewohner geschwächt und geheilt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/cure_zombie_villager"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.smelt_iron",
+			"text": {
+				"en_us": "Smelter",
+				"de_de": "Schmelzer",
+				"de_de/female": "Schmelzerin",
+				"de_de/neutral": "Schmelzende"
+			},
+			"description": {
+				"en_us": "Smelted an Iron Ingot.",
+				"de_de": "Hat einen Eisenbarren geschmolzen."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/smelt_iron"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.smelt_iron",
+			"text": {
+				"en_us": "First Smelter",
+				"de_de": "Erster Schmelzer",
+				"de_de/female": "Erste Schmelzerin",
+				"de_de/neutral": "Erste Schmelzende"
+			},
+			"description": {
+				"en_us": "Smelted an Iron Ingot. The first on this server.",
+				"de_de": "Hat einen Eisenbarren geschmolzen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/smelt_iron"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.shiny_gear",
+			"text": {
+				"en_us": "Diamond-Clad",
+				"de_de": "Diamantgepanzert"
+			},
+			"description": {
+				"en_us": "Wore diamond armor.",
+				"de_de": "Hat eine Diamantrüstung getragen."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/shiny_gear"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.shiny_gear",
+			"text": {
+				"en_us": "Diamond-Clad Prime",
+				"de_de": "Ur-Diamantgepanzert"
+			},
+			"description": {
+				"en_us": "Wore diamond armor. The first on this server.",
+				"de_de": "Hat eine Diamantrüstung getragen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/shiny_gear"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.mine_diamond",
+			"text": {
+				"en_us": "Diamond Finder",
+				"de_de": "Diamantfinder",
+				"de_de/female": "Diamantfinderin",
+				"de_de/neutral": "Diamantfindende"
+			},
+			"description": {
+				"en_us": "Found diamonds.",
+				"de_de": "Hat Diamanten gefunden."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/mine_diamond"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.mine_diamond",
+			"text": {
+				"en_us": "Diamond Finder Prime",
+				"de_de": "Erzdiamantfinder",
+				"de_de/female": "Erzdiamantfinderin",
+				"de_de/neutral": "Erzdiamantfindende"
+			},
+			"description": {
+				"en_us": "Found diamonds. The first on this server.",
+				"de_de": "Hat Diamanten gefunden. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/mine_diamond"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.enchant_item",
+			"text": {
+				"en_us": "Spellbinder",
+				"de_de": "Zauberkundig"
+			},
+			"description": {
+				"en_us": "Enchanted an item at an Enchanting Table.",
+				"de_de": "Hat einen Gegenstand am Zaubertisch verzaubert."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/enchant_item"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.enchant_item",
+			"text": {
+				"en_us": "Elder Spellbinder",
+				"de_de": "Ur-Zauberkundig"
+			},
+			"description": {
+				"en_us": "Enchanted an item at an Enchanting Table. The first on this server.",
+				"de_de": "Hat einen Gegenstand am Zaubertisch verzaubert. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/enchant_item"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.follow_ender_eye",
+			"text": {
+				"en_us": "Seeker",
+				"de_de": "Sucher",
+				"de_de/female": "Sucherin",
+				"de_de/neutral": "Suchende"
+			},
+			"description": {
+				"en_us": "Followed an Eye of Ender.",
+				"de_de": "Ist einem Enderauge gefolgt."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/follow_ender_eye"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.follow_ender_eye",
+			"text": {
+				"en_us": "OG Seeker",
+				"de_de": "OG-Sucher",
+				"de_de/female": "OG-Sucherin",
+				"de_de/neutral": "OG-Suchende"
+			},
+			"description": {
+				"en_us": "Followed an Eye of Ender. The first on this server.",
+				"de_de": "Ist einem Enderauge gefolgt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/follow_ender_eye"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.upgrade_tools",
+			"text": {
+				"en_us": "Toolmaker",
+				"de_de": "Werkzeugmacher",
+				"de_de/female": "Werkzeugmacherin",
+				"de_de/neutral": "Werkzeugmachende"
+			},
+			"description": {
+				"en_us": "Made a Stone Pickaxe.",
+				"de_de": "Hat eine Steinspitzhacke hergestellt."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/upgrade_tools"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.upgrade_tools",
+			"text": {
+				"en_us": "Pro Toolmaker",
+				"de_de": "Profi-Werkzeugmacher",
+				"de_de/female": "Profi-Werkzeugmacherin",
+				"de_de/neutral": "Profi-Werkzeugmachende"
+			},
+			"description": {
+				"en_us": "Made a Stone Pickaxe. The first on this server.",
+				"de_de": "Hat eine Steinspitzhacke hergestellt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/upgrade_tools"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.lava_bucket",
+			"text": {
+				"en_us": "Lavabearer",
+				"de_de": "Lavaträger",
+				"de_de/female": "Lavaträgerin",
+				"de_de/neutral": "Lavatragende"
+			},
+			"description": {
+				"en_us": "Filled a Bucket with lava.",
+				"de_de": "Hat einen Eimer mit Lava gefüllt."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/lava_bucket"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.lava_bucket",
+			"text": {
+				"en_us": "Top Lavabearer",
+				"de_de": "Top-Lavaträger",
+				"de_de/female": "Top-Lavaträgerin",
+				"de_de/neutral": "Top-Lavatragende"
+			},
+			"description": {
+				"en_us": "Filled a Bucket with lava. The first on this server.",
+				"de_de": "Hat einen Eimer mit Lava gefüllt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/lava_bucket"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.form_obsidian",
+			"text": {
+				"en_us": "Lavatamer",
+				"de_de": "Lavabändiger",
+				"de_de/female": "Lavabändigerin",
+				"de_de/neutral": "Lavabändigende"
+			},
+			"description": {
+				"en_us": "Got a block of Obsidian.",
+				"de_de": "Hat einen Obsidianblock bekommen."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/form_obsidian"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.form_obsidian",
+			"text": {
+				"en_us": "Chief Lavatamer",
+				"de_de": "Chef-Lavabändiger",
+				"de_de/female": "Chef-Lavabändigerin",
+				"de_de/neutral": "Chef-Lavabändigende"
+			},
+			"description": {
+				"en_us": "Got a block of Obsidian. The first on this server.",
+				"de_de": "Hat einen Obsidianblock bekommen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/form_obsidian"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.iron_tools",
+			"text": {
+				"en_us": "Ironworker",
+				"de_de": "Eisenhauer",
+				"de_de/female": "Eisenhauerin",
+				"de_de/neutral": "Eisenhauende"
+			},
+			"description": {
+				"en_us": "Made an Iron Pickaxe.",
+				"de_de": "Hat eine Eisenspitzhacke hergestellt."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/iron_tools"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.iron_tools",
+			"text": {
+				"en_us": "First Ironworker",
+				"de_de": "Erster Eisenhauer",
+				"de_de/female": "Erste Eisenhauerin",
+				"de_de/neutral": "Erste Eisenhauende"
+			},
+			"description": {
+				"en_us": "Made an Iron Pickaxe. The first on this server.",
+				"de_de": "Hat eine Eisenspitzhacke hergestellt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/iron_tools"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.root",
+			"text": {
+				"en_us": "Newcomer",
+				"de_de": "Neuling"
+			},
+			"description": {
+				"en_us": "Held a Crafting Table for the first time.",
+				"de_de": "Hatte zum ersten Mal eine Werkbank."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/root"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.root",
+			"text": {
+				"en_us": "Original Newcomer",
+				"de_de": "Ur-Neuling"
+			},
+			"description": {
+				"en_us": "Held a Crafting Table for the first time. The first on this server.",
+				"de_de": "Hatte zum ersten Mal eine Werkbank. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/root"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.deflect_arrow",
+			"text": {
+				"en_us": "Shieldbearer",
+				"de_de": "Schildträger",
+				"de_de/female": "Schildträgerin",
+				"de_de/neutral": "Schildtragende"
+			},
+			"description": {
+				"en_us": "Blocked a projectile with a Shield.",
+				"de_de": "Hat ein Geschoss mit einem Schild abgewehrt."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/deflect_arrow"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.deflect_arrow",
+			"text": {
+				"en_us": "Shieldbearer Prime",
+				"de_de": "Erzschildträger",
+				"de_de/female": "Erzschildträgerin",
+				"de_de/neutral": "Erzschildtragende"
+			},
+			"description": {
+				"en_us": "Blocked a projectile with a Shield. The first on this server.",
+				"de_de": "Hat ein Geschoss mit einem Schild abgewehrt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/deflect_arrow"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.mine_stone",
+			"text": {
+				"en_us": "Stonebreaker",
+				"de_de": "Steinbrecher",
+				"de_de/female": "Steinbrecherin",
+				"de_de/neutral": "Steinbrechende"
+			},
+			"description": {
+				"en_us": "Mined Stone with a Pickaxe.",
+				"de_de": "Hat mit einer Spitzhacke Stein abgebaut."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/mine_stone"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.mine_stone",
+			"text": {
+				"en_us": "Elder Stonebreaker",
+				"de_de": "Altehrwürdiger Steinbrecher",
+				"de_de/female": "Altehrwürdige Steinbrecherin",
+				"de_de/neutral": "Altehrwürdige Steinbrechende"
+			},
+			"description": {
+				"en_us": "Mined Stone with a Pickaxe. The first on this server.",
+				"de_de": "Hat mit einer Spitzhacke Stein abgebaut. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/mine_stone"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.obtain_armor",
+			"text": {
+				"en_us": "Ironclad",
+				"de_de": "Eisern"
+			},
+			"description": {
+				"en_us": "Put on a piece of iron armor.",
+				"de_de": "Hat ein Stück Eisenrüstung angelegt."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/obtain_armor"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.obtain_armor",
+			"text": {
+				"en_us": "Ironclad Prime",
+				"de_de": "OG-Eisern"
+			},
+			"description": {
+				"en_us": "Put on a piece of iron armor. The first on this server.",
+				"de_de": "Hat ein Stück Eisenrüstung angelegt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/obtain_armor"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.enter_the_end",
+			"text": {
+				"en_us": "End Walker",
+				"de_de": "Endwanderer",
+				"de_de/female": "Endwanderin",
+				"de_de/neutral": "Endwandernde"
+			},
+			"description": {
+				"en_us": "Entered the End Portal.",
+				"de_de": "Hat das Endportal betreten."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/enter_the_end"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.enter_the_end",
+			"text": {
+				"en_us": "Pro End Walker",
+				"de_de": "Profi-Endwanderer",
+				"de_de/female": "Profi-Endwanderin",
+				"de_de/neutral": "Profi-Endwandernde"
+			},
+			"description": {
+				"en_us": "Entered the End Portal. The first on this server.",
+				"de_de": "Hat das Endportal betreten. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/enter_the_end"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.story.enter_the_nether",
+			"text": {
+				"en_us": "Portal Builder",
+				"de_de": "Portalbauer",
+				"de_de/female": "Portalbauerin",
+				"de_de/neutral": "Portalbauende"
+			},
+			"description": {
+				"en_us": "Built, lit and entered a Nether Portal.",
+				"de_de": "Hat ein Netherportal gebaut, entzündet und betreten."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:story/enter_the_nether"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.story.enter_the_nether",
+			"text": {
+				"en_us": "Top Portal Builder",
+				"de_de": "Top-Portalbauer",
+				"de_de/female": "Top-Portalbauerin",
+				"de_de/neutral": "Top-Portalbauende"
+			},
+			"description": {
+				"en_us": "Built, lit and entered a Nether Portal. The first on this server.",
+				"de_de": "Hat ein Netherportal gebaut, entzündet und betreten. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:story/enter_the_nether"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.all_effects",
+			"text": {
+				"en_us": "Living Experiment",
+				"de_de": "Lebendes Experiment"
+			},
+			"description": {
+				"en_us": "Had every effect at the same time.",
+				"de_de": "Hatte alle Effekte gleichzeitig."
+			},
+			"style": {
+				"gradient": [
+					"#FF7A59",
+					"#B3261E"
+				],
+				"icon": "item/brewing_stand",
+				"animation": "wave"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"advancement:minecraft:nether/all_effects"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.all_effects",
+			"text": {
+				"en_us": "Living Experiment of Legend",
+				"de_de": "Lebendes Experiment Nr. 1"
+			},
+			"description": {
+				"en_us": "Had every effect at the same time. The first on this server.",
+				"de_de": "Hatte alle Effekte gleichzeitig. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "wave",
+				"icons": [
+					"item/nether_star",
+					"item/brewing_stand"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/all_effects"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.all_potions",
+			"text": {
+				"en_us": "Alchemist",
+				"de_de": "Alchemist",
+				"de_de/female": "Alchemistin",
+				"de_de/neutral": "Alchemiekundige"
+			},
+			"description": {
+				"en_us": "Had every potion effect at the same time.",
+				"de_de": "Hatte alle Trankeffekte gleichzeitig."
+			},
+			"style": {
+				"gradient": [
+					"#FF7A59",
+					"#B3261E"
+				],
+				"icon": "item/blaze_powder"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:nether/all_potions"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.all_potions",
+			"text": {
+				"en_us": "Renowned Alchemist",
+				"de_de": "Berühmter Alchemist",
+				"de_de/female": "Berühmte Alchemistin",
+				"de_de/neutral": "Berühmte Alchemiekundige"
+			},
+			"description": {
+				"en_us": "Had every potion effect at the same time. The first on this server.",
+				"de_de": "Hatte alle Trankeffekte gleichzeitig. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/blaze_powder"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/all_potions"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.netherite_armor",
+			"text": {
+				"en_us": "Netherite Knight",
+				"de_de": "Netheritritter",
+				"de_de/female": "Netheritritterin",
+				"de_de/neutral": "Netheritgerüstete"
+			},
+			"description": {
+				"en_us": "Wore a full set of Netherite armor.",
+				"de_de": "Hat eine volle Netheritrüstung getragen."
+			},
+			"style": {
+				"gradient": [
+					"#FF7A59",
+					"#B3261E"
+				],
+				"icon": "item/netherite_chestplate"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:nether/netherite_armor"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.netherite_armor",
+			"text": {
+				"en_us": "Supreme Netherite Knight",
+				"de_de": "Obernetheritritter",
+				"de_de/female": "Obernetheritritterin",
+				"de_de/neutral": "Obernetheritgerüstete"
+			},
+			"description": {
+				"en_us": "Wore a full set of Netherite armor. The first on this server.",
+				"de_de": "Hat eine volle Netheritrüstung getragen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/netherite_chestplate"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/netherite_armor"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.explore_nether",
+			"text": {
+				"en_us": "Nether Wanderer",
+				"de_de": "Netherwanderer",
+				"de_de/female": "Netherwanderin",
+				"de_de/neutral": "Netherwandernde"
+			},
+			"description": {
+				"en_us": "Explored all Nether biomes.",
+				"de_de": "Hat alle Netherbiome erkundet."
+			},
+			"style": {
+				"gradient": [
+					"#FF7A59",
+					"#B3261E"
+				],
+				"icon": "block/crimson_nylium_side"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:nether/explore_nether"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.explore_nether",
+			"text": {
+				"en_us": "Ultra Nether Wanderer",
+				"de_de": "Ultra-Netherwanderer",
+				"de_de/female": "Ultra-Netherwanderin",
+				"de_de/neutral": "Ultra-Netherwandernde"
+			},
+			"description": {
+				"en_us": "Explored all Nether biomes. The first on this server.",
+				"de_de": "Hat alle Netherbiome erkundet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"block/crimson_nylium_side"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/explore_nether"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.return_to_sender",
+			"text": {
+				"en_us": "Ghast Breaker",
+				"de_de": "Ghastbrecher",
+				"de_de/female": "Ghastbrecherin",
+				"de_de/neutral": "Ghastbrechende"
+			},
+			"description": {
+				"en_us": "Destroyed a Ghast with its own fireball.",
+				"de_de": "Hat einen Ghast mit dessen eigenem Feuerball zerstört."
+			},
+			"style": {
+				"gradient": [
+					"#FF7A59",
+					"#B3261E"
+				],
+				"icon": "item/fire_charge"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:nether/return_to_sender"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.return_to_sender",
+			"text": {
+				"en_us": "Genesis Ghast Breaker",
+				"de_de": "Genesis-Ghastbrecher",
+				"de_de/female": "Genesis-Ghastbrecherin",
+				"de_de/neutral": "Genesis-Ghastbrechende"
+			},
+			"description": {
+				"en_us": "Destroyed a Ghast with its own fireball. The first on this server.",
+				"de_de": "Hat einen Ghast mit dessen eigenem Feuerball zerstört. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/fire_charge"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/return_to_sender"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.fast_travel",
+			"text": {
+				"en_us": "Pathfinder",
+				"de_de": "Wegbereiter",
+				"de_de/female": "Wegbereiterin",
+				"de_de/neutral": "Wegbereitende"
+			},
+			"description": {
+				"en_us": "Travelled 7 km of the Overworld through the Nether.",
+				"de_de": "Ist durch den Nether 7 km in der Oberwelt gereist."
+			},
+			"style": {
+				"gradient": [
+					"#FF7A59",
+					"#B3261E"
+				],
+				"icon": "block/nether_portal"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:nether/fast_travel"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.fast_travel",
+			"text": {
+				"en_us": "Renowned Pathfinder",
+				"de_de": "Berühmter Wegbereiter",
+				"de_de/female": "Berühmte Wegbereiterin",
+				"de_de/neutral": "Berühmte Wegbereitende"
+			},
+			"description": {
+				"en_us": "Travelled 7 km of the Overworld through the Nether. The first on this server.",
+				"de_de": "Ist durch den Nether 7 km in der Oberwelt gereist. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"block/nether_portal"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/fast_travel"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.uneasy_alliance",
+			"text": {
+				"en_us": "Ghast Smuggler",
+				"de_de": "Ghastschmuggler",
+				"de_de/female": "Ghastschmugglerin",
+				"de_de/neutral": "Ghastschmuggelnde"
+			},
+			"description": {
+				"en_us": "Brought a Ghast from the Nether to the Overworld, then killed it.",
+				"de_de": "Hat einen Ghast aus dem Nether in die Oberwelt gebracht und ihn dann getötet."
+			},
+			"style": {
+				"gradient": [
+					"#FF7A59",
+					"#B3261E"
+				],
+				"icon": "item/ghast_tear"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:nether/uneasy_alliance"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.uneasy_alliance",
+			"text": {
+				"en_us": "Supreme Ghast Smuggler",
+				"de_de": "Oberghastschmuggler",
+				"de_de/female": "Oberghastschmugglerin",
+				"de_de/neutral": "Oberghastschmuggelnde"
+			},
+			"description": {
+				"en_us": "Brought a Ghast from the Nether to the Overworld, then killed it. The first on this server.",
+				"de_de": "Hat einen Ghast aus dem Nether in die Oberwelt gebracht und ihn dann getötet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/ghast_tear"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/uneasy_alliance"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.create_full_beacon",
+			"text": {
+				"en_us": "Beacon Master",
+				"de_de": "Leuchtfeuermeister",
+				"de_de/female": "Leuchtfeuermeisterin",
+				"de_de/neutral": "Leuchtfeuerkundige"
+			},
+			"description": {
+				"en_us": "Brought a Beacon to full power.",
+				"de_de": "Hat ein Leuchtfeuer auf volle Stärke gebracht."
+			},
+			"style": {
+				"gradient": [
+					"#FF7A59",
+					"#B3261E"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"advancement:minecraft:nether/create_full_beacon"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.create_full_beacon",
+			"text": {
+				"en_us": "Day One Beacon Master",
+				"de_de": "Day-One-Leuchtfeuermeister",
+				"de_de/female": "Day-One-Leuchtfeuermeisterin",
+				"de_de/neutral": "Day-One-Leuchtfeuerkundige"
+			},
+			"description": {
+				"en_us": "Brought a Beacon to full power. The first on this server.",
+				"de_de": "Hat ein Leuchtfeuer auf volle Stärke gebracht. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/create_full_beacon"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.find_fortress",
+			"text": {
+				"en_us": "Fortress Breaker",
+				"de_de": "Festungsbrecher",
+				"de_de/female": "Festungsbrecherin",
+				"de_de/neutral": "Festungsbrechende"
+			},
+			"description": {
+				"en_us": "Broke into a Nether Fortress.",
+				"de_de": "Ist in eine Netherfestung eingedrungen."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/find_fortress"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.find_fortress",
+			"text": {
+				"en_us": "Chief Fortress Breaker",
+				"de_de": "Chef-Festungsbrecher",
+				"de_de/female": "Chef-Festungsbrecherin",
+				"de_de/neutral": "Chef-Festungsbrechende"
+			},
+			"description": {
+				"en_us": "Broke into a Nether Fortress. The first on this server.",
+				"de_de": "Ist in eine Netherfestung eingedrungen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/find_fortress"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.create_beacon",
+			"text": {
+				"en_us": "Beacon Builder",
+				"de_de": "Leuchtfeuerbauer",
+				"de_de/female": "Leuchtfeuerbauerin",
+				"de_de/neutral": "Leuchtfeuerbauende"
+			},
+			"description": {
+				"en_us": "Built and placed a Beacon.",
+				"de_de": "Hat ein Leuchtfeuer gebaut und aufgestellt."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/create_beacon"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.create_beacon",
+			"text": {
+				"en_us": "First Beacon Builder",
+				"de_de": "Erster Leuchtfeuerbauer",
+				"de_de/female": "Erste Leuchtfeuerbauerin",
+				"de_de/neutral": "Erste Leuchtfeuerbauende"
+			},
+			"description": {
+				"en_us": "Built and placed a Beacon. The first on this server.",
+				"de_de": "Hat ein Leuchtfeuer gebaut und aufgestellt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/create_beacon"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.ride_strider_in_overworld_lava",
+			"text": {
+				"en_us": "Lava Sailor",
+				"de_de": "Lavasegler",
+				"de_de/female": "Lavaseglerin",
+				"de_de/neutral": "Lavasegelnde"
+			},
+			"description": {
+				"en_us": "Rode a Strider far across a lava lake in the Overworld.",
+				"de_de": "Ist auf einem Schreiter weit über einen Lavasee in der Oberwelt geritten."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/ride_strider_in_overworld_lava"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.ride_strider_in_overworld_lava",
+			"text": {
+				"en_us": "Original Lava Sailor",
+				"de_de": "Ur-Lavasegler",
+				"de_de/female": "Ur-Lavaseglerin",
+				"de_de/neutral": "Ur-Lavasegelnde"
+			},
+			"description": {
+				"en_us": "Rode a Strider far across a lava lake in the Overworld. The first on this server.",
+				"de_de": "Ist auf einem Schreiter weit über einen Lavasee in der Oberwelt geritten. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/ride_strider_in_overworld_lava"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.obtain_ancient_debris",
+			"text": {
+				"en_us": "Debris Digger",
+				"de_de": "Schrottgräber",
+				"de_de/female": "Schrottgräberin",
+				"de_de/neutral": "Schrottgrabende"
+			},
+			"description": {
+				"en_us": "Found Ancient Debris.",
+				"de_de": "Hat antiken Schrott gefunden."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/obtain_ancient_debris"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.obtain_ancient_debris",
+			"text": {
+				"en_us": "Debris Digger Prime",
+				"de_de": "Erzschrottgräber",
+				"de_de/female": "Erzschrottgräberin",
+				"de_de/neutral": "Erzschrottgrabende"
+			},
+			"description": {
+				"en_us": "Found Ancient Debris. The first on this server.",
+				"de_de": "Hat antiken Schrott gefunden. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/obtain_ancient_debris"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.obtain_blaze_rod",
+			"text": {
+				"en_us": "Blaze Hunter",
+				"de_de": "Lohenjäger",
+				"de_de/female": "Lohenjägerin",
+				"de_de/neutral": "Lohenjagende"
+			},
+			"description": {
+				"en_us": "Took a Blaze Rod from a Blaze.",
+				"de_de": "Hat einer Lohe eine Lohenrute abgenommen."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/obtain_blaze_rod"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.obtain_blaze_rod",
+			"text": {
+				"en_us": "Elder Blaze Hunter",
+				"de_de": "Altehrwürdiger Lohenjäger",
+				"de_de/female": "Altehrwürdige Lohenjägerin",
+				"de_de/neutral": "Altehrwürdige Lohenjagende"
+			},
+			"description": {
+				"en_us": "Took a Blaze Rod from a Blaze. The first on this server.",
+				"de_de": "Hat einer Lohe eine Lohenrute abgenommen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/obtain_blaze_rod"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.brew_potion",
+			"text": {
+				"en_us": "Brewer",
+				"de_de": "Brauer",
+				"de_de/female": "Brauerin",
+				"de_de/neutral": "Brauende"
+			},
+			"description": {
+				"en_us": "Brewed a potion.",
+				"de_de": "Hat einen Trank gebraut."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/brew_potion"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.brew_potion",
+			"text": {
+				"en_us": "OG Brewer",
+				"de_de": "OG-Brauer",
+				"de_de/female": "OG-Brauerin",
+				"de_de/neutral": "OG-Brauende"
+			},
+			"description": {
+				"en_us": "Brewed a potion. The first on this server.",
+				"de_de": "Hat einen Trank gebraut. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/brew_potion"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.root",
+			"text": {
+				"en_us": "Nether Guest",
+				"de_de": "Nethergast"
+			},
+			"description": {
+				"en_us": "Entered the Nether.",
+				"de_de": "Hat den Nether betreten."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/root"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.root",
+			"text": {
+				"en_us": "Pro Nether Guest",
+				"de_de": "Ur-Nethergast"
+			},
+			"description": {
+				"en_us": "Entered the Nether. The first on this server.",
+				"de_de": "Hat den Nether betreten. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/root"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.charge_respawn_anchor",
+			"text": {
+				"en_us": "Anchor Keeper",
+				"de_de": "Ankerhüter",
+				"de_de/female": "Ankerhüterin",
+				"de_de/neutral": "Ankerhütende"
+			},
+			"description": {
+				"en_us": "Charged a Respawn Anchor fully.",
+				"de_de": "Hat einen Seelenanker voll aufgeladen."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/charge_respawn_anchor"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.charge_respawn_anchor",
+			"text": {
+				"en_us": "Top Anchor Keeper",
+				"de_de": "Top-Ankerhüter",
+				"de_de/female": "Top-Ankerhüterin",
+				"de_de/neutral": "Top-Ankerhütende"
+			},
+			"description": {
+				"en_us": "Charged a Respawn Anchor fully. The first on this server.",
+				"de_de": "Hat einen Seelenanker voll aufgeladen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/charge_respawn_anchor"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.distract_piglin",
+			"text": {
+				"en_us": "Goldbringer",
+				"de_de": "Goldbringer",
+				"de_de/female": "Goldbringerin",
+				"de_de/neutral": "Goldbringende"
+			},
+			"description": {
+				"en_us": "Distracted Piglins with gold.",
+				"de_de": "Hat Piglins mit Gold abgelenkt."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/distract_piglin"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.distract_piglin",
+			"text": {
+				"en_us": "Chief Goldbringer",
+				"de_de": "Chef-Goldbringer",
+				"de_de/female": "Chef-Goldbringerin",
+				"de_de/neutral": "Chef-Goldbringende"
+			},
+			"description": {
+				"en_us": "Distracted Piglins with gold. The first on this server.",
+				"de_de": "Hat Piglins mit Gold abgelenkt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/distract_piglin"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.get_wither_skull",
+			"text": {
+				"en_us": "Skull Collector",
+				"de_de": "Schädelsammler",
+				"de_de/female": "Schädelsammlerin",
+				"de_de/neutral": "Schädelsammelnde"
+			},
+			"description": {
+				"en_us": "Got a Wither Skeleton Skull.",
+				"de_de": "Hat einen Wither-Skelettschädel bekommen."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/get_wither_skull"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.get_wither_skull",
+			"text": {
+				"en_us": "First Skull Collector",
+				"de_de": "Erster Schädelsammler",
+				"de_de/female": "Erste Schädelsammlerin",
+				"de_de/neutral": "Erste Schädelsammelnde"
+			},
+			"description": {
+				"en_us": "Got a Wither Skeleton Skull. The first on this server.",
+				"de_de": "Hat einen Wither-Skelettschädel bekommen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/get_wither_skull"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.ride_strider",
+			"text": {
+				"en_us": "Strider Rider",
+				"de_de": "Schreiterreiter",
+				"de_de/female": "Schreiterreiterin",
+				"de_de/neutral": "Schreiterreitende"
+			},
+			"description": {
+				"en_us": "Rode a Strider with a Warped Fungus on a Stick.",
+				"de_de": "Ist mit einer Wirrpilzrute auf einem Schreiter geritten."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/ride_strider"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.ride_strider",
+			"text": {
+				"en_us": "Original Strider Rider",
+				"de_de": "Ur-Schreiterreiter",
+				"de_de/female": "Ur-Schreiterreiterin",
+				"de_de/neutral": "Ur-Schreiterreitende"
+			},
+			"description": {
+				"en_us": "Rode a Strider with a Warped Fungus on a Stick. The first on this server.",
+				"de_de": "Ist mit einer Wirrpilzrute auf einem Schreiter geritten. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/ride_strider"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.find_bastion",
+			"text": {
+				"en_us": "Bastion Explorer",
+				"de_de": "Bastionsforscher",
+				"de_de/female": "Bastionsforscherin",
+				"de_de/neutral": "Bastionsforschende"
+			},
+			"description": {
+				"en_us": "Entered a Bastion Remnant.",
+				"de_de": "Hat eine Bastionsruine betreten."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/find_bastion"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.find_bastion",
+			"text": {
+				"en_us": "Bastion Explorer Prime",
+				"de_de": "Erzbastionsforscher",
+				"de_de/female": "Erzbastionsforscherin",
+				"de_de/neutral": "Erzbastionsforschende"
+			},
+			"description": {
+				"en_us": "Entered a Bastion Remnant. The first on this server.",
+				"de_de": "Hat eine Bastionsruine betreten. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/find_bastion"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.loot_bastion",
+			"text": {
+				"en_us": "Bastion Looter",
+				"de_de": "Bastionsplünderer",
+				"de_de/female": "Bastionsplünderin",
+				"de_de/neutral": "Bastionsplündernde"
+			},
+			"description": {
+				"en_us": "Looted a chest in a Bastion Remnant.",
+				"de_de": "Hat eine Truhe in einer Bastionsruine geplündert."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/loot_bastion"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.loot_bastion",
+			"text": {
+				"en_us": "Elder Bastion Looter",
+				"de_de": "Altehrwürdiger Bastionsplünderer",
+				"de_de/female": "Altehrwürdige Bastionsplünderin",
+				"de_de/neutral": "Altehrwürdige Bastionsplündernde"
+			},
+			"description": {
+				"en_us": "Looted a chest in a Bastion Remnant. The first on this server.",
+				"de_de": "Hat eine Truhe in einer Bastionsruine geplündert. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/loot_bastion"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.obtain_crying_obsidian",
+			"text": {
+				"en_us": "Tearcatcher",
+				"de_de": "Tränenfänger",
+				"de_de/female": "Tränenfängerin",
+				"de_de/neutral": "Tränenfangende"
+			},
+			"description": {
+				"en_us": "Got Crying Obsidian.",
+				"de_de": "Hat weinenden Obsidian bekommen."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/obtain_crying_obsidian"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.obtain_crying_obsidian",
+			"text": {
+				"en_us": "OG Tearcatcher",
+				"de_de": "OG-Tränenfänger",
+				"de_de/female": "OG-Tränenfängerin",
+				"de_de/neutral": "OG-Tränenfangende"
+			},
+			"description": {
+				"en_us": "Got Crying Obsidian. The first on this server.",
+				"de_de": "Hat weinenden Obsidian bekommen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/obtain_crying_obsidian"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.nether.summon_wither",
+			"text": {
+				"en_us": "Wither Caller",
+				"de_de": "Witherrufer",
+				"de_de/female": "Witherruferin",
+				"de_de/neutral": "Witherrufende"
+			},
+			"description": {
+				"en_us": "Summoned the Wither.",
+				"de_de": "Hat den Wither beschworen."
+			},
+			"style": {
+				"color": "#FF7A59"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:nether/summon_wither"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.nether.summon_wither",
+			"text": {
+				"en_us": "Pro Wither Caller",
+				"de_de": "Profi-Witherrufer",
+				"de_de/female": "Profi-Witherruferin",
+				"de_de/neutral": "Profi-Witherrufende"
+			},
+			"description": {
+				"en_us": "Summoned the Wither. The first on this server.",
+				"de_de": "Hat den Wither beschworen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:nether/summon_wither"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.end.levitate",
+			"text": {
+				"en_us": "Cloudwalker",
+				"de_de": "Wolkengänger",
+				"de_de/female": "Wolkengängerin",
+				"de_de/neutral": "Wolkengehende"
+			},
+			"description": {
+				"en_us": "Floated 50 blocks up from a Shulker's attacks.",
+				"de_de": "Ist durch Angriffe eines Shulkers 50 Blöcke hoch geschwebt."
+			},
+			"style": {
+				"gradient": [
+					"#D9B8FF",
+					"#7B4FD1"
+				],
+				"icon": "item/shulker_shell"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:end/levitate"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.end.levitate",
+			"text": {
+				"en_us": "Ultra Cloudwalker",
+				"de_de": "Ultra-Wolkengänger",
+				"de_de/female": "Ultra-Wolkengängerin",
+				"de_de/neutral": "Ultra-Wolkengehende"
+			},
+			"description": {
+				"en_us": "Floated 50 blocks up from a Shulker's attacks. The first on this server.",
+				"de_de": "Ist durch Angriffe eines Shulkers 50 Blöcke hoch geschwebt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/shulker_shell"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:end/levitate"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.end.elytra",
+			"text": {
+				"en_us": "Skyborne",
+				"de_de": "Himmelsstürmer",
+				"de_de/female": "Himmelsstürmerin",
+				"de_de/neutral": "Himmelsstürmende"
+			},
+			"description": {
+				"en_us": "Found Elytra.",
+				"de_de": "Hat Elytren gefunden."
+			},
+			"style": {
+				"gradient": [
+					"#D9B8FF",
+					"#7B4FD1"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"advancement:minecraft:end/elytra"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.end.elytra",
+			"text": {
+				"en_us": "Skyborne Prime",
+				"de_de": "Elite-Himmelsstürmer",
+				"de_de/female": "Elite-Himmelsstürmerin",
+				"de_de/neutral": "Elite-Himmelsstürmende"
+			},
+			"description": {
+				"en_us": "Found Elytra. The first on this server.",
+				"de_de": "Hat Elytren gefunden. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:end/elytra"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.end.respawn_dragon",
+			"text": {
+				"en_us": "Dragon Caller",
+				"de_de": "Drachenrufer",
+				"de_de/female": "Drachenruferin",
+				"de_de/neutral": "Drachenrufende"
+			},
+			"description": {
+				"en_us": "Brought the Ender Dragon back.",
+				"de_de": "Hat den Enderdrachen zurückgeholt."
+			},
+			"style": {
+				"gradient": [
+					"#D9B8FF",
+					"#7B4FD1"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"advancement:minecraft:end/respawn_dragon"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.end.respawn_dragon",
+			"text": {
+				"en_us": "Alpha Dragon Caller",
+				"de_de": "Alpha-Drachenrufer",
+				"de_de/female": "Alpha-Drachenruferin",
+				"de_de/neutral": "Alpha-Drachenrufende"
+			},
+			"description": {
+				"en_us": "Brought the Ender Dragon back. The first on this server.",
+				"de_de": "Hat den Enderdrachen zurückgeholt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:end/respawn_dragon"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.end.dragon_egg",
+			"text": {
+				"en_us": "Dragon Heir",
+				"de_de": "Drachenerbe",
+				"de_de/female": "Drachenerbin"
+			},
+			"description": {
+				"en_us": "Held the Dragon Egg.",
+				"de_de": "Hielt das Drachenei in der Hand."
+			},
+			"style": {
+				"gradient": [
+					"#D9B8FF",
+					"#7B4FD1"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"advancement:minecraft:end/dragon_egg"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.end.dragon_egg",
+			"text": {
+				"en_us": "Veteran Dragon Heir",
+				"de_de": "Altgedienter Drachenerbe",
+				"de_de/female": "Altgediente Drachenerbin",
+				"de_de/neutral": "Altgediente Drachenerbe"
+			},
+			"description": {
+				"en_us": "Held the Dragon Egg. The first on this server.",
+				"de_de": "Hielt das Drachenei in der Hand. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:end/dragon_egg"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.end.dragon_breath",
+			"text": {
+				"en_us": "Breathtaker",
+				"de_de": "Atemräuber",
+				"de_de/female": "Atemräuberin",
+				"de_de/neutral": "Atemraubende"
+			},
+			"description": {
+				"en_us": "Collected Dragon's Breath in a Glass Bottle.",
+				"de_de": "Hat Drachenatem in einer Glasflasche gesammelt."
+			},
+			"style": {
+				"gradient": [
+					"#D9B8FF",
+					"#7B4FD1"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"advancement:minecraft:end/dragon_breath"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.end.dragon_breath",
+			"text": {
+				"en_us": "Day One Breathtaker",
+				"de_de": "Day-One-Atemräuber",
+				"de_de/female": "Day-One-Atemräuberin",
+				"de_de/neutral": "Day-One-Atemraubende"
+			},
+			"description": {
+				"en_us": "Collected Dragon's Breath in a Glass Bottle. The first on this server.",
+				"de_de": "Hat Drachenatem in einer Glasflasche gesammelt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:end/dragon_breath"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.end.kill_dragon",
+			"text": {
+				"en_us": "Dragonslayer",
+				"de_de": "Drachentöter",
+				"de_de/female": "Drachentöterin",
+				"de_de/neutral": "Drachentötende"
+			},
+			"description": {
+				"en_us": "Killed the Ender Dragon.",
+				"de_de": "Hat den Enderdrachen getötet."
+			},
+			"style": {
+				"gradient": [
+					"#D9B8FF",
+					"#7B4FD1"
+				],
+				"icon": "item/end_crystal"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:end/kill_dragon"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.end.kill_dragon",
+			"text": {
+				"en_us": "Genesis Dragonslayer",
+				"de_de": "Genesis-Drachentöter",
+				"de_de/female": "Genesis-Drachentöterin",
+				"de_de/neutral": "Genesis-Drachentötende"
+			},
+			"description": {
+				"en_us": "Killed the Ender Dragon. The first on this server.",
+				"de_de": "Hat den Enderdrachen getötet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/end_crystal"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:end/kill_dragon"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.end.enter_end_gateway",
+			"text": {
+				"en_us": "Gateway Jumper",
+				"de_de": "Torspringer",
+				"de_de/female": "Torspringerin",
+				"de_de/neutral": "Torspringende"
+			},
+			"description": {
+				"en_us": "Left the main island through an End Gateway.",
+				"de_de": "Hat die Hauptinsel durch ein Endtransitportal verlassen."
+			},
+			"style": {
+				"color": "#D9B8FF"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:end/enter_end_gateway"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.end.enter_end_gateway",
+			"text": {
+				"en_us": "Top Gateway Jumper",
+				"de_de": "Top-Torspringer",
+				"de_de/female": "Top-Torspringerin",
+				"de_de/neutral": "Top-Torspringende"
+			},
+			"description": {
+				"en_us": "Left the main island through an End Gateway. The first on this server.",
+				"de_de": "Hat die Hauptinsel durch ein Endtransitportal verlassen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:end/enter_end_gateway"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.end.find_end_city",
+			"text": {
+				"en_us": "City Seeker",
+				"de_de": "Stadtsucher",
+				"de_de/female": "Stadtsucherin",
+				"de_de/neutral": "Stadtsuchende"
+			},
+			"description": {
+				"en_us": "Found an End City.",
+				"de_de": "Hat eine Endsiedlung gefunden."
+			},
+			"style": {
+				"color": "#D9B8FF"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:end/find_end_city"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.end.find_end_city",
+			"text": {
+				"en_us": "Chief City Seeker",
+				"de_de": "Chef-Stadtsucher",
+				"de_de/female": "Chef-Stadtsucherin",
+				"de_de/neutral": "Chef-Stadtsuchende"
+			},
+			"description": {
+				"en_us": "Found an End City. The first on this server.",
+				"de_de": "Hat eine Endsiedlung gefunden. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:end/find_end_city"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.end.root",
+			"text": {
+				"en_us": "Voidgazer",
+				"de_de": "Leerenblicker",
+				"de_de/female": "Leerenblickerin",
+				"de_de/neutral": "Leerenblickende"
+			},
+			"description": {
+				"en_us": "Entered the End.",
+				"de_de": "Hat das Ende betreten."
+			},
+			"style": {
+				"color": "#D9B8FF"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:end/root"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.end.root",
+			"text": {
+				"en_us": "First Voidgazer",
+				"de_de": "Erster Leerenblicker",
+				"de_de/female": "Erste Leerenblickerin",
+				"de_de/neutral": "Erste Leerenblickende"
+			},
+			"description": {
+				"en_us": "Entered the End. The first on this server.",
+				"de_de": "Hat das Ende betreten. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:end/root"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.adventuring_time",
+			"text": {
+				"en_us": "World Explorer",
+				"de_de": "Weltenbummler",
+				"de_de/female": "Weltenbummlerin",
+				"de_de/neutral": "Weltenbummelnde"
+			},
+			"description": {
+				"en_us": "Discovered every biome.",
+				"de_de": "Hat jedes Biom entdeckt."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				],
+				"icon": "item/map",
+				"animation": "wave"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"advancement:minecraft:adventure/adventuring_time"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.adventuring_time",
+			"text": {
+				"en_us": "GOAT World Explorer",
+				"de_de": "GOAT-Weltenbummler",
+				"de_de/female": "GOAT-Weltenbummlerin",
+				"de_de/neutral": "GOAT-Weltenbummelnde"
+			},
+			"description": {
+				"en_us": "Discovered every biome. The first on this server.",
+				"de_de": "Hat jedes Biom entdeckt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "wave",
+				"icons": [
+					"item/nether_star",
+					"item/map"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/adventuring_time"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.kill_all_mobs",
+			"text": {
+				"en_us": "Monster Expert",
+				"de_de": "Monsterkenner",
+				"de_de/female": "Monsterkennerin",
+				"de_de/neutral": "Monsterkundige"
+			},
+			"description": {
+				"en_us": "Killed one of every hostile mob.",
+				"de_de": "Hat jede feindliche Kreatur einmal getötet."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				],
+				"icon": "item/diamond_sword",
+				"animation": "wave"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"advancement:minecraft:adventure/kill_all_mobs"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.kill_all_mobs",
+			"text": {
+				"en_us": "Monster Expert No. 1",
+				"de_de": "Monsterkenner Nr. 1",
+				"de_de/female": "Monsterkennerin Nr. 1",
+				"de_de/neutral": "Monsterkundige Nr. 1"
+			},
+			"description": {
+				"en_us": "Killed one of every hostile mob. The first on this server.",
+				"de_de": "Hat jede feindliche Kreatur einmal getötet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "wave",
+				"icons": [
+					"item/nether_star",
+					"item/diamond_sword"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/kill_all_mobs"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.overoverkill",
+			"text": {
+				"en_us": "Mace Master",
+				"de_de": "Streitkolbenmeister",
+				"de_de/female": "Streitkolbenmeisterin",
+				"de_de/neutral": "Streitkolbenkundige"
+			},
+			"description": {
+				"en_us": "Dealt 50 hearts of damage in one hit with the Mace.",
+				"de_de": "Hat mit dem Streitkolben 50 Herzen Schaden mit einem Schlag verursacht."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				],
+				"icon": "item/mace",
+				"animation": "wave"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"advancement:minecraft:adventure/overoverkill"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.overoverkill",
+			"text": {
+				"en_us": "Mace Master of Legend",
+				"de_de": "Legendärer Streitkolbenmeister",
+				"de_de/female": "Legendäre Streitkolbenmeisterin",
+				"de_de/neutral": "Legendäre Streitkolbenkundige"
+			},
+			"description": {
+				"en_us": "Dealt 50 hearts of damage in one hit with the Mace. The first on this server.",
+				"de_de": "Hat mit dem Streitkolben 50 Herzen Schaden mit einem Schlag verursacht. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "wave",
+				"icons": [
+					"item/nether_star",
+					"item/mace"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/overoverkill"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.arbalistic",
+			"text": {
+				"en_us": "Arbalist",
+				"de_de": "Armbrustmeister",
+				"de_de/female": "Armbrustmeisterin",
+				"de_de/neutral": "Armbrustkundige"
+			},
+			"description": {
+				"en_us": "Killed five different mobs with one Crossbow shot.",
+				"de_de": "Hat fünf verschiedene Kreaturen mit einem Armbrustschuss getötet."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				],
+				"icon": "item/crossbow_standby"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:adventure/arbalistic"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.arbalistic",
+			"text": {
+				"en_us": "Renowned Arbalist",
+				"de_de": "Berühmter Armbrustmeister",
+				"de_de/female": "Berühmte Armbrustmeisterin",
+				"de_de/neutral": "Berühmte Armbrustkundige"
+			},
+			"description": {
+				"en_us": "Killed five different mobs with one Crossbow shot. The first on this server.",
+				"de_de": "Hat fünf verschiedene Kreaturen mit einem Armbrustschuss getötet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/crossbow_standby"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/arbalistic"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.blowback",
+			"text": {
+				"en_us": "Windbreaker",
+				"de_de": "Windbrecher",
+				"de_de/female": "Windbrecherin",
+				"de_de/neutral": "Windbrechende"
+			},
+			"description": {
+				"en_us": "Killed a Breeze with its own deflected Wind Charge.",
+				"de_de": "Hat eine Böe mit ihrer eigenen abgelenkten Windkugel getötet."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				],
+				"icon": "item/wind_charge"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:adventure/blowback"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.blowback",
+			"text": {
+				"en_us": "Supreme Windbreaker",
+				"de_de": "Oberwindbrecher",
+				"de_de/female": "Oberwindbrecherin",
+				"de_de/neutral": "Oberwindbrechende"
+			},
+			"description": {
+				"en_us": "Killed a Breeze with its own deflected Wind Charge. The first on this server.",
+				"de_de": "Hat eine Böe mit ihrer eigenen abgelenkten Windkugel getötet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/wind_charge"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/blowback"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.bullseye",
+			"text": {
+				"en_us": "Dead Eye",
+				"de_de": "Adlerauge"
+			},
+			"description": {
+				"en_us": "Hit the middle of a Target from at least 30 meters away.",
+				"de_de": "Hat die Mitte eines Zielblocks aus mindestens 30 Metern getroffen."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				],
+				"icon": "block/target_side"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:adventure/bullseye"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.bullseye",
+			"text": {
+				"en_us": "Ultra Dead Eye",
+				"de_de": "Ultra-Adlerauge"
+			},
+			"description": {
+				"en_us": "Hit the middle of a Target from at least 30 meters away. The first on this server.",
+				"de_de": "Hat die Mitte eines Zielblocks aus mindestens 30 Metern getroffen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"block/target_side"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/bullseye"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.hero_of_the_village",
+			"text": {
+				"en_us": "Village Defender",
+				"de_de": "Dorfverteidiger",
+				"de_de/female": "Dorfverteidigerin",
+				"de_de/neutral": "Dorfverteidigende"
+			},
+			"description": {
+				"en_us": "Defended a village from a raid.",
+				"de_de": "Hat ein Dorf gegen einen Überfall verteidigt."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				],
+				"icon": "item/emerald"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:adventure/hero_of_the_village"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.hero_of_the_village",
+			"text": {
+				"en_us": "Genesis Village Defender",
+				"de_de": "Genesis-Dorfverteidiger",
+				"de_de/female": "Genesis-Dorfverteidigerin",
+				"de_de/neutral": "Genesis-Dorfverteidigende"
+			},
+			"description": {
+				"en_us": "Defended a village from a raid. The first on this server.",
+				"de_de": "Hat ein Dorf gegen einen Überfall verteidigt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/emerald"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/hero_of_the_village"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.kill_mob_near_sculk_catalyst",
+			"text": {
+				"en_us": "Sculk Feeder",
+				"de_de": "Sculkfütterer",
+				"de_de/female": "Sculkfütterin",
+				"de_de/neutral": "Sculkfütternde"
+			},
+			"description": {
+				"en_us": "Killed a mob near a Sculk Catalyst.",
+				"de_de": "Hat eine Kreatur nahe einem Sculk-Katalysator getötet."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				],
+				"icon": "block/sculk_catalyst_top"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:adventure/kill_mob_near_sculk_catalyst"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.kill_mob_near_sculk_catalyst",
+			"text": {
+				"en_us": "Renowned Sculk Feeder",
+				"de_de": "Berühmter Sculkfütterer",
+				"de_de/female": "Berühmte Sculkfütterin",
+				"de_de/neutral": "Berühmte Sculkfütternde"
+			},
+			"description": {
+				"en_us": "Killed a mob near a Sculk Catalyst. The first on this server.",
+				"de_de": "Hat eine Kreatur nahe einem Sculk-Katalysator getötet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"block/sculk_catalyst_top"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/kill_mob_near_sculk_catalyst"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.trim_with_all_exclusive_armor_patterns",
+			"text": {
+				"en_us": "Master Smith",
+				"de_de": "Schmiedemeister",
+				"de_de/female": "Schmiedemeisterin",
+				"de_de/neutral": "Schmiedekundige"
+			},
+			"description": {
+				"en_us": "Used all rare armor trims at a Smithing Table.",
+				"de_de": "Hat alle seltenen Rüstungsverzierungen am Schmiedetisch benutzt."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				],
+				"icon": "item/silence_armor_trim_smithing_template"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:adventure/trim_with_all_exclusive_armor_patterns"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.trim_with_all_exclusive_armor_patterns",
+			"text": {
+				"en_us": "Supreme Master Smith",
+				"de_de": "Oberschmiedemeister",
+				"de_de/female": "Oberschmiedemeisterin",
+				"de_de/neutral": "Oberschmiedekundige"
+			},
+			"description": {
+				"en_us": "Used all rare armor trims at a Smithing Table. The first on this server.",
+				"de_de": "Hat alle seltenen Rüstungsverzierungen am Schmiedetisch benutzt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/silence_armor_trim_smithing_template"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/trim_with_all_exclusive_armor_patterns"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.sniper_duel",
+			"text": {
+				"en_us": "Sharpshooter",
+				"de_de": "Scharfschütze",
+				"de_de/female": "Scharfschützin",
+				"de_de/neutral": "Scharfschießende"
+			},
+			"description": {
+				"en_us": "Killed a Skeleton from at least 50 meters away.",
+				"de_de": "Hat ein Skelett aus mindestens 50 Metern Entfernung getötet."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				],
+				"icon": "item/bow"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:adventure/sniper_duel"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.sniper_duel",
+			"text": {
+				"en_us": "Ultra Sharpshooter",
+				"de_de": "Ultra-Scharfschütze",
+				"de_de/female": "Ultra-Scharfschützin",
+				"de_de/neutral": "Ultra-Scharfschießende"
+			},
+			"description": {
+				"en_us": "Killed a Skeleton from at least 50 meters away. The first on this server.",
+				"de_de": "Hat ein Skelett aus mindestens 50 Metern Entfernung getötet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/bow"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/sniper_duel"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.two_birds_one_arrow",
+			"text": {
+				"en_us": "Double Shot",
+				"de_de": "Doppeltreffer"
+			},
+			"description": {
+				"en_us": "Killed two Phantoms with one piercing Arrow.",
+				"de_de": "Hat zwei Phantome mit einem durchschlagenden Pfeil getötet."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				],
+				"icon": "item/phantom_membrane"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:adventure/two_birds_one_arrow"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.two_birds_one_arrow",
+			"text": {
+				"en_us": "Genesis Double Shot",
+				"de_de": "Genesis-Doppeltreffer"
+			},
+			"description": {
+				"en_us": "Killed two Phantoms with one piercing Arrow. The first on this server.",
+				"de_de": "Hat zwei Phantome mit einem durchschlagenden Pfeil getötet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/phantom_membrane"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/two_birds_one_arrow"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.summon_iron_golem",
+			"text": {
+				"en_us": "Golem Maker",
+				"de_de": "Golembauer",
+				"de_de/female": "Golembauerin",
+				"de_de/neutral": "Golembauende"
+			},
+			"description": {
+				"en_us": "Built an Iron Golem to defend a village.",
+				"de_de": "Hat einen Eisengolem zum Schutz eines Dorfes gebaut."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"advancement:minecraft:adventure/summon_iron_golem"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.summon_iron_golem",
+			"text": {
+				"en_us": "Elite Golem Maker",
+				"de_de": "Elite-Golembauer",
+				"de_de/female": "Elite-Golembauerin",
+				"de_de/neutral": "Elite-Golembauende"
+			},
+			"description": {
+				"en_us": "Built an Iron Golem to defend a village. The first on this server.",
+				"de_de": "Hat einen Eisengolem zum Schutz eines Dorfes gebaut. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/summon_iron_golem"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.spear_many_mobs",
+			"text": {
+				"en_us": "Skewer",
+				"de_de": "Aufspießer",
+				"de_de/female": "Aufspießerin",
+				"de_de/neutral": "Aufspießende"
+			},
+			"description": {
+				"en_us": "Hit five mobs in one charge attack with a Spear.",
+				"de_de": "Hat fünf Kreaturen im selben Anlauf mit dem Speer getroffen."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"advancement:minecraft:adventure/spear_many_mobs"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.spear_many_mobs",
+			"text": {
+				"en_us": "Alpha Skewer",
+				"de_de": "Alpha-Aufspießer",
+				"de_de/female": "Alpha-Aufspießerin",
+				"de_de/neutral": "Alpha-Aufspießende"
+			},
+			"description": {
+				"en_us": "Hit five mobs in one charge attack with a Spear. The first on this server.",
+				"de_de": "Hat fünf Kreaturen im selben Anlauf mit dem Speer getroffen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/spear_many_mobs"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.totem_of_undying",
+			"text": {
+				"en_us": "Deathless",
+				"de_de": "Todlos"
+			},
+			"description": {
+				"en_us": "Cheated death with a Totem of Undying.",
+				"de_de": "Hat mit einem Totem der Unsterblichkeit den Tod überlistet."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"advancement:minecraft:adventure/totem_of_undying"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.totem_of_undying",
+			"text": {
+				"en_us": "Deathless Prime",
+				"de_de": "Elite-Todlos"
+			},
+			"description": {
+				"en_us": "Cheated death with a Totem of Undying. The first on this server.",
+				"de_de": "Hat mit einem Totem der Unsterblichkeit den Tod überlistet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/totem_of_undying"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.revaulting",
+			"text": {
+				"en_us": "Vault Breaker",
+				"de_de": "Tresorknacker",
+				"de_de/female": "Tresorknackerin",
+				"de_de/neutral": "Tresorknackende"
+			},
+			"description": {
+				"en_us": "Unlocked an Ominous Vault with an Ominous Trial Key.",
+				"de_de": "Hat einen unheilvollen Tresor mit einem unheilvollen Prüfungsschlüssel geöffnet."
+			},
+			"style": {
+				"gradient": [
+					"#F7D774",
+					"#C98A1B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"advancement:minecraft:adventure/revaulting"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.revaulting",
+			"text": {
+				"en_us": "Day One Vault Breaker",
+				"de_de": "Day-One-Tresorknacker",
+				"de_de/female": "Day-One-Tresorknackerin",
+				"de_de/neutral": "Day-One-Tresorknackende"
+			},
+			"description": {
+				"en_us": "Unlocked an Ominous Vault with an Ominous Trial Key. The first on this server.",
+				"de_de": "Hat einen unheilvollen Tresor mit einem unheilvollen Prüfungsschlüssel geöffnet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/revaulting"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.throw_trident",
+			"text": {
+				"en_us": "Spearfisher",
+				"de_de": "Speerfischer",
+				"de_de/female": "Speerfischerin",
+				"de_de/neutral": "Speerfischende"
+			},
+			"description": {
+				"en_us": "Threw a Trident.",
+				"de_de": "Hat einen Dreizack geworfen."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/throw_trident"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.throw_trident",
+			"text": {
+				"en_us": "Original Spearfisher",
+				"de_de": "Ur-Speerfischer",
+				"de_de/female": "Ur-Speerfischerin",
+				"de_de/neutral": "Ur-Speerfischende"
+			},
+			"description": {
+				"en_us": "Threw a Trident. The first on this server.",
+				"de_de": "Hat einen Dreizack geworfen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/throw_trident"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.root",
+			"text": {
+				"en_us": "Adventurer",
+				"de_de": "Abenteurer",
+				"de_de/female": "Abenteurerin",
+				"de_de/neutral": "Abenteuerlustige"
+			},
+			"description": {
+				"en_us": "Fought for the first time.",
+				"de_de": "Hat zum ersten Mal gekämpft."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/root"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.root",
+			"text": {
+				"en_us": "Adventurer Prime",
+				"de_de": "Erzabenteurer",
+				"de_de/female": "Erzabenteurerin",
+				"de_de/neutral": "Erzabenteuerlustige"
+			},
+			"description": {
+				"en_us": "Fought for the first time. The first on this server.",
+				"de_de": "Hat zum ersten Mal gekämpft. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/root"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.craft_decorated_pot_using_only_sherds",
+			"text": {
+				"en_us": "Restorer",
+				"de_de": "Restaurator",
+				"de_de/female": "Restauratorin",
+				"de_de/neutral": "Restaurierende"
+			},
+			"description": {
+				"en_us": "Made a Decorated Pot from 4 Pottery Sherds.",
+				"de_de": "Hat einen verzierten Krug aus 4 Töpferscherben hergestellt."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/craft_decorated_pot_using_only_sherds"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.craft_decorated_pot_using_only_sherds",
+			"text": {
+				"en_us": "Elder Restorer",
+				"de_de": "Altehrwürdiger Restaurator",
+				"de_de/female": "Altehrwürdige Restauratorin",
+				"de_de/neutral": "Altehrwürdige Restaurierende"
+			},
+			"description": {
+				"en_us": "Made a Decorated Pot from 4 Pottery Sherds. The first on this server.",
+				"de_de": "Hat einen verzierten Krug aus 4 Töpferscherben hergestellt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/craft_decorated_pot_using_only_sherds"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.fall_from_world_height",
+			"text": {
+				"en_us": "Freefaller",
+				"de_de": "Freifaller",
+				"de_de/female": "Freifallerin",
+				"de_de/neutral": "Freifallende"
+			},
+			"description": {
+				"en_us": "Fell from the top of the world to the bottom and survived.",
+				"de_de": "Ist vom höchsten bis zum tiefsten Punkt der Welt gefallen und hat überlebt."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/fall_from_world_height"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.fall_from_world_height",
+			"text": {
+				"en_us": "OG Freefaller",
+				"de_de": "OG-Freifaller",
+				"de_de/female": "OG-Freifallerin",
+				"de_de/neutral": "OG-Freifallende"
+			},
+			"description": {
+				"en_us": "Fell from the top of the world to the bottom and survived. The first on this server.",
+				"de_de": "Ist vom höchsten bis zum tiefsten Punkt der Welt gefallen und hat überlebt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/fall_from_world_height"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.use_lodestone",
+			"text": {
+				"en_us": "Homeward",
+				"de_de": "Heimkehrer",
+				"de_de/female": "Heimkehrerin",
+				"de_de/neutral": "Heimkehrende"
+			},
+			"description": {
+				"en_us": "Used a Compass on a Lodestone.",
+				"de_de": "Hat einen Kompass mit einem Leitstein verbunden."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/use_lodestone"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.use_lodestone",
+			"text": {
+				"en_us": "Homeward Prime",
+				"de_de": "Profi-Heimkehrer",
+				"de_de/female": "Profi-Heimkehrerin",
+				"de_de/neutral": "Profi-Heimkehrende"
+			},
+			"description": {
+				"en_us": "Used a Compass on a Lodestone. The first on this server.",
+				"de_de": "Hat einen Kompass mit einem Leitstein verbunden. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/use_lodestone"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.crafters_crafting_crafters",
+			"text": {
+				"en_us": "Machinist",
+				"de_de": "Maschinist",
+				"de_de/female": "Maschinistin",
+				"de_de/neutral": "Maschinenkundige"
+			},
+			"description": {
+				"en_us": "Watched a Crafter craft a Crafter.",
+				"de_de": "War dabei, als ein Werker einen Werker herstellte."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/crafters_crafting_crafters"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.crafters_crafting_crafters",
+			"text": {
+				"en_us": "Top Machinist",
+				"de_de": "Top-Maschinist",
+				"de_de/female": "Top-Maschinistin",
+				"de_de/neutral": "Top-Maschinenkundige"
+			},
+			"description": {
+				"en_us": "Watched a Crafter craft a Crafter. The first on this server.",
+				"de_de": "War dabei, als ein Werker einen Werker herstellte. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/crafters_crafting_crafters"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.trim_with_any_armor_pattern",
+			"text": {
+				"en_us": "Trendsetter",
+				"de_de": "Trendsetter",
+				"de_de/female": "Trendsetterin",
+				"de_de/neutral": "Trendsetzende"
+			},
+			"description": {
+				"en_us": "Made trimmed armor at a Smithing Table.",
+				"de_de": "Hat am Schmiedetisch eine verzierte Rüstung hergestellt."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/trim_with_any_armor_pattern"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.trim_with_any_armor_pattern",
+			"text": {
+				"en_us": "Chief Trendsetter",
+				"de_de": "Chef-Trendsetter",
+				"de_de/female": "Chef-Trendsetterin",
+				"de_de/neutral": "Chef-Trendsetzende"
+			},
+			"description": {
+				"en_us": "Made trimmed armor at a Smithing Table. The first on this server.",
+				"de_de": "Hat am Schmiedetisch eine verzierte Rüstung hergestellt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/trim_with_any_armor_pattern"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.heart_transplanter",
+			"text": {
+				"en_us": "Heart Surgeon",
+				"de_de": "Herzchirurg",
+				"de_de/female": "Herzchirurgin",
+				"de_de/neutral": "Herzverpflanzende"
+			},
+			"description": {
+				"en_us": "Placed a Creaking Heart the right way between Pale Oak Logs.",
+				"de_de": "Hat ein Knarzherz richtig zwischen Blasseichenstämme gesetzt."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/heart_transplanter"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.heart_transplanter",
+			"text": {
+				"en_us": "First Heart Surgeon",
+				"de_de": "Erster Herzchirurg",
+				"de_de/female": "Erste Herzchirurgin",
+				"de_de/neutral": "Erste Herzverpflanzende"
+			},
+			"description": {
+				"en_us": "Placed a Creaking Heart the right way between Pale Oak Logs. The first on this server.",
+				"de_de": "Hat ein Knarzherz richtig zwischen Blasseichenstämme gesetzt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/heart_transplanter"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.spyglass_at_ghast",
+			"text": {
+				"en_us": "Ghast Spotter",
+				"de_de": "Ghastspäher",
+				"de_de/female": "Ghastspäherin",
+				"de_de/neutral": "Ghastspähende"
+			},
+			"description": {
+				"en_us": "Watched a Ghast through a Spyglass.",
+				"de_de": "Hat einen Ghast durch ein Fernrohr beobachtet."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/spyglass_at_ghast"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.spyglass_at_ghast",
+			"text": {
+				"en_us": "Original Ghast Spotter",
+				"de_de": "Ur-Ghastspäher",
+				"de_de/female": "Ur-Ghastspäherin",
+				"de_de/neutral": "Ur-Ghastspähende"
+			},
+			"description": {
+				"en_us": "Watched a Ghast through a Spyglass. The first on this server.",
+				"de_de": "Hat einen Ghast durch ein Fernrohr beobachtet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/spyglass_at_ghast"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.spyglass_at_parrot",
+			"text": {
+				"en_us": "Birdwatcher",
+				"de_de": "Vogelbeobachter",
+				"de_de/female": "Vogelbeobachterin",
+				"de_de/neutral": "Vogelbeobachtende"
+			},
+			"description": {
+				"en_us": "Watched a Parrot through a Spyglass.",
+				"de_de": "Hat einen Papagei durch ein Fernrohr beobachtet."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/spyglass_at_parrot"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.spyglass_at_parrot",
+			"text": {
+				"en_us": "Birdwatcher Prime",
+				"de_de": "Erzvogelbeobachter",
+				"de_de/female": "Erzvogelbeobachterin",
+				"de_de/neutral": "Erzvogelbeobachtende"
+			},
+			"description": {
+				"en_us": "Watched a Parrot through a Spyglass. The first on this server.",
+				"de_de": "Hat einen Papagei durch ein Fernrohr beobachtet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/spyglass_at_parrot"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.spyglass_at_dragon",
+			"text": {
+				"en_us": "Dragon Watcher",
+				"de_de": "Drachenbeobachter",
+				"de_de/female": "Drachenbeobachterin",
+				"de_de/neutral": "Drachenbeobachtende"
+			},
+			"description": {
+				"en_us": "Watched the Ender Dragon through a Spyglass.",
+				"de_de": "Hat den Enderdrachen durch ein Fernrohr beobachtet."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/spyglass_at_dragon"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.spyglass_at_dragon",
+			"text": {
+				"en_us": "Elder Dragon Watcher",
+				"de_de": "Altehrwürdiger Drachenbeobachter",
+				"de_de/female": "Altehrwürdige Drachenbeobachterin",
+				"de_de/neutral": "Altehrwürdige Drachenbeobachtende"
+			},
+			"description": {
+				"en_us": "Watched the Ender Dragon through a Spyglass. The first on this server.",
+				"de_de": "Hat den Enderdrachen durch ein Fernrohr beobachtet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/spyglass_at_dragon"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.brush_armadillo",
+			"text": {
+				"en_us": "Armadillo Groomer",
+				"de_de": "Gürteltierpfleger",
+				"de_de/female": "Gürteltierpflegerin",
+				"de_de/neutral": "Gürteltierpflegende"
+			},
+			"description": {
+				"en_us": "Brushed Armadillo Scutes off an Armadillo.",
+				"de_de": "Hat einem Gürteltier mit einem Pinsel Gürteltier-Hornschilde abgebürstet."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/brush_armadillo"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.brush_armadillo",
+			"text": {
+				"en_us": "OG Armadillo Groomer",
+				"de_de": "OG-Gürteltierpfleger",
+				"de_de/female": "OG-Gürteltierpflegerin",
+				"de_de/neutral": "OG-Gürteltierpflegende"
+			},
+			"description": {
+				"en_us": "Brushed Armadillo Scutes off an Armadillo. The first on this server.",
+				"de_de": "Hat einem Gürteltier mit einem Pinsel Gürteltier-Hornschilde abgebürstet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/brush_armadillo"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.walk_on_powder_snow_with_leather_boots",
+			"text": {
+				"en_us": "Lightfoot",
+				"de_de": "Leichtfuß"
+			},
+			"description": {
+				"en_us": "Walked on Powder Snow without sinking in.",
+				"de_de": "Ist über Pulverschnee gegangen, ohne einzusinken."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/walk_on_powder_snow_with_leather_boots"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.walk_on_powder_snow_with_leather_boots",
+			"text": {
+				"en_us": "Pro Lightfoot",
+				"de_de": "Ur-Leichtfuß"
+			},
+			"description": {
+				"en_us": "Walked on Powder Snow without sinking in. The first on this server.",
+				"de_de": "Ist über Pulverschnee gegangen, ohne einzusinken. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/walk_on_powder_snow_with_leather_boots"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.lighten_up",
+			"text": {
+				"en_us": "Lamplighter",
+				"de_de": "Lampenanzünder",
+				"de_de/female": "Lampenanzünderin",
+				"de_de/neutral": "Lampenanzündende"
+			},
+			"description": {
+				"en_us": "Scraped a Copper Bulb brighter with an Axe.",
+				"de_de": "Hat eine Kupferleuchte mit einer Axt heller gemacht."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/lighten_up"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.lighten_up",
+			"text": {
+				"en_us": "Top Lamplighter",
+				"de_de": "Top-Lampenanzünder",
+				"de_de/female": "Top-Lampenanzünderin",
+				"de_de/neutral": "Top-Lampenanzündende"
+			},
+			"description": {
+				"en_us": "Scraped a Copper Bulb brighter with an Axe. The first on this server.",
+				"de_de": "Hat eine Kupferleuchte mit einer Axt heller gemacht. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/lighten_up"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.minecraft_trials_edition",
+			"text": {
+				"en_us": "Trial Seeker",
+				"de_de": "Prüfling"
+			},
+			"description": {
+				"en_us": "Stepped into a Trial Chamber.",
+				"de_de": "Hat eine Prüfungskammer betreten."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/minecraft_trials_edition"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.minecraft_trials_edition",
+			"text": {
+				"en_us": "Chief Trial Seeker",
+				"de_de": "Ur-Prüfling"
+			},
+			"description": {
+				"en_us": "Stepped into a Trial Chamber. The first on this server.",
+				"de_de": "Hat eine Prüfungskammer betreten. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/minecraft_trials_edition"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.kill_a_mob",
+			"text": {
+				"en_us": "Monster Slayer",
+				"de_de": "Monstertöter",
+				"de_de/female": "Monstertöterin",
+				"de_de/neutral": "Monstertötende"
+			},
+			"description": {
+				"en_us": "Killed a hostile mob.",
+				"de_de": "Hat eine feindliche Kreatur getötet."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/kill_a_mob"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.kill_a_mob",
+			"text": {
+				"en_us": "First Monster Slayer",
+				"de_de": "Erster Monstertöter",
+				"de_de/female": "Erste Monstertöterin",
+				"de_de/neutral": "Erste Monstertötende"
+			},
+			"description": {
+				"en_us": "Killed a hostile mob. The first on this server.",
+				"de_de": "Hat eine feindliche Kreatur getötet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/kill_a_mob"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.ol_betsy",
+			"text": {
+				"en_us": "Bolt Shooter",
+				"de_de": "Bolzenschütze",
+				"de_de/female": "Bolzenschützin",
+				"de_de/neutral": "Bolzenschießende"
+			},
+			"description": {
+				"en_us": "Shot a Crossbow.",
+				"de_de": "Hat mit einer Armbrust geschossen."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/ol_betsy"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.ol_betsy",
+			"text": {
+				"en_us": "Original Bolt Shooter",
+				"de_de": "Ur-Bolzenschütze",
+				"de_de/female": "Ur-Bolzenschützin",
+				"de_de/neutral": "Ur-Bolzenschießende"
+			},
+			"description": {
+				"en_us": "Shot a Crossbow. The first on this server.",
+				"de_de": "Hat mit einer Armbrust geschossen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/ol_betsy"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.salvage_sherd",
+			"text": {
+				"en_us": "Archaeologist",
+				"de_de": "Archäologe",
+				"de_de/female": "Archäologin",
+				"de_de/neutral": "Archäologiekundige"
+			},
+			"description": {
+				"en_us": "Brushed a Pottery Sherd out of a Suspicious block.",
+				"de_de": "Hat eine Töpferscherbe aus einem seltsamen Block gepinselt."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/salvage_sherd"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.salvage_sherd",
+			"text": {
+				"en_us": "Archaeologist Prime",
+				"de_de": "Erzarchäologe",
+				"de_de/female": "Erzarchäologin",
+				"de_de/neutral": "Erzarchäologiekundige"
+			},
+			"description": {
+				"en_us": "Brushed a Pottery Sherd out of a Suspicious block. The first on this server.",
+				"de_de": "Hat eine Töpferscherbe aus einem seltsamen Block gepinselt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/salvage_sherd"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.avoid_vibration",
+			"text": {
+				"en_us": "Silent Step",
+				"de_de": "Leisetreter",
+				"de_de/female": "Leisetreterin",
+				"de_de/neutral": "Leisetretende"
+			},
+			"description": {
+				"en_us": "Sneaked past a Sculk Sensor or Warden unheard.",
+				"de_de": "Hat sich ungehört an einem Sculk-Sensor oder Wärter vorbeigeschlichen."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/avoid_vibration"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.avoid_vibration",
+			"text": {
+				"en_us": "Elder Silent Step",
+				"de_de": "Altehrwürdiger Leisetreter",
+				"de_de/female": "Altehrwürdige Leisetreterin",
+				"de_de/neutral": "Altehrwürdige Leisetretende"
+			},
+			"description": {
+				"en_us": "Sneaked past a Sculk Sensor or Warden unheard. The first on this server.",
+				"de_de": "Hat sich ungehört an einem Sculk-Sensor oder Wärter vorbeigeschlichen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/avoid_vibration"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.play_jukebox_in_meadows",
+			"text": {
+				"en_us": "Meadow Minstrel",
+				"de_de": "Almmusikant",
+				"de_de/female": "Almmusikantin",
+				"de_de/neutral": "Almmusizierende"
+			},
+			"description": {
+				"en_us": "Played music from a Jukebox in a Meadow.",
+				"de_de": "Hat auf einer Alm Musik aus einem Plattenspieler gespielt."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/play_jukebox_in_meadows"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.play_jukebox_in_meadows",
+			"text": {
+				"en_us": "OG Meadow Minstrel",
+				"de_de": "OG-Almmusikant",
+				"de_de/female": "OG-Almmusikantin",
+				"de_de/neutral": "OG-Almmusizierende"
+			},
+			"description": {
+				"en_us": "Played music from a Jukebox in a Meadow. The first on this server.",
+				"de_de": "Hat auf einer Alm Musik aus einem Plattenspieler gespielt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/play_jukebox_in_meadows"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.trade_at_world_height",
+			"text": {
+				"en_us": "Sky Merchant",
+				"de_de": "Himmelshändler",
+				"de_de/female": "Himmelshändlerin",
+				"de_de/neutral": "Himmelshandelnde"
+			},
+			"description": {
+				"en_us": "Traded with a Villager at the build height limit.",
+				"de_de": "Hat an der Bauhöhengrenze mit einem Dorfbewohner gehandelt."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/trade_at_world_height"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.trade_at_world_height",
+			"text": {
+				"en_us": "Pro Sky Merchant",
+				"de_de": "Profi-Himmelshändler",
+				"de_de/female": "Profi-Himmelshändlerin",
+				"de_de/neutral": "Profi-Himmelshandelnde"
+			},
+			"description": {
+				"en_us": "Traded with a Villager at the build height limit. The first on this server.",
+				"de_de": "Hat an der Bauhöhengrenze mit einem Dorfbewohner gehandelt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/trade_at_world_height"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.honey_block_slide",
+			"text": {
+				"en_us": "Honeyfoot",
+				"de_de": "Honigfuß"
+			},
+			"description": {
+				"en_us": "Broke a fall with a Honey Block.",
+				"de_de": "Hat einen Sturz mit einem Honigblock abgefangen."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/honey_block_slide"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.honey_block_slide",
+			"text": {
+				"en_us": "Top Honeyfoot",
+				"de_de": "Top-Honigfuß"
+			},
+			"description": {
+				"en_us": "Broke a fall with a Honey Block. The first on this server.",
+				"de_de": "Hat einen Sturz mit einem Honigblock abgefangen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/honey_block_slide"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.lightning_rod_with_villager_no_fire",
+			"text": {
+				"en_us": "Lightning Guard",
+				"de_de": "Blitzwächter",
+				"de_de/female": "Blitzwächterin",
+				"de_de/neutral": "Blitzschützende"
+			},
+			"description": {
+				"en_us": "Kept lightning from a Villager without starting a fire.",
+				"de_de": "Hat einen Dorfbewohner vor einem Blitz geschützt, ohne ein Feuer zu legen."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/lightning_rod_with_villager_no_fire"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.lightning_rod_with_villager_no_fire",
+			"text": {
+				"en_us": "Chief Lightning Guard",
+				"de_de": "Chef-Blitzwächter",
+				"de_de/female": "Chef-Blitzwächterin",
+				"de_de/neutral": "Chef-Blitzschützende"
+			},
+			"description": {
+				"en_us": "Kept lightning from a Villager without starting a fire. The first on this server.",
+				"de_de": "Hat einen Dorfbewohner vor einem Blitz geschützt, ohne ein Feuer zu legen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/lightning_rod_with_villager_no_fire"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.sleep_in_bed",
+			"text": {
+				"en_us": "Dreamer",
+				"de_de": "Träumer",
+				"de_de/female": "Träumerin",
+				"de_de/neutral": "Träumende"
+			},
+			"description": {
+				"en_us": "Slept in a Bed.",
+				"de_de": "Hat in einem Bett geschlafen."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/sleep_in_bed"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.sleep_in_bed",
+			"text": {
+				"en_us": "First Dreamer",
+				"de_de": "Erster Träumer",
+				"de_de/female": "Erste Träumerin",
+				"de_de/neutral": "Erste Träumende"
+			},
+			"description": {
+				"en_us": "Slept in a Bed. The first on this server.",
+				"de_de": "Hat in einem Bett geschlafen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/sleep_in_bed"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.shoot_arrow",
+			"text": {
+				"en_us": "Archer",
+				"de_de": "Bogenschütze",
+				"de_de/female": "Bogenschützin",
+				"de_de/neutral": "Bogenschießende"
+			},
+			"description": {
+				"en_us": "Hit something with an Arrow.",
+				"de_de": "Hat etwas mit einem Pfeil getroffen."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/shoot_arrow"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.shoot_arrow",
+			"text": {
+				"en_us": "Original Archer",
+				"de_de": "Ur-Bogenschütze",
+				"de_de/female": "Ur-Bogenschützin",
+				"de_de/neutral": "Ur-Bogenschießende"
+			},
+			"description": {
+				"en_us": "Hit something with an Arrow. The first on this server.",
+				"de_de": "Hat etwas mit einem Pfeil getroffen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/shoot_arrow"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.read_power_of_chiseled_bookshelf",
+			"text": {
+				"en_us": "Bookworm",
+				"de_de": "Bücherwurm"
+			},
+			"description": {
+				"en_us": "Read a Chiseled Bookshelf's signal with a Redstone Comparator.",
+				"de_de": "Hat das Signal eines gearbeiteten Bücherregals mit einem Redstone-Komparator ausgelesen."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/read_power_of_chiseled_bookshelf"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.read_power_of_chiseled_bookshelf",
+			"text": {
+				"en_us": "Bookworm Prime",
+				"de_de": "Ur-Bücherwurm"
+			},
+			"description": {
+				"en_us": "Read a Chiseled Bookshelf's signal with a Redstone Comparator. The first on this server.",
+				"de_de": "Hat das Signal eines gearbeiteten Bücherregals mit einem Redstone-Komparator ausgelesen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/read_power_of_chiseled_bookshelf"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.under_lock_and_key",
+			"text": {
+				"en_us": "Vault Opener",
+				"de_de": "Tresoröffner",
+				"de_de/female": "Tresoröffnerin",
+				"de_de/neutral": "Tresoröffnende"
+			},
+			"description": {
+				"en_us": "Unlocked a Vault with a Trial Key.",
+				"de_de": "Hat einen Tresor mit einem Prüfungsschlüssel geöffnet."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/under_lock_and_key"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.under_lock_and_key",
+			"text": {
+				"en_us": "Elder Vault Opener",
+				"de_de": "Altehrwürdiger Tresoröffner",
+				"de_de/female": "Altehrwürdige Tresoröffnerin",
+				"de_de/neutral": "Altehrwürdige Tresoröffnende"
+			},
+			"description": {
+				"en_us": "Unlocked a Vault with a Trial Key. The first on this server.",
+				"de_de": "Hat einen Tresor mit einem Prüfungsschlüssel geöffnet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/under_lock_and_key"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.very_very_frightening",
+			"text": {
+				"en_us": "Storm Bringer",
+				"de_de": "Sturmbringer",
+				"de_de/female": "Sturmbringerin",
+				"de_de/neutral": "Sturmbringende"
+			},
+			"description": {
+				"en_us": "Struck a Villager with lightning.",
+				"de_de": "Hat einen Dorfbewohner vom Blitz treffen lassen."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/very_very_frightening"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.very_very_frightening",
+			"text": {
+				"en_us": "OG Storm Bringer",
+				"de_de": "OG-Sturmbringer",
+				"de_de/female": "OG-Sturmbringerin",
+				"de_de/neutral": "OG-Sturmbringende"
+			},
+			"description": {
+				"en_us": "Struck a Villager with lightning. The first on this server.",
+				"de_de": "Hat einen Dorfbewohner vom Blitz treffen lassen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/very_very_frightening"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.voluntary_exile",
+			"text": {
+				"en_us": "Captain's Bane",
+				"de_de": "Hauptmannsbezwinger",
+				"de_de/female": "Hauptmannsbezwingerin",
+				"de_de/neutral": "Hauptmannsbezwingende"
+			},
+			"description": {
+				"en_us": "Killed the captain of a raid.",
+				"de_de": "Hat den Hauptmann eines Überfalls getötet."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/voluntary_exile"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.voluntary_exile",
+			"text": {
+				"en_us": "Pro Captain's Bane",
+				"de_de": "Profi-Hauptmannsbezwinger",
+				"de_de/female": "Profi-Hauptmannsbezwingerin",
+				"de_de/neutral": "Profi-Hauptmannsbezwingende"
+			},
+			"description": {
+				"en_us": "Killed the captain of a raid. The first on this server.",
+				"de_de": "Hat den Hauptmann eines Überfalls getötet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/voluntary_exile"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.trade",
+			"text": {
+				"en_us": "Trader",
+				"de_de": "Händler",
+				"de_de/female": "Händlerin",
+				"de_de/neutral": "Handelnde"
+			},
+			"description": {
+				"en_us": "Traded with a Villager.",
+				"de_de": "Hat mit einem Dorfbewohner gehandelt."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/trade"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.trade",
+			"text": {
+				"en_us": "Top Trader",
+				"de_de": "Top-Händler",
+				"de_de/female": "Top-Händlerin",
+				"de_de/neutral": "Top-Handelnde"
+			},
+			"description": {
+				"en_us": "Traded with a Villager. The first on this server.",
+				"de_de": "Hat mit einem Dorfbewohner gehandelt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/trade"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.who_needs_rockets",
+			"text": {
+				"en_us": "Wind Rider",
+				"de_de": "Windreiter",
+				"de_de/female": "Windreiterin",
+				"de_de/neutral": "Windreitende"
+			},
+			"description": {
+				"en_us": "Launched up 8 blocks with a Wind Charge.",
+				"de_de": "Hat sich mit einer Windkugel 8 Blöcke hochgeschleudert."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/who_needs_rockets"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.who_needs_rockets",
+			"text": {
+				"en_us": "Chief Wind Rider",
+				"de_de": "Chef-Windreiter",
+				"de_de/female": "Chef-Windreiterin",
+				"de_de/neutral": "Chef-Windreitende"
+			},
+			"description": {
+				"en_us": "Launched up 8 blocks with a Wind Charge. The first on this server.",
+				"de_de": "Hat sich mit einer Windkugel 8 Blöcke hochgeschleudert. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/who_needs_rockets"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.adventure.whos_the_pillager_now",
+			"text": {
+				"en_us": "Pillager Hunter",
+				"de_de": "Plündererjäger",
+				"de_de/female": "Plündererjägerin",
+				"de_de/neutral": "Plündererjagende"
+			},
+			"description": {
+				"en_us": "Killed a Pillager with a Crossbow.",
+				"de_de": "Hat einen Plünderer mit einer Armbrust getötet."
+			},
+			"style": {
+				"color": "#F7D774"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:adventure/whos_the_pillager_now"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.adventure.whos_the_pillager_now",
+			"text": {
+				"en_us": "First Pillager Hunter",
+				"de_de": "Erster Plündererjäger",
+				"de_de/female": "Erste Plündererjägerin",
+				"de_de/neutral": "Erste Plündererjagende"
+			},
+			"description": {
+				"en_us": "Killed a Pillager with a Crossbow. The first on this server.",
+				"de_de": "Hat einen Plünderer mit einer Armbrust getötet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:adventure/whos_the_pillager_now"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.balanced_diet",
+			"text": {
+				"en_us": "Gourmet",
+				"de_de": "Feinschmecker",
+				"de_de/female": "Feinschmeckerin",
+				"de_de/neutral": "Feinschmeckende"
+			},
+			"description": {
+				"en_us": "Ate everything edible.",
+				"de_de": "Hat alles Essbare gegessen."
+			},
+			"style": {
+				"gradient": [
+					"#A8E07A",
+					"#3E8E41"
+				],
+				"icon": "item/golden_apple",
+				"animation": "wave"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"advancement:minecraft:husbandry/balanced_diet"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.balanced_diet",
+			"text": {
+				"en_us": "GOAT Gourmet",
+				"de_de": "GOAT-Feinschmecker",
+				"de_de/female": "GOAT-Feinschmeckerin",
+				"de_de/neutral": "GOAT-Feinschmeckende"
+			},
+			"description": {
+				"en_us": "Ate everything edible. The first on this server.",
+				"de_de": "Hat alles Essbare gegessen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "wave",
+				"icons": [
+					"item/nether_star",
+					"item/golden_apple"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/balanced_diet"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.complete_catalogue",
+			"text": {
+				"en_us": "Cat Collector",
+				"de_de": "Katzensammler",
+				"de_de/female": "Katzensammlerin",
+				"de_de/neutral": "Katzensammelnde"
+			},
+			"description": {
+				"en_us": "Tamed every Cat variant.",
+				"de_de": "Hat jede Katzenvariante gezähmt."
+			},
+			"style": {
+				"gradient": [
+					"#A8E07A",
+					"#3E8E41"
+				],
+				"icon": "item/cod"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:husbandry/complete_catalogue"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.complete_catalogue",
+			"text": {
+				"en_us": "Renowned Cat Collector",
+				"de_de": "Berühmter Katzensammler",
+				"de_de/female": "Berühmte Katzensammlerin",
+				"de_de/neutral": "Berühmte Katzensammelnde"
+			},
+			"description": {
+				"en_us": "Tamed every Cat variant. The first on this server.",
+				"de_de": "Hat jede Katzenvariante gezähmt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/cod"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/complete_catalogue"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.obtain_netherite_hoe",
+			"text": {
+				"en_us": "Netherite Farmer",
+				"de_de": "Netheritbauer",
+				"de_de/female": "Netheritbäuerin",
+				"de_de/neutral": "Netheritackernde"
+			},
+			"description": {
+				"en_us": "Upgraded a Hoe with a Netherite Ingot.",
+				"de_de": "Hat eine Hacke mit einem Netheritbarren aufgewertet."
+			},
+			"style": {
+				"gradient": [
+					"#A8E07A",
+					"#3E8E41"
+				],
+				"icon": "item/netherite_hoe"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:husbandry/obtain_netherite_hoe"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.obtain_netherite_hoe",
+			"text": {
+				"en_us": "Supreme Netherite Farmer",
+				"de_de": "Obernetheritbauer",
+				"de_de/female": "Obernetheritbäuerin",
+				"de_de/neutral": "Obernetheritackernde"
+			},
+			"description": {
+				"en_us": "Upgraded a Hoe with a Netherite Ingot. The first on this server.",
+				"de_de": "Hat eine Hacke mit einem Netheritbarren aufgewertet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/netherite_hoe"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/obtain_netherite_hoe"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.whole_pack",
+			"text": {
+				"en_us": "Pack Leader",
+				"de_de": "Rudelführer",
+				"de_de/female": "Rudelführerin",
+				"de_de/neutral": "Rudelführende"
+			},
+			"description": {
+				"en_us": "Tamed every Wolf variant.",
+				"de_de": "Hat jede Wolfsvariante gezähmt."
+			},
+			"style": {
+				"gradient": [
+					"#A8E07A",
+					"#3E8E41"
+				],
+				"icon": "item/bone"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:husbandry/whole_pack"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.whole_pack",
+			"text": {
+				"en_us": "Ultra Pack Leader",
+				"de_de": "Ultra-Rudelführer",
+				"de_de/female": "Ultra-Rudelführerin",
+				"de_de/neutral": "Ultra-Rudelführende"
+			},
+			"description": {
+				"en_us": "Tamed every Wolf variant. The first on this server.",
+				"de_de": "Hat jede Wolfsvariante gezähmt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/bone"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/whole_pack"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.bred_all_animals",
+			"text": {
+				"en_us": "Ark Keeper",
+				"de_de": "Archehüter",
+				"de_de/female": "Archehüterin",
+				"de_de/neutral": "Archehütende"
+			},
+			"description": {
+				"en_us": "Bred every animal.",
+				"de_de": "Hat jedes Tier gezüchtet."
+			},
+			"style": {
+				"gradient": [
+					"#A8E07A",
+					"#3E8E41"
+				],
+				"icon": "item/wheat"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:husbandry/bred_all_animals"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.bred_all_animals",
+			"text": {
+				"en_us": "Genesis Ark Keeper",
+				"de_de": "Genesis-Archehüter",
+				"de_de/female": "Genesis-Archehüterin",
+				"de_de/neutral": "Genesis-Archehütende"
+			},
+			"description": {
+				"en_us": "Bred every animal. The first on this server.",
+				"de_de": "Hat jedes Tier gezüchtet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"item/wheat"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/bred_all_animals"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.froglights",
+			"text": {
+				"en_us": "Froglight Keeper",
+				"de_de": "Froschlichthüter",
+				"de_de/female": "Froschlichthüterin",
+				"de_de/neutral": "Froschlichthütende"
+			},
+			"description": {
+				"en_us": "Had every Froglight at once.",
+				"de_de": "Hatte alle Froschlichter zugleich."
+			},
+			"style": {
+				"gradient": [
+					"#A8E07A",
+					"#3E8E41"
+				],
+				"icon": "block/pearlescent_froglight_side"
+			},
+			"rarity": "epic",
+			"sources": [
+				"advancement:minecraft:husbandry/froglights"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.froglights",
+			"text": {
+				"en_us": "Renowned Froglight Keeper",
+				"de_de": "Berühmter Froschlichthüter",
+				"de_de/female": "Berühmte Froschlichthüterin",
+				"de_de/neutral": "Berühmte Froschlichthütende"
+			},
+			"description": {
+				"en_us": "Had every Froglight at once. The first on this server.",
+				"de_de": "Hatte alle Froschlichter zugleich. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icons": [
+					"item/nether_star",
+					"block/pearlescent_froglight_side"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/froglights"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.plant_seed",
+			"text": {
+				"en_us": "Gardener",
+				"de_de": "Gärtner",
+				"de_de/female": "Gärtnerin",
+				"de_de/neutral": "Gärtnernde"
+			},
+			"description": {
+				"en_us": "Planted a seed.",
+				"de_de": "Hat einen Samen gepflanzt."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/plant_seed"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.plant_seed",
+			"text": {
+				"en_us": "Original Gardener",
+				"de_de": "Ur-Gärtner",
+				"de_de/female": "Ur-Gärtnerin",
+				"de_de/neutral": "Ur-Gärtnernde"
+			},
+			"description": {
+				"en_us": "Planted a seed. The first on this server.",
+				"de_de": "Hat einen Samen gepflanzt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/plant_seed"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.safely_harvest_honey",
+			"text": {
+				"en_us": "Beekeeper",
+				"de_de": "Imker",
+				"de_de/female": "Imkerin",
+				"de_de/neutral": "Imkernde"
+			},
+			"description": {
+				"en_us": "Took Honey from a Beehive over a Campfire without angering the Bees.",
+				"de_de": "Hat über einem Lagerfeuer Honig aus einem Bienenstock geholt, ohne die Bienen zu verärgern."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/safely_harvest_honey"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.safely_harvest_honey",
+			"text": {
+				"en_us": "Beekeeper Prime",
+				"de_de": "Erzimker",
+				"de_de/female": "Erzimkerin",
+				"de_de/neutral": "Erzimkernde"
+			},
+			"description": {
+				"en_us": "Took Honey from a Beehive over a Campfire without angering the Bees. The first on this server.",
+				"de_de": "Hat über einem Lagerfeuer Honig aus einem Bienenstock geholt, ohne die Bienen zu verärgern. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/safely_harvest_honey"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.tame_an_animal",
+			"text": {
+				"en_us": "Animal Friend",
+				"de_de": "Tierfreund",
+				"de_de/female": "Tierfreundin",
+				"de_de/neutral": "Tierfreundliche"
+			},
+			"description": {
+				"en_us": "Tamed an animal.",
+				"de_de": "Hat ein Tier gezähmt."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/tame_an_animal"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.tame_an_animal",
+			"text": {
+				"en_us": "Elder Animal Friend",
+				"de_de": "Altehrwürdiger Tierfreund",
+				"de_de/female": "Altehrwürdige Tierfreundin",
+				"de_de/neutral": "Altehrwürdige Tierfreundliche"
+			},
+			"description": {
+				"en_us": "Tamed an animal. The first on this server.",
+				"de_de": "Hat ein Tier gezähmt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/tame_an_animal"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.allay_deliver_cake_to_note_block",
+			"text": {
+				"en_us": "Party Planner",
+				"de_de": "Partyplaner",
+				"de_de/female": "Partyplanerin",
+				"de_de/neutral": "Partyplanende"
+			},
+			"description": {
+				"en_us": "Had an Allay drop a Cake at a Note Block.",
+				"de_de": "Ließ einen Hilfsgeist einen Kuchen an einem Notenblock ablegen."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/allay_deliver_cake_to_note_block"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.allay_deliver_cake_to_note_block",
+			"text": {
+				"en_us": "OG Party Planner",
+				"de_de": "OG-Partyplaner",
+				"de_de/female": "OG-Partyplanerin",
+				"de_de/neutral": "OG-Partyplanende"
+			},
+			"description": {
+				"en_us": "Had an Allay drop a Cake at a Note Block. The first on this server.",
+				"de_de": "Ließ einen Hilfsgeist einen Kuchen an einem Notenblock ablegen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/allay_deliver_cake_to_note_block"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.tadpole_in_a_bucket",
+			"text": {
+				"en_us": "Tadpole Catcher",
+				"de_de": "Kaulquappenfänger",
+				"de_de/female": "Kaulquappenfängerin",
+				"de_de/neutral": "Kaulquappenfangende"
+			},
+			"description": {
+				"en_us": "Caught a Tadpole in a Bucket.",
+				"de_de": "Hat eine Kaulquappe in einem Eimer gefangen."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/tadpole_in_a_bucket"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.tadpole_in_a_bucket",
+			"text": {
+				"en_us": "Pro Tadpole Catcher",
+				"de_de": "Profi-Kaulquappenfänger",
+				"de_de/female": "Profi-Kaulquappenfängerin",
+				"de_de/neutral": "Profi-Kaulquappenfangende"
+			},
+			"description": {
+				"en_us": "Caught a Tadpole in a Bucket. The first on this server.",
+				"de_de": "Hat eine Kaulquappe in einem Eimer gefangen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/tadpole_in_a_bucket"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.fishy_business",
+			"text": {
+				"en_us": "Angler",
+				"de_de": "Angler",
+				"de_de/female": "Anglerin",
+				"de_de/neutral": "Angelnde"
+			},
+			"description": {
+				"en_us": "Caught a fish.",
+				"de_de": "Hat einen Fisch gefangen."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/fishy_business"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.fishy_business",
+			"text": {
+				"en_us": "Top Angler",
+				"de_de": "Top-Angler",
+				"de_de/female": "Top-Anglerin",
+				"de_de/neutral": "Top-Angelnde"
+			},
+			"description": {
+				"en_us": "Caught a fish. The first on this server.",
+				"de_de": "Hat einen Fisch gefangen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/fishy_business"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.make_a_sign_glow",
+			"text": {
+				"en_us": "Glowscribe",
+				"de_de": "Leuchtschreiber",
+				"de_de/female": "Leuchtschreiberin",
+				"de_de/neutral": "Leuchtschreibende"
+			},
+			"description": {
+				"en_us": "Made a sign's text glow.",
+				"de_de": "Hat den Text eines Schildes leuchten lassen."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/make_a_sign_glow"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.make_a_sign_glow",
+			"text": {
+				"en_us": "Chief Glowscribe",
+				"de_de": "Chef-Leuchtschreiber",
+				"de_de/female": "Chef-Leuchtschreiberin",
+				"de_de/neutral": "Chef-Leuchtschreibende"
+			},
+			"description": {
+				"en_us": "Made a sign's text glow. The first on this server.",
+				"de_de": "Hat den Text eines Schildes leuchten lassen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/make_a_sign_glow"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.repair_wolf_armor",
+			"text": {
+				"en_us": "Armor Mender",
+				"de_de": "Panzerflicker",
+				"de_de/female": "Panzerflickerin",
+				"de_de/neutral": "Panzerflickende"
+			},
+			"description": {
+				"en_us": "Fully repaired Wolf Armor with Armadillo Scutes.",
+				"de_de": "Hat einen Wolfspanzer mit Gürteltier-Hornschilden ganz repariert."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/repair_wolf_armor"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.repair_wolf_armor",
+			"text": {
+				"en_us": "First Armor Mender",
+				"de_de": "Erster Panzerflicker",
+				"de_de/female": "Erste Panzerflickerin",
+				"de_de/neutral": "Erste Panzerflickende"
+			},
+			"description": {
+				"en_us": "Fully repaired Wolf Armor with Armadillo Scutes. The first on this server.",
+				"de_de": "Hat einen Wolfspanzer mit Gürteltier-Hornschilden ganz repariert. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/repair_wolf_armor"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.root",
+			"text": {
+				"en_us": "Gatherer",
+				"de_de": "Sammler",
+				"de_de/female": "Sammlerin",
+				"de_de/neutral": "Sammelnde"
+			},
+			"description": {
+				"en_us": "Ate or drank something.",
+				"de_de": "Hat etwas gegessen oder getrunken."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/root"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.root",
+			"text": {
+				"en_us": "Original Gatherer",
+				"de_de": "Ur-Sammler",
+				"de_de/female": "Ur-Sammlerin",
+				"de_de/neutral": "Ur-Sammelnde"
+			},
+			"description": {
+				"en_us": "Ate or drank something. The first on this server.",
+				"de_de": "Hat etwas gegessen oder getrunken. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/root"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.feed_snifflet",
+			"text": {
+				"en_us": "Snifflet Sitter",
+				"de_de": "Schnüfflerhüter",
+				"de_de/female": "Schnüfflerhüterin",
+				"de_de/neutral": "Schnüfflerhütende"
+			},
+			"description": {
+				"en_us": "Fed a Snifflet.",
+				"de_de": "Hat ein Schnüfflerjunges gefüttert."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/feed_snifflet"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.feed_snifflet",
+			"text": {
+				"en_us": "Snifflet Sitter Prime",
+				"de_de": "Erzschnüfflerhüter",
+				"de_de/female": "Erzschnüfflerhüterin",
+				"de_de/neutral": "Erzschnüfflerhütende"
+			},
+			"description": {
+				"en_us": "Fed a Snifflet. The first on this server.",
+				"de_de": "Hat ein Schnüfflerjunges gefüttert. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/feed_snifflet"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.plant_any_sniffer_seed",
+			"text": {
+				"en_us": "Ancient Gardener",
+				"de_de": "Urzeitgärtner",
+				"de_de/female": "Urzeitgärtnerin",
+				"de_de/neutral": "Urzeitgärtnernde"
+			},
+			"description": {
+				"en_us": "Planted a seed a Sniffer dug up.",
+				"de_de": "Hat einen von einem Schnüffler ausgegrabenen Samen gesät."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/plant_any_sniffer_seed"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.plant_any_sniffer_seed",
+			"text": {
+				"en_us": "Elder Ancient Gardener",
+				"de_de": "Altehrwürdiger Urzeitgärtner",
+				"de_de/female": "Altehrwürdige Urzeitgärtnerin",
+				"de_de/neutral": "Altehrwürdige Urzeitgärtnernde"
+			},
+			"description": {
+				"en_us": "Planted a seed a Sniffer dug up. The first on this server.",
+				"de_de": "Hat einen von einem Schnüffler ausgegrabenen Samen gesät. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/plant_any_sniffer_seed"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.remove_wolf_armor",
+			"text": {
+				"en_us": "Wolf Groomer",
+				"de_de": "Wolfspfleger",
+				"de_de/female": "Wolfspflegerin",
+				"de_de/neutral": "Wolfspflegende"
+			},
+			"description": {
+				"en_us": "Took Wolf Armor off a Wolf with Shears.",
+				"de_de": "Hat einem Wolf mit einer Schere den Wolfspanzer abgenommen."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/remove_wolf_armor"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.remove_wolf_armor",
+			"text": {
+				"en_us": "OG Wolf Groomer",
+				"de_de": "OG-Wolfspfleger",
+				"de_de/female": "OG-Wolfspflegerin",
+				"de_de/neutral": "OG-Wolfspflegende"
+			},
+			"description": {
+				"en_us": "Took Wolf Armor off a Wolf with Shears. The first on this server.",
+				"de_de": "Hat einem Wolf mit einer Schere den Wolfspanzer abgenommen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/remove_wolf_armor"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.obtain_sniffer_egg",
+			"text": {
+				"en_us": "Egg Finder",
+				"de_de": "Eierfinder",
+				"de_de/female": "Eierfinderin",
+				"de_de/neutral": "Eierfindende"
+			},
+			"description": {
+				"en_us": "Got a Sniffer Egg.",
+				"de_de": "Hat ein Schnüffler-Ei bekommen."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/obtain_sniffer_egg"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.obtain_sniffer_egg",
+			"text": {
+				"en_us": "Pro Egg Finder",
+				"de_de": "Profi-Eierfinder",
+				"de_de/female": "Profi-Eierfinderin",
+				"de_de/neutral": "Profi-Eierfindende"
+			},
+			"description": {
+				"en_us": "Got a Sniffer Egg. The first on this server.",
+				"de_de": "Hat ein Schnüffler-Ei bekommen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/obtain_sniffer_egg"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.place_dried_ghast_in_water",
+			"text": {
+				"en_us": "Ghast Revival",
+				"de_de": "Ghastwecker",
+				"de_de/female": "Ghastweckerin",
+				"de_de/neutral": "Ghastweckende"
+			},
+			"description": {
+				"en_us": "Put a Dried Ghast into water.",
+				"de_de": "Hat einen ausgetrockneten Ghast ins Wasser gesetzt."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/place_dried_ghast_in_water"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.place_dried_ghast_in_water",
+			"text": {
+				"en_us": "Top Ghast Revival",
+				"de_de": "Top-Ghastwecker",
+				"de_de/female": "Top-Ghastweckerin",
+				"de_de/neutral": "Top-Ghastweckende"
+			},
+			"description": {
+				"en_us": "Put a Dried Ghast into water. The first on this server.",
+				"de_de": "Hat einen ausgetrockneten Ghast ins Wasser gesetzt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/place_dried_ghast_in_water"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.tactical_fishing",
+			"text": {
+				"en_us": "Bucket Fisher",
+				"de_de": "Eimerfischer",
+				"de_de/female": "Eimerfischerin",
+				"de_de/neutral": "Eimerfischende"
+			},
+			"description": {
+				"en_us": "Caught a fish without a Fishing Rod.",
+				"de_de": "Hat einen Fisch ohne Angel gefangen."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/tactical_fishing"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.tactical_fishing",
+			"text": {
+				"en_us": "Chief Bucket Fisher",
+				"de_de": "Chef-Eimerfischer",
+				"de_de/female": "Chef-Eimerfischerin",
+				"de_de/neutral": "Chef-Eimerfischende"
+			},
+			"description": {
+				"en_us": "Caught a fish without a Fishing Rod. The first on this server.",
+				"de_de": "Hat einen Fisch ohne Angel gefangen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/tactical_fishing"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.axolotl_in_a_bucket",
+			"text": {
+				"en_us": "Axolotl Keeper",
+				"de_de": "Axolotlhalter",
+				"de_de/female": "Axolotlhalterin",
+				"de_de/neutral": "Axolotlhaltende"
+			},
+			"description": {
+				"en_us": "Caught an Axolotl in a Bucket.",
+				"de_de": "Hat einen Axolotl in einem Eimer gefangen."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/axolotl_in_a_bucket"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.axolotl_in_a_bucket",
+			"text": {
+				"en_us": "First Axolotl Keeper",
+				"de_de": "Erster Axolotlhalter",
+				"de_de/female": "Erste Axolotlhalterin",
+				"de_de/neutral": "Erste Axolotlhaltende"
+			},
+			"description": {
+				"en_us": "Caught an Axolotl in a Bucket. The first on this server.",
+				"de_de": "Hat einen Axolotl in einem Eimer gefangen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/axolotl_in_a_bucket"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.kill_axolotl_target",
+			"text": {
+				"en_us": "Axolotl's Ally",
+				"de_de": "Axolotlverbündeter",
+				"de_de/female": "Axolotlverbündete",
+				"de_de/neutral": "Axolotlverbündete"
+			},
+			"description": {
+				"en_us": "Won a fight together with an Axolotl.",
+				"de_de": "Hat zusammen mit einem Axolotl einen Kampf gewonnen."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/kill_axolotl_target"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.kill_axolotl_target",
+			"text": {
+				"en_us": "Original Axolotl's Ally",
+				"de_de": "Ur-Axolotlverbündeter",
+				"de_de/female": "Ur-Axolotlverbündete",
+				"de_de/neutral": "Ur-Axolotlverbündete"
+			},
+			"description": {
+				"en_us": "Won a fight together with an Axolotl. The first on this server.",
+				"de_de": "Hat zusammen mit einem Axolotl einen Kampf gewonnen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/kill_axolotl_target"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.breed_an_animal",
+			"text": {
+				"en_us": "Breeder",
+				"de_de": "Züchter",
+				"de_de/female": "Züchterin",
+				"de_de/neutral": "Züchtende"
+			},
+			"description": {
+				"en_us": "Bred two animals.",
+				"de_de": "Hat zwei Tiere gezüchtet."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/breed_an_animal"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.breed_an_animal",
+			"text": {
+				"en_us": "Breeder Prime",
+				"de_de": "Erzzüchter",
+				"de_de/female": "Erzzüchterin",
+				"de_de/neutral": "Erzzüchtende"
+			},
+			"description": {
+				"en_us": "Bred two animals. The first on this server.",
+				"de_de": "Hat zwei Tiere gezüchtet. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/breed_an_animal"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.silk_touch_nest",
+			"text": {
+				"en_us": "Bee Mover",
+				"de_de": "Bienenumzieher",
+				"de_de/female": "Bienenumzieherin",
+				"de_de/neutral": "Bienenumziehende"
+			},
+			"description": {
+				"en_us": "Moved a Bee Nest with 3 Bees inside using Silk Touch.",
+				"de_de": "Hat ein Bienennest mit 3 Bienen darin mit Behutsamkeit umgesetzt."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/silk_touch_nest"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.silk_touch_nest",
+			"text": {
+				"en_us": "Elder Bee Mover",
+				"de_de": "Altehrwürdiger Bienenumzieher",
+				"de_de/female": "Altehrwürdige Bienenumzieherin",
+				"de_de/neutral": "Altehrwürdige Bienenumziehende"
+			},
+			"description": {
+				"en_us": "Moved a Bee Nest with 3 Bees inside using Silk Touch. The first on this server.",
+				"de_de": "Hat ein Bienennest mit 3 Bienen darin mit Behutsamkeit umgesetzt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/silk_touch_nest"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.uh_oh",
+			"text": {
+				"en_us": "Demolition Feeder",
+				"de_de": "Sprengstofffütterer",
+				"de_de/female": "Sprengstofffütterin",
+				"de_de/neutral": "Sprengstofffütternde"
+			},
+			"description": {
+				"en_us": "Let a Sulfur Cube take in TNT.",
+				"de_de": "Ließ einen Schwefelwürfel TNT aufnehmen."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/uh_oh"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.uh_oh",
+			"text": {
+				"en_us": "OG Demolition Feeder",
+				"de_de": "OG-Sprengstofffütterer",
+				"de_de/female": "OG-Sprengstofffütterin",
+				"de_de/neutral": "OG-Sprengstofffütternde"
+			},
+			"description": {
+				"en_us": "Let a Sulfur Cube take in TNT. The first on this server.",
+				"de_de": "Ließ einen Schwefelwürfel TNT aufnehmen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/uh_oh"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.wax_off",
+			"text": {
+				"en_us": "Copper Scraper",
+				"de_de": "Kupferschaber",
+				"de_de/female": "Kupferschaberin",
+				"de_de/neutral": "Kupferschabende"
+			},
+			"description": {
+				"en_us": "Scraped the wax off a Block of Copper.",
+				"de_de": "Hat das Wachs von einem Kupferblock gekratzt."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/wax_off"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.wax_off",
+			"text": {
+				"en_us": "Pro Copper Scraper",
+				"de_de": "Profi-Kupferschaber",
+				"de_de/female": "Profi-Kupferschaberin",
+				"de_de/neutral": "Profi-Kupferschabende"
+			},
+			"description": {
+				"en_us": "Scraped the wax off a Block of Copper. The first on this server.",
+				"de_de": "Hat das Wachs von einem Kupferblock gekratzt. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/wax_off"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.wax_on",
+			"text": {
+				"en_us": "Waxer",
+				"de_de": "Wachser",
+				"de_de/female": "Wachserin",
+				"de_de/neutral": "Wachsende"
+			},
+			"description": {
+				"en_us": "Waxed a Block of Copper with Honeycomb.",
+				"de_de": "Hat einen Kupferblock mit Honigwabe gewachst."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/wax_on"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.wax_on",
+			"text": {
+				"en_us": "Top Waxer",
+				"de_de": "Top-Wachser",
+				"de_de/female": "Top-Wachserin",
+				"de_de/neutral": "Top-Wachsende"
+			},
+			"description": {
+				"en_us": "Waxed a Block of Copper with Honeycomb. The first on this server.",
+				"de_de": "Hat einen Kupferblock mit Honigwabe gewachst. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/wax_on"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.ride_a_boat_with_a_goat",
+			"text": {
+				"en_us": "Goat Captain",
+				"de_de": "Ziegenkapitän",
+				"de_de/female": "Ziegenkapitänin",
+				"de_de/neutral": "Ziegenbootfahrende"
+			},
+			"description": {
+				"en_us": "Went boating with a Goat.",
+				"de_de": "Ist mit einer Ziege Boot gefahren."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/ride_a_boat_with_a_goat"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.ride_a_boat_with_a_goat",
+			"text": {
+				"en_us": "Chief Goat Captain",
+				"de_de": "Chef-Ziegenkapitän",
+				"de_de/female": "Chef-Ziegenkapitänin",
+				"de_de/neutral": "Chef-Ziegenbootfahrende"
+			},
+			"description": {
+				"en_us": "Went boating with a Goat. The first on this server.",
+				"de_de": "Ist mit einer Ziege Boot gefahren. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/ride_a_boat_with_a_goat"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.leash_all_frog_variants",
+			"text": {
+				"en_us": "Frog Herder",
+				"de_de": "Froschhirte",
+				"de_de/female": "Froschhirtin",
+				"de_de/neutral": "Froschhütende"
+			},
+			"description": {
+				"en_us": "Had every Frog variant on a Lead.",
+				"de_de": "Hatte jede Froschvariante an der Leine."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/leash_all_frog_variants"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.leash_all_frog_variants",
+			"text": {
+				"en_us": "First Frog Herder",
+				"de_de": "Erster Froschhirte",
+				"de_de/female": "Erste Froschhirtin",
+				"de_de/neutral": "Erste Froschhütende"
+			},
+			"description": {
+				"en_us": "Had every Frog variant on a Lead. The first on this server.",
+				"de_de": "Hatte jede Froschvariante an der Leine. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/leash_all_frog_variants"
+			],
+			"category": "first"
+		},
+		{
+			"id": "adv.husbandry.allay_deliver_item_to_player",
+			"text": {
+				"en_us": "Allay's Friend",
+				"de_de": "Hilfsgeistfreund",
+				"de_de/female": "Hilfsgeistfreundin",
+				"de_de/neutral": "Hilfsgeistvertraute"
+			},
+			"description": {
+				"en_us": "Got items brought by an Allay.",
+				"de_de": "Hat Gegenstände von einem Hilfsgeist gebracht bekommen."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"advancement:minecraft:husbandry/allay_deliver_item_to_player"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "first.husbandry.allay_deliver_item_to_player",
+			"text": {
+				"en_us": "Original Allay's Friend",
+				"de_de": "Ur-Hilfsgeistfreund",
+				"de_de/female": "Ur-Hilfsgeistfreundin",
+				"de_de/neutral": "Ur-Hilfsgeistvertraute"
+			},
+			"description": {
+				"en_us": "Got items brought by an Allay. The first on this server.",
+				"de_de": "Hat Gegenstände von einem Hilfsgeist gebracht bekommen. Als Erstes auf diesem Server."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "pulse",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_advancement:minecraft:husbandry/allay_deliver_item_to_player"
+			],
+			"category": "first"
+		}
+	]
+}

@@ -1,0 +1,3 @@
+[submodule "libs/nr137-lib"]
+	path = libs/nr137-lib
+	url = https://github.com/NR137/nr137-lib.git

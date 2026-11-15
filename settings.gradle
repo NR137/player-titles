@@ -1,0 +1,37 @@
+pluginManagement {
+	repositories {
+		gradlePluginPortal()
+		mavenCentral()
+		exclusiveContent {
+			forRepository {
+				maven {
+					name = 'Fabric'
+					url = uri('https://maven.fabricmc.net')
+				}
+			}
+			filter {
+				includeGroupAndSubgroups('net.fabricmc')
+			}
+		}
+	}
+}
+
+plugins {
+	// Lets Gradle download a matching JDK if no local Java 25 is found.
+	id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+}
+
+rootProject.name = 'player-titles'
+// Shared build scripts used by the subprojects (build-logic/src/main/groovy)
+includeBuild('build-logic')
+// The shared library (a git submodule): built as part of this mod and packed into its JARs (fabric/, neoforge/).
+includeBuild('libs/nr137-lib') {
+	dependencySubstitution {
+		substitute(module('de.nr137.lib:nr137-lib-common')).using(project(':common'))
+		substitute(module('de.nr137.lib:nr137-lib-fabric')).using(project(':fabric'))
+		substitute(module('de.nr137.lib:nr137-lib-neoforge')).using(project(':neoforge'))
+	}
+}
+include('common')
+include('fabric')
+include('neoforge')
