@@ -3,6 +3,13 @@
 All notable changes to this project are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.2.0] - Unreleased
+
+### Fixed
+
+- A Title Merchant lost its name tag when a player stood close to it: the game's "show trades" behaviour emptied the
+  villager's hand. Merchants don't run it now (they have no vanilla trades to show).
+
 ## [0.1.0] - 2026-11-15
 
 The first version, for trying it out on a server.

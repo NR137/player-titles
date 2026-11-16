@@ -16,6 +16,7 @@
 		"ServerGamePacketListenerImplMixin",
 		"ServerPlayerMixin",
 		"SetPassengersPacketMixin",
+		"ShowTradesToPlayerMixin",
 		"TextDisplayAccessor",
 		"VillagerAccessor",
 		"VillagerMixin"

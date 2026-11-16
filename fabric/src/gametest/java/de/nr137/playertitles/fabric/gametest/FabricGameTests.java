@@ -52,4 +52,9 @@ public class FabricGameTests {
 	public void nitwitsPickUpNameTags(GameTestHelper helper) {
 		GameTests.all().get("nitwits_pick_up_name_tags").accept(helper);
 	}
+
+	@GameTest(maxTicks = MAX_TICKS)
+	public void merchantsKeepTheirNameTag(GameTestHelper helper) {
+		GameTests.all().get("merchants_keep_their_name_tag").accept(helper);
+	}
 }

@@ -36,6 +36,7 @@ public final class GameTests {
 		tests.put("nitwits_become_title_merchants", GameTests::merchant);
 		tests.put("loot_name_tags_give_titles", GameTests::titleTags);
 		tests.put("nitwits_pick_up_name_tags", GameTests::pickUp);
+		tests.put("merchants_keep_their_name_tag", GameTests::keepsNameTag);
 		return tests;
 	}
 
@@ -288,5 +289,30 @@ public final class GameTests {
 		level.addFreshEntity(tag);
 		helper.succeedWhen(() -> helper.assertTrue(de.nr137.playertitles.merchant.TitleMerchants.isMerchant(villager),
 			"the nitwit took the name tag"));
+	}
+
+	/**
+	 * A player standing next to a Title Merchant for a while: the game's "show trades" behaviour would empty its hand
+	 * when it stops; a merchant keeps its name tag.
+	 */
+	private static void keepsNameTag(GameTestHelper helper) {
+		var level = helper.getLevel();
+		var villager = helper.spawn(net.minecraft.world.entity.EntityTypes.VILLAGER, new net.minecraft.core.BlockPos(1, 2, 1));
+		villager.setVillagerData(villager.getVillagerData().withProfession(level.registryAccess(),
+			net.minecraft.world.entity.npc.villager.VillagerProfession.NITWIT));
+		var tag = new net.minecraft.world.entity.item.ItemEntity(level, villager.getX(), villager.getY(), villager.getZ(),
+			new net.minecraft.world.item.ItemStack(Items.NAME_TAG), 0, 0, 0);
+		level.addFreshEntity(tag);
+		helper.assertTrue(de.nr137.playertitles.merchant.TitleMerchants.pickUp(level, villager, tag), "a merchant");
+		ServerPlayer player = helper.makeMockServerPlayerInLevel();
+		player.setGameMode(net.minecraft.world.level.GameType.SURVIVAL);
+		helper.onEachTick(() -> {
+			player.teleportTo(villager.getX() + 1.5, villager.getY(), villager.getZ());
+			player.lookAt(net.minecraft.commands.arguments.EntityAnchorArgument.Anchor.EYES, villager.getEyePosition());
+		});
+		helper.runAfterDelay(160, () -> {
+			helper.assertValueEqual(villager.getMainHandItem().getItem(), Items.NAME_TAG, "it still holds its name tag");
+			helper.succeed();
+		});
 	}
 }
