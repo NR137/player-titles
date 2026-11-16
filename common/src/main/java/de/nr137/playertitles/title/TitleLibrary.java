@@ -21,7 +21,7 @@ import de.nr137.playertitles.PlayerTitles;
  */
 public final class TitleLibrary {
 	/** The sets the mod ships (resources under /defaults/titles/). */
-	private static final List<String> SHIPPED = List.of("examples.json", "advancements.json", "special.json");
+	private static final List<String> SHIPPED = List.of("examples.json", "advancements.json", "merchant-and-loot.json", "special.json");
 	private static final String SHIPPED_LIST = ".shipped";
 
 	private final Map<String, Title> titles;

@@ -128,8 +128,7 @@
 			},
 			"rarity": "epic",
 			"sources": [
-				"merchant",
-				"loot"
+				"admin"
 			]
 		},
 		{
@@ -149,8 +148,7 @@
 			},
 			"rarity": "legendary",
 			"sources": [
-				"merchant",
-				"loot"
+				"admin"
 			]
 		},
 		{
@@ -174,8 +172,7 @@
 			},
 			"rarity": "legendary",
 			"sources": [
-				"merchant",
-				"loot"
+				"admin"
 			]
 		},
 		{
@@ -196,8 +193,7 @@
 			},
 			"rarity": "rare",
 			"sources": [
-				"merchant",
-				"loot"
+				"admin"
 			]
 		},
 		{
@@ -221,8 +217,7 @@
 			},
 			"rarity": "epic",
 			"sources": [
-				"merchant",
-				"loot"
+				"admin"
 			]
 		},
 		{
@@ -241,8 +236,7 @@
 			},
 			"rarity": "legendary",
 			"sources": [
-				"merchant",
-				"loot"
+				"admin"
 			]
 		},
 		{
@@ -261,8 +255,7 @@
 			},
 			"rarity": "legendary",
 			"sources": [
-				"merchant",
-				"loot"
+				"admin"
 			]
 		},
 		{
@@ -284,8 +277,7 @@
 			},
 			"rarity": "legendary",
 			"sources": [
-				"merchant",
-				"loot"
+				"admin"
 			]
 		}
 	]

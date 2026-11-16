@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [0.2.0] - Unreleased
 
+### Added
+
+- The shipped set of merchant and loot titles (159): internet, trends and slang, football, pop culture, roles, anime,
+  gaming and more, in categories of their own; the example titles are examples only again.
+
 ### Fixed
 
 - A Title Merchant lost its name tag when a player stood close to it: the game's "show trades" behaviour emptied the

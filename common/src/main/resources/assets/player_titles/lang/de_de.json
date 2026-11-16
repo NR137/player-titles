@@ -84,5 +84,13 @@
 	"category.player_titles.special": "Besondere",
 	"merchant.player_titles.level": "Deine Stufe hier: ",
 	"merchant.player_titles.next_level": "Gekaufte Titel: %s. Die nächste Stufe bei %s (noch %s).",
-	"merchant.player_titles.max_level": "Gekaufte Titel: %s. Die höchste Stufe."
+	"merchant.player_titles.max_level": "Gekaufte Titel: %s. Die höchste Stufe.",
+	"category.player_titles.trends": "Internet & Trends",
+	"category.player_titles.football": "Fußball",
+	"category.player_titles.pop_culture": "Popkultur",
+	"category.player_titles.roles": "Rollen",
+	"category.player_titles.anime": "Anime",
+	"category.player_titles.gaming": "Gaming",
+	"category.player_titles.general": "Allgemein",
+	"category.player_titles.unreadable": "Rätselhaft"
 }

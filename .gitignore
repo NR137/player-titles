@@ -18,6 +18,8 @@ __pycache__/
 TODO.md
 docs/*
 !docs/design.md
+!docs/titles-advancements.md
+!docs/titles-merchant-and-loot.md
 
 # Editors and operating systems
 .idea/

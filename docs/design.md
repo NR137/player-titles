@@ -23,7 +23,8 @@ No releases needed in between.
 
 - Files in `config/player_titles/titles/*.json`, each one set of titles; the mod ships its sets (English and German)
   and writes them there at the first start, so they can be changed, replaced or removed. A server adds its own sets by
-  dropping in a file (e.g. NR137's NSFW set, which is never in the repo or the JAR).
+  dropping in a file (titles about that server only, its insiders and friends, belong there, never in the
+  mod's own sets).
 - A title: `id` (unique), `text` and `description` per language (`en_us`, `de_de`; English or a configured language
   as the fallback), `style`, `rarity` (common, rare, epic, legendary: decides how often it is offered and what it
   costs), and its sources.

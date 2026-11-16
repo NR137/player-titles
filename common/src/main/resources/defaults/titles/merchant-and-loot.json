@@ -1,0 +1,3660 @@
+{
+	"name": "Merchant and loot",
+	"enabled": true,
+	"titles": [
+		{
+			"id": "merchant_loot.main_character",
+			"text": {
+				"en_us": "Main Character",
+				"de_de": "Main Character"
+			},
+			"description": {
+				"en_us": "The story is clearly about them.",
+				"de_de": "Die Geschichte dreht sich eindeutig um diese Person."
+			},
+			"style": {
+				"gradient": [
+					"#FF9AA2",
+					"#FFD27F"
+				],
+				"icon": "item/spyglass"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.npc",
+			"text": {
+				"en_us": "NPC",
+				"de_de": "NPC"
+			},
+			"description": {
+				"en_us": "Stands around and says the same thing every day.",
+				"de_de": "Steht herum und sagt jeden Tag dasselbe."
+			},
+			"style": {
+				"color": "#A0A0A0"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.aura_farmer",
+			"text": {
+				"en_us": "Aura Farmer",
+				"de_de": "Aura Farmer"
+			},
+			"description": {
+				"en_us": "Everything they do looks effortless. It isn't.",
+				"de_de": "Alles sieht mühelos aus. Ist es nicht."
+			},
+			"style": {
+				"gradient": [
+					"#FFF6A0",
+					"#C9A0FF"
+				],
+				"icon": "item/amethyst_shard",
+				"animation": "pulse"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.touch_grass",
+			"text": {
+				"en_us": "Grass Toucher",
+				"de_de": "Grass Toucher"
+			},
+			"description": {
+				"en_us": "Has been outside. Once.",
+				"de_de": "War draußen. Einmal."
+			},
+			"style": {
+				"color": "#7FD47F"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.no_life",
+			"text": {
+				"en_us": "No Life",
+				"de_de": "No Life"
+			},
+			"description": {
+				"en_us": "Online. Always.",
+				"de_de": "Online. Immer."
+			},
+			"style": {
+				"gradient": [
+					"#9A9A9A",
+					"#4A4A4A"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.tryhard",
+			"text": {
+				"en_us": "Tryhard",
+				"de_de": "Tryhard"
+			},
+			"description": {
+				"en_us": "Takes every game far too seriously.",
+				"de_de": "Nimmt jedes Spiel viel zu ernst."
+			},
+			"style": {
+				"gradient": [
+					"#FF6B6B",
+					"#FFD200"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.noob",
+			"text": {
+				"en_us": "Noob",
+				"de_de": "Noob"
+			},
+			"description": {
+				"en_us": "Everybody starts somewhere.",
+				"de_de": "Alle fangen mal klein an."
+			},
+			"style": {
+				"color": "#9AD0FF"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.pro_gamer",
+			"text": {
+				"en_us": "Pro Gamer",
+				"de_de": "Pro Gamer"
+			},
+			"description": {
+				"en_us": "Has the moves, and the excuses.",
+				"de_de": "Hat die Moves, und die Ausreden."
+			},
+			"style": {
+				"gradient": [
+					"#7DFFB0",
+					"#2E86DE"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.gg",
+			"text": {
+				"en_us": "GG",
+				"de_de": "GG"
+			},
+			"description": {
+				"en_us": "Wins well, loses well.",
+				"de_de": "Gewinnt fair, verliert fair."
+			},
+			"style": {
+				"color": "#B6FF8A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.afk_legend",
+			"text": {
+				"en_us": "AFK Legend",
+				"de_de": "AFK-Legende"
+			},
+			"description": {
+				"en_us": "Present in body only.",
+				"de_de": "Nur körperlich anwesend."
+			},
+			"style": {
+				"gradient": [
+					"#A0A0C8",
+					"#5A5A7A"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.mending_enjoyer",
+			"text": {
+				"en_us": "Mending Enjoyer",
+				"de_de": "Mending Enjoyer"
+			},
+			"description": {
+				"en_us": "Never lets a tool break.",
+				"de_de": "Lässt kein Werkzeug kaputtgehen."
+			},
+			"style": {
+				"gradient": [
+					"#7DFFB0",
+					"#1FAA59"
+				],
+				"icon": "item/enchanted_book"
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.dirt_house_enjoyer",
+			"text": {
+				"en_us": "Dirt House Enjoyer",
+				"de_de": "Dirt House Enjoyer"
+			},
+			"description": {
+				"en_us": "A roof is a roof.",
+				"de_de": "Dach ist Dach."
+			},
+			"style": {
+				"color": "#8B7355"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.side_quest_enjoyer",
+			"text": {
+				"en_us": "Side Quest Enjoyer",
+				"de_de": "Side Quest Enjoyer"
+			},
+			"description": {
+				"en_us": "Forgot the main goal three hours ago.",
+				"de_de": "Hat das eigentliche Ziel vor drei Stunden vergessen."
+			},
+			"style": {
+				"gradient": [
+					"#FFD27F",
+					"#E07A5F"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.brainrot_enjoyer",
+			"text": {
+				"en_us": "Brainrot Enjoyer",
+				"de_de": "Brainrot Enjoyer"
+			},
+			"description": {
+				"en_us": "Has seen too many short videos.",
+				"de_de": "Hat zu viele kurze Videos gesehen."
+			},
+			"style": {
+				"gradient": [
+					"#FF9AA2",
+					"#7F00FF"
+				],
+				"sides": "magic"
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.copium",
+			"text": {
+				"en_us": "Copium Addict",
+				"de_de": "Copium-Junkie"
+			},
+			"description": {
+				"en_us": "Next time it will work. Surely.",
+				"de_de": "Nächstes Mal klappt es. Ganz sicher."
+			},
+			"style": {
+				"color": "#9AD0FF"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.lowkey_legend",
+			"text": {
+				"en_us": "Lowkey Legend",
+				"de_de": "Lowkey Legende"
+			},
+			"description": {
+				"en_us": "Great at everything, tells nobody.",
+				"de_de": "Gut in allem, erzählt es niemandem."
+			},
+			"style": {
+				"gradient": [
+					"#E0E0E0",
+					"#7DFFB0"
+				],
+				"icon": "item/totem_of_undying"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.final_boss",
+			"text": {
+				"en_us": "Final Boss",
+				"de_de": "Final Boss"
+			},
+			"description": {
+				"en_us": "The last thing you see before the credits.",
+				"de_de": "Das Letzte, was man vor dem Abspann sieht."
+			},
+			"style": {
+				"gradient": [
+					"#FF4E00",
+					"#5A0E0E"
+				],
+				"icon": "item/nether_star",
+				"animation": "wave"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.unc",
+			"text": {
+				"en_us": "Unc",
+				"de_de": "Unc"
+			},
+			"description": {
+				"en_us": "Has seen a few seasons come and go.",
+				"de_de": "Hat schon ein paar Saisons kommen und gehen sehen."
+			},
+			"style": {
+				"gradient": [
+					"#B5835A",
+					"#5A5A7A"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.blind_box_enjoyer",
+			"text": {
+				"en_us": "Blind Box Enjoyer",
+				"de_de": "Blind Box Enjoyer"
+			},
+			"description": {
+				"en_us": "Has to open it to know what's inside. Again.",
+				"de_de": "Muss es öffnen, um zu wissen, was drin ist. Schon wieder."
+			},
+			"style": {
+				"gradient": [
+					"#FFB6E1",
+					"#FFD27F"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.bro",
+			"text": {
+				"en_us": "Bro",
+				"de_de": "Bro"
+			},
+			"description": {
+				"en_us": "Always got your back.",
+				"de_de": "Hält dir immer den Rücken frei."
+			},
+			"style": {
+				"color": "#9AD0FF"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.bestie",
+			"text": {
+				"en_us": "Bestie",
+				"de_de": "Bestie"
+			},
+			"description": {
+				"en_us": "Everyone's favourite.",
+				"de_de": "Liebling von allen."
+			},
+			"style": {
+				"color": "#FFB6E1"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.goat",
+			"text": {
+				"en_us": "GOAT",
+				"de_de": "GOAT"
+			},
+			"description": {
+				"en_us": "The greatest of all time. Allegedly.",
+				"de_de": "Der Größte aller Zeiten. Angeblich."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"icon": "item/goat_horn",
+				"animation": "pulse"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.w",
+			"text": {
+				"en_us": "W",
+				"de_de": "W"
+			},
+			"description": {
+				"en_us": "Only takes wins.",
+				"de_de": "Nimmt nur Siege mit."
+			},
+			"style": {
+				"gradient": [
+					"#7DFFB0",
+					"#17B45B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.l",
+			"text": {
+				"en_us": "L",
+				"de_de": "L"
+			},
+			"description": {
+				"en_us": "Took one. Took another.",
+				"de_de": "Hat eins kassiert. Und noch eins."
+			},
+			"style": {
+				"color": "#FF6B6B"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.sus",
+			"text": {
+				"en_us": "Sus",
+				"de_de": "Sus"
+			},
+			"description": {
+				"en_us": "Acting a bit suspicious lately.",
+				"de_de": "Benimmt sich in letzter Zeit etwas verdächtig."
+			},
+			"style": {
+				"color": "#FF4E4E"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.rizzler",
+			"text": {
+				"en_us": "Rizzler",
+				"de_de": "Rizzler"
+			},
+			"description": {
+				"en_us": "Charms every villager into a discount.",
+				"de_de": "Bezirzt jeden Dorfbewohner zum Rabatt."
+			},
+			"style": {
+				"gradient": [
+					"#FF9AA2",
+					"#FFD27F"
+				],
+				"icon": "item/emerald"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.sigma",
+			"text": {
+				"en_us": "Sigma",
+				"de_de": "Sigma"
+			},
+			"description": {
+				"en_us": "Plays alone, wins alone.",
+				"de_de": "Spielt allein, gewinnt allein."
+			},
+			"style": {
+				"gradient": [
+					"#2B2B2B",
+					"#9A9A9A"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.skill_issue",
+			"text": {
+				"en_us": "Skill Issue",
+				"de_de": "Skill Issue"
+			},
+			"description": {
+				"en_us": "It was not the lag.",
+				"de_de": "Es lag nicht am Lag."
+			},
+			"style": {
+				"color": "#C8C8C8"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.based",
+			"text": {
+				"en_us": "Based",
+				"de_de": "Based"
+			},
+			"description": {
+				"en_us": "Says what everyone thinks.",
+				"de_de": "Sagt, was alle denken."
+			},
+			"style": {
+				"gradient": [
+					"#FFD200",
+					"#FF6B6B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.cringe",
+			"text": {
+				"en_us": "Cringe",
+				"de_de": "Cringe"
+			},
+			"description": {
+				"en_us": "Owns it.",
+				"de_de": "Steht dazu."
+			},
+			"style": {
+				"color": "#C9A0FF"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.slay",
+			"text": {
+				"en_us": "Slay",
+				"de_de": "Slay"
+			},
+			"description": {
+				"en_us": "Ate and left no crumbs.",
+				"de_de": "Hat abgeliefert, ohne Reste."
+			},
+			"style": {
+				"gradient": [
+					"#FF69B4",
+					"#FFD27F"
+				],
+				"icon": "item/diamond",
+				"animation": "wave"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.no_cap",
+			"text": {
+				"en_us": "No Cap",
+				"de_de": "No Cap"
+			},
+			"description": {
+				"en_us": "Tells it like it is.",
+				"de_de": "Sagt es, wie es ist."
+			},
+			"style": {
+				"color": "#F7F08A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.delulu",
+			"text": {
+				"en_us": "Delulu",
+				"de_de": "Delulu"
+			},
+			"description": {
+				"en_us": "Delusional, and doing great.",
+				"de_de": "Realitätsfern, und es läuft super."
+			},
+			"style": {
+				"gradient": [
+					"#FFB6E1",
+					"#9AD0FF"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.mid",
+			"text": {
+				"en_us": "Mid",
+				"de_de": "Mid"
+			},
+			"description": {
+				"en_us": "Not good, not bad. Just there.",
+				"de_de": "Nicht gut, nicht schlecht. Einfach da."
+			},
+			"style": {
+				"color": "#A0A0A0"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "trends"
+		},
+		{
+			"id": "merchant_loot.ball_wizard",
+			"text": {
+				"en_us": "Ball Wizard",
+				"de_de": "Ballzauberer",
+				"de_de/female": "Ballzauberin",
+				"de_de/neutral": "Ballzaubernde"
+			},
+			"description": {
+				"en_us": "The ball does what they say.",
+				"de_de": "Der Ball macht, was hier gesagt wird."
+			},
+			"style": {
+				"gradient": [
+					"#FFFFFF",
+					"#2E86DE"
+				],
+				"icon": "item/slime_ball"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.football_god",
+			"text": {
+				"en_us": "Football God",
+				"de_de": "Fußballgott",
+				"de_de/female": "Fußballgöttin",
+				"de_de/neutral": "Fußballgottheit"
+			},
+			"description": {
+				"en_us": "Worshipped in the stands.",
+				"de_de": "Auf den Rängen verehrt."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"icon": "item/golden_helmet",
+				"animation": "pulse"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.bench_warmer",
+			"text": {
+				"en_us": "Bench Warmer",
+				"de_de": "Bankdrücker",
+				"de_de/female": "Bankdrückerin",
+				"de_de/neutral": "Bankdrückende"
+			},
+			"description": {
+				"en_us": "Ready when called. Rarely called.",
+				"de_de": "Bereit, wenn gerufen. Selten gerufen."
+			},
+			"style": {
+				"color": "#B5835A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.super_sub",
+			"text": {
+				"en_us": "Super Sub",
+				"de_de": "Joker",
+				"de_de/female": "Jokerin"
+			},
+			"description": {
+				"en_us": "Comes on late, scores anyway.",
+				"de_de": "Kommt spät rein, trifft trotzdem."
+			},
+			"style": {
+				"gradient": [
+					"#B6FF8A",
+					"#FFD200"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.penalty_killer",
+			"text": {
+				"en_us": "Penalty Killer",
+				"de_de": "Elfmeterkiller",
+				"de_de/female": "Elfmeterkillerin"
+			},
+			"description": {
+				"en_us": "Saves what others would concede.",
+				"de_de": "Hält, was andere reinlassen."
+			},
+			"style": {
+				"gradient": [
+					"#9AD0FF",
+					"#2E3A87"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.number_ten",
+			"text": {
+				"en_us": "The Number 10",
+				"de_de": "Zehner",
+				"de_de/female": "Zehnerin"
+			},
+			"description": {
+				"en_us": "Pulls the strings in midfield.",
+				"de_de": "Zieht im Mittelfeld die Fäden."
+			},
+			"style": {
+				"gradient": [
+					"#FFFFFF",
+					"#FF6B6B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.stoppage_time_hero",
+			"text": {
+				"en_us": "Stoppage Time Hero",
+				"de_de": "Nachspielzeit-Held",
+				"de_de/female": "Nachspielzeit-Heldin",
+				"de_de/neutral": "Nachspielzeit-Legende"
+			},
+			"description": {
+				"en_us": "Decides it in the 90+4th minute.",
+				"de_de": "Entscheidet es in der 90.+4 Minute."
+			},
+			"style": {
+				"gradient": [
+					"#FFD200",
+					"#FF4E00"
+				],
+				"icon": "item/clock_00",
+				"animation": "pulse"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.var_victim",
+			"text": {
+				"en_us": "VAR Victim",
+				"de_de": "VAR-Opfer"
+			},
+			"description": {
+				"en_us": "Was offside by a toenail.",
+				"de_de": "Stand einen Zehennagel im Abseits."
+			},
+			"style": {
+				"color": "#FF9AA2"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.derby_winner",
+			"text": {
+				"en_us": "Derby Winner",
+				"de_de": "Derbysieger",
+				"de_de/female": "Derbysiegerin",
+				"de_de/neutral": "Derbysiegende"
+			},
+			"description": {
+				"en_us": "The only game that matters.",
+				"de_de": "Das einzige Spiel, das zählt."
+			},
+			"style": {
+				"gradient": [
+					"#FF6B6B",
+					"#8B0000"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.tiki_taka",
+			"text": {
+				"en_us": "Tiki-Taka",
+				"de_de": "Tiki-Taka"
+			},
+			"description": {
+				"en_us": "Pass, pass, pass, goal.",
+				"de_de": "Pass, Pass, Pass, Tor."
+			},
+			"style": {
+				"gradient": [
+					"#7DFFB0",
+					"#2E86DE",
+					"#7DFFB0"
+				],
+				"animation": "wave"
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.kreisliga_legend",
+			"text": {
+				"en_us": "Kreisliga Legend",
+				"de_de": "Kreisliga-Legende"
+			},
+			"description": {
+				"en_us": "Famous in the village, unknown everywhere else.",
+				"de_de": "Berühmt im Dorf, unbekannt im Rest der Welt."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.captain",
+			"text": {
+				"en_us": "Captain",
+				"de_de": "Kapitän",
+				"de_de/female": "Kapitänin",
+				"de_de/neutral": "Kapitänsbinde"
+			},
+			"description": {
+				"en_us": "Wears the armband.",
+				"de_de": "Trägt die Binde."
+			},
+			"style": {
+				"gradient": [
+					"#FFFFFF",
+					"#C9A0FF"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.ultra",
+			"text": {
+				"en_us": "Ultra",
+				"de_de": "Ultra"
+			},
+			"description": {
+				"en_us": "Loudest in the stands, rain or shine.",
+				"de_de": "Am lautesten auf den Rängen, bei jedem Wetter."
+			},
+			"style": {
+				"color": "#FF6B6B"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "football"
+		},
+		{
+			"id": "merchant_loot.headliner",
+			"text": {
+				"en_us": "Headliner",
+				"de_de": "Headliner"
+			},
+			"description": {
+				"en_us": "Plays last, and everyone stays.",
+				"de_de": "Spielt als Letztes, und alle bleiben."
+			},
+			"style": {
+				"gradient": [
+					"#FF9AA2",
+					"#7F00FF"
+				],
+				"icon": "item/music_disc_pigstep",
+				"animation": "pulse"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.one_hit_wonder",
+			"text": {
+				"en_us": "One-Hit Wonder",
+				"de_de": "One-Hit-Wonder"
+			},
+			"description": {
+				"en_us": "Had that one moment. Everyone still remembers it.",
+				"de_de": "Hatte diesen einen Moment. Alle erinnern sich noch daran."
+			},
+			"style": {
+				"gradient": [
+					"#FFD27F",
+					"#FF6B6B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.earworm",
+			"text": {
+				"en_us": "Earworm",
+				"de_de": "Ohrwurm"
+			},
+			"description": {
+				"en_us": "Impossible to get out of your head.",
+				"de_de": "Geht nicht mehr aus dem Kopf."
+			},
+			"style": {
+				"color": "#C9A0FF"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.air_guitarist",
+			"text": {
+				"en_us": "Air Guitarist",
+				"de_de": "Luftgitarrist",
+				"de_de/female": "Luftgitarristin",
+				"de_de/neutral": "Luftgitarre Spielende"
+			},
+			"description": {
+				"en_us": "Plays every solo, holds no guitar.",
+				"de_de": "Spielt jedes Solo, ohne Gitarre."
+			},
+			"style": {
+				"color": "#FF6B6B"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.mosh_pit_survivor",
+			"text": {
+				"en_us": "Mosh Pit Survivor",
+				"de_de": "Moshpit-Überlebender",
+				"de_de/female": "Moshpit-Überlebende",
+				"de_de/neutral": "Moshpit-Überlebende"
+			},
+			"description": {
+				"en_us": "Came out of the pit, mostly in one piece.",
+				"de_de": "Kam aus dem Pit, größtenteils am Stück."
+			},
+			"style": {
+				"gradient": [
+					"#9A9A9A",
+					"#FF4E00"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.karaoke_star",
+			"text": {
+				"en_us": "Karaoke Star",
+				"de_de": "Karaoke-Star"
+			},
+			"description": {
+				"en_us": "Never misses a high note. Or hits one.",
+				"de_de": "Lässt keinen hohen Ton aus. Trifft aber auch keinen."
+			},
+			"style": {
+				"gradient": [
+					"#FFF6A0",
+					"#FF9AA2"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.festival_veteran",
+			"text": {
+				"en_us": "Festival Veteran",
+				"de_de": "Festival-Veteran",
+				"de_de/female": "Festival-Veteranin",
+				"de_de/neutral": "Festival-Erfahrene"
+			},
+			"description": {
+				"en_us": "Knows mud, rain and the best spot at the stage.",
+				"de_de": "Kennt Schlamm, Regen und den besten Platz vor der Bühne."
+			},
+			"style": {
+				"gradient": [
+					"#A8E07A",
+					"#FFD27F"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.bass_drop",
+			"text": {
+				"en_us": "Bass Drop",
+				"de_de": "Bass Drop"
+			},
+			"description": {
+				"en_us": "Arrives with a boom.",
+				"de_de": "Kommt mit einem Wumms."
+			},
+			"style": {
+				"gradient": [
+					"#7F00FF",
+					"#2E3A87"
+				],
+				"icon": "item/goat_horn",
+				"animation": "wave"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.plot_twist",
+			"text": {
+				"en_us": "Plot Twist",
+				"de_de": "Plot Twist"
+			},
+			"description": {
+				"en_us": "Nobody saw them coming.",
+				"de_de": "Hat niemand kommen sehen."
+			},
+			"style": {
+				"gradient": [
+					"#D9B8FF",
+					"#3B1E6E"
+				],
+				"icon": "item/ender_eye",
+				"sides": "magic"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.post_credits_scene",
+			"text": {
+				"en_us": "Post-Credits Scene",
+				"de_de": "Post-Credits-Szene"
+			},
+			"description": {
+				"en_us": "Shows up when everyone has left already.",
+				"de_de": "Taucht auf, wenn alle schon gegangen sind."
+			},
+			"style": {
+				"gradient": [
+					"#2E2A6B",
+					"#B9C7FF"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.stunt_double",
+			"text": {
+				"en_us": "Stunt Double",
+				"de_de": "Stuntdouble"
+			},
+			"description": {
+				"en_us": "Takes the falls for everyone.",
+				"de_de": "Fällt für alle anderen."
+			},
+			"style": {
+				"gradient": [
+					"#FFB38A",
+					"#A0522D"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.directors_cut",
+			"text": {
+				"en_us": "Director's Cut",
+				"de_de": "Director's Cut"
+			},
+			"description": {
+				"en_us": "Longer, and supposedly better.",
+				"de_de": "Länger, und angeblich besser."
+			},
+			"style": {
+				"gradient": [
+					"#F2E6C9",
+					"#B08D57"
+				],
+				"icon": "item/spyglass"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.binge_watcher",
+			"text": {
+				"en_us": "Binge Watcher",
+				"de_de": "Binge Watcher"
+			},
+			"description": {
+				"en_us": "Just one more episode.",
+				"de_de": "Nur noch eine Folge."
+			},
+			"style": {
+				"color": "#6C7BD9"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.spoiler_alert",
+			"text": {
+				"en_us": "Spoiler Alert",
+				"de_de": "Spoiler-Alarm"
+			},
+			"description": {
+				"en_us": "Knows how it ends, and tells you.",
+				"de_de": "Weiß, wie es ausgeht, und erzählt es."
+			},
+			"style": {
+				"color": "#FF9AA2"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.popcorn_enjoyer",
+			"text": {
+				"en_us": "Popcorn Enjoyer",
+				"de_de": "Popcorn Enjoyer"
+			},
+			"description": {
+				"en_us": "Here for the drama, not to take part.",
+				"de_de": "Für das Drama hier, nicht zum Mitmachen."
+			},
+			"style": {
+				"color": "#FFE259"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.red_carpet",
+			"text": {
+				"en_us": "Red Carpet",
+				"de_de": "Roter Teppich"
+			},
+			"description": {
+				"en_us": "Every entrance is a premiere.",
+				"de_de": "Jeder Auftritt ist eine Premiere."
+			},
+			"style": {
+				"gradient": [
+					"#FF4E4E",
+					"#8B0000"
+				],
+				"icon": "item/golden_helmet",
+				"animation": "pulse"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.drip",
+			"text": {
+				"en_us": "Drip",
+				"de_de": "Drip"
+			},
+			"description": {
+				"en_us": "The outfit speaks first.",
+				"de_de": "Das Outfit spricht zuerst."
+			},
+			"style": {
+				"gradient": [
+					"#48DBFB",
+					"#C9A0FF"
+				],
+				"icon": "item/diamond_chestplate",
+				"animation": "wave"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.fit_check",
+			"text": {
+				"en_us": "Fit Check",
+				"de_de": "Fit Check"
+			},
+			"description": {
+				"en_us": "Always ready for one.",
+				"de_de": "Immer bereit dafür."
+			},
+			"style": {
+				"gradient": [
+					"#FFD27F",
+					"#C9A0FF"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.sneakerhead",
+			"text": {
+				"en_us": "Sneakerhead",
+				"de_de": "Sneakerhead"
+			},
+			"description": {
+				"en_us": "Owns more shoes than feet can wear.",
+				"de_de": "Besitzt mehr Schuhe, als Füße tragen können."
+			},
+			"style": {
+				"gradient": [
+					"#FFFFFF",
+					"#FF6B6B"
+				],
+				"icon": "item/leather_boots"
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.fashion_icon",
+			"text": {
+				"en_us": "Fashion Icon",
+				"de_de": "Fashion-Ikone"
+			},
+			"description": {
+				"en_us": "Wears it first, everyone else next season.",
+				"de_de": "Trägt es zuerst, alle anderen nächste Saison."
+			},
+			"style": {
+				"icon": "item/amethyst_shard",
+				"animation": "rainbow"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.vintage_lover",
+			"text": {
+				"en_us": "Vintage Lover",
+				"de_de": "Vintage Lover"
+			},
+			"description": {
+				"en_us": "Everything old is new again.",
+				"de_de": "Alles Alte ist wieder neu."
+			},
+			"style": {
+				"color": "#B08D57"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.old_money",
+			"text": {
+				"en_us": "Old Money",
+				"de_de": "Old Money"
+			},
+			"description": {
+				"en_us": "Quietly rich, loudly tasteful.",
+				"de_de": "Leise reich, laut geschmackvoll."
+			},
+			"style": {
+				"gradient": [
+					"#F2E6C9",
+					"#2D6A4F"
+				],
+				"icon": "item/emerald"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.runway_ready",
+			"text": {
+				"en_us": "Runway Ready",
+				"de_de": "Laufsteg-ready"
+			},
+			"description": {
+				"en_us": "Walks every path like a runway.",
+				"de_de": "Läuft jeden Weg wie einen Laufsteg."
+			},
+			"style": {
+				"gradient": [
+					"#FF9AA2",
+					"#E0E0E0"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.y2k",
+			"text": {
+				"en_us": "Y2K",
+				"de_de": "Y2K"
+			},
+			"description": {
+				"en_us": "Dressed like the year 2000 never ended.",
+				"de_de": "Angezogen, als wäre das Jahr 2000 nie vorbei."
+			},
+			"style": {
+				"color": "#48DBFB"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "pop_culture"
+		},
+		{
+			"id": "merchant_loot.boss",
+			"text": {
+				"en_us": "Boss",
+				"de_de": "Boss"
+			},
+			"description": {
+				"en_us": "Gives the orders around here.",
+				"de_de": "Gibt hier die Befehle."
+			},
+			"style": {
+				"gradient": [
+					"#FFD200",
+					"#C98A1B"
+				],
+				"icon": "item/golden_helmet"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.servant",
+			"text": {
+				"en_us": "Servant",
+				"de_de": "Diener",
+				"de_de/female": "Dienerin",
+				"de_de/neutral": "Dienende"
+			},
+			"description": {
+				"en_us": "Always at your service.",
+				"de_de": "Stets zu Diensten."
+			},
+			"style": {
+				"color": "#B0B0C8"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.minion",
+			"text": {
+				"en_us": "Minion",
+				"de_de": "Untertan",
+				"de_de/female": "Untertanin"
+			},
+			"description": {
+				"en_us": "Does the work, gets none of the credit.",
+				"de_de": "Macht die Arbeit, bekommt nichts vom Ruhm."
+			},
+			"style": {
+				"color": "#F7F08A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.overlord",
+			"text": {
+				"en_us": "Overlord",
+				"de_de": "Oberherr",
+				"de_de/female": "Oberherrin",
+				"de_de/neutral": "Oberhaupt"
+			},
+			"description": {
+				"en_us": "Everything as far as the eye can see is theirs.",
+				"de_de": "Alles, so weit das Auge reicht, gehört hierher."
+			},
+			"style": {
+				"gradient": [
+					"#8B0000",
+					"#2E2A6B"
+				],
+				"icon": "item/netherite_chestplate",
+				"animation": "wave"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.rookie",
+			"text": {
+				"en_us": "Rookie",
+				"de_de": "Rookie"
+			},
+			"description": {
+				"en_us": "New here, and eager.",
+				"de_de": "Neu hier, und voller Eifer."
+			},
+			"style": {
+				"color": "#9AD0FF"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.veteran",
+			"text": {
+				"en_us": "Veteran",
+				"de_de": "Veteran",
+				"de_de/female": "Veteranin",
+				"de_de/neutral": "Erfahrene"
+			},
+			"description": {
+				"en_us": "Has seen it all.",
+				"de_de": "Hat schon alles gesehen."
+			},
+			"style": {
+				"gradient": [
+					"#B5835A",
+					"#5A3A22"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.champion",
+			"text": {
+				"en_us": "Champion",
+				"de_de": "Champion"
+			},
+			"description": {
+				"en_us": "Beat everyone at least once.",
+				"de_de": "Hat jeden mindestens einmal geschlagen."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"icon": "item/diamond_sword"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.hero",
+			"text": {
+				"en_us": "Hero",
+				"de_de": "Held",
+				"de_de/female": "Heldin",
+				"de_de/neutral": "Heldenhaft"
+			},
+			"description": {
+				"en_us": "Shows up when it matters.",
+				"de_de": "Ist da, wenn es darauf ankommt."
+			},
+			"style": {
+				"gradient": [
+					"#FFFFFF",
+					"#2E86DE"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.villain",
+			"text": {
+				"en_us": "Villain",
+				"de_de": "Bösewicht"
+			},
+			"description": {
+				"en_us": "Every story needs one.",
+				"de_de": "Jede Geschichte braucht einen."
+			},
+			"style": {
+				"gradient": [
+					"#5A0E0E",
+					"#7F00FF"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.sidekick",
+			"text": {
+				"en_us": "Sidekick",
+				"de_de": "Sidekick"
+			},
+			"description": {
+				"en_us": "Always one step behind the hero.",
+				"de_de": "Immer einen Schritt hinter dem Helden."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.knight",
+			"text": {
+				"en_us": "Knight",
+				"de_de": "Ritter",
+				"de_de/female": "Ritterin",
+				"de_de/neutral": "Ritterlich"
+			},
+			"description": {
+				"en_us": "Sworn to protect.",
+				"de_de": "Zum Schutz geschworen."
+			},
+			"style": {
+				"gradient": [
+					"#D8D8D8",
+					"#2E3A87"
+				],
+				"icon": "item/iron_sword"
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.squire",
+			"text": {
+				"en_us": "Squire",
+				"de_de": "Knappe",
+				"de_de/female": "Knappin"
+			},
+			"description": {
+				"en_us": "Carries the gear, dreams of the armour.",
+				"de_de": "Trägt die Ausrüstung, träumt von der Rüstung."
+			},
+			"style": {
+				"color": "#C8B08A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.jester",
+			"text": {
+				"en_us": "Jester",
+				"de_de": "Hofnarr",
+				"de_de/female": "Hofnärrin",
+				"de_de/neutral": "Spaßmacher"
+			},
+			"description": {
+				"en_us": "Makes the whole server laugh.",
+				"de_de": "Bringt den ganzen Server zum Lachen."
+			},
+			"style": {
+				"animation": "rainbow"
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.wizard",
+			"text": {
+				"en_us": "Wizard",
+				"de_de": "Zauberer",
+				"de_de/female": "Zauberin",
+				"de_de/neutral": "Zaubernde"
+			},
+			"description": {
+				"en_us": "Knows a spell for everything.",
+				"de_de": "Kennt für alles einen Zauber."
+			},
+			"style": {
+				"gradient": [
+					"#C9A0FF",
+					"#2E2A6B"
+				],
+				"icon": "item/blaze_rod",
+				"sides": "runes"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.rebel",
+			"text": {
+				"en_us": "Rebel",
+				"de_de": "Rebell",
+				"de_de/female": "Rebellin",
+				"de_de/neutral": "Rebellisch"
+			},
+			"description": {
+				"en_us": "Doesn't follow the rules. Any of them.",
+				"de_de": "Hält sich an keine Regeln. An keine einzige."
+			},
+			"style": {
+				"gradient": [
+					"#FF6B6B",
+					"#2B2B2B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.outlaw",
+			"text": {
+				"en_us": "Outlaw",
+				"de_de": "Gesetzloser",
+				"de_de/female": "Gesetzlose",
+				"de_de/neutral": "Gesetzlos"
+			},
+			"description": {
+				"en_us": "Wanted in three villages.",
+				"de_de": "In drei Dörfern gesucht."
+			},
+			"style": {
+				"gradient": [
+					"#B5835A",
+					"#8B0000"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.peasant",
+			"text": {
+				"en_us": "Peasant",
+				"de_de": "Bauer",
+				"de_de/female": "Bäuerin",
+				"de_de/neutral": "Landvolk"
+			},
+			"description": {
+				"en_us": "Humble, hungry, hard-working.",
+				"de_de": "Bescheiden, hungrig, fleißig."
+			},
+			"style": {
+				"color": "#A0A070"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.chief",
+			"text": {
+				"en_us": "Chief",
+				"de_de": "Häuptling"
+			},
+			"description": {
+				"en_us": "The village listens when they speak.",
+				"de_de": "Das Dorf hört zu, wenn hier gesprochen wird."
+			},
+			"style": {
+				"gradient": [
+					"#FFB38A",
+					"#A0522D"
+				],
+				"icon": "item/goat_horn"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "roles"
+		},
+		{
+			"id": "merchant_loot.uwu",
+			"text": {
+				"en_us": "UwU",
+				"de_de": "UwU"
+			},
+			"description": {
+				"en_us": "Too cute to handle.",
+				"de_de": "Zu süß, um damit klarzukommen."
+			},
+			"style": {
+				"gradient": [
+					"#FFB6E1",
+					"#FF69B4"
+				],
+				"icon": "item/pink_petals",
+				"animation": "pulse"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "anime"
+		},
+		{
+			"id": "merchant_loot.owo",
+			"text": {
+				"en_us": "OwO",
+				"de_de": "OwO"
+			},
+			"description": {
+				"en_us": "What's this?",
+				"de_de": "Was ist das denn?"
+			},
+			"style": {
+				"gradient": [
+					"#FFB6E1",
+					"#C9A0FF"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "anime"
+		},
+		{
+			"id": "merchant_loot.senpai",
+			"text": {
+				"en_us": "Senpai",
+				"de_de": "Senpai"
+			},
+			"description": {
+				"en_us": "Finally noticed you.",
+				"de_de": "Hat dich endlich bemerkt."
+			},
+			"style": {
+				"gradient": [
+					"#FFB6E1",
+					"#FF6B6B"
+				],
+				"icon": "block/cherry_sapling"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "anime"
+		},
+		{
+			"id": "merchant_loot.kouhai",
+			"text": {
+				"en_us": "Kouhai",
+				"de_de": "Kouhai"
+			},
+			"description": {
+				"en_us": "Still waiting to be noticed.",
+				"de_de": "Wartet noch darauf, bemerkt zu werden."
+			},
+			"style": {
+				"color": "#FFB6E1"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "anime"
+		},
+		{
+			"id": "merchant_loot.weeb",
+			"text": {
+				"en_us": "Weeb",
+				"de_de": "Weeb"
+			},
+			"description": {
+				"en_us": "Has watched more anime than is healthy.",
+				"de_de": "Hat mehr Anime geschaut, als gesund ist."
+			},
+			"style": {
+				"gradient": [
+					"#FF69B4",
+					"#7F00FF"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "anime"
+		},
+		{
+			"id": "merchant_loot.otaku",
+			"text": {
+				"en_us": "Otaku",
+				"de_de": "Otaku"
+			},
+			"description": {
+				"en_us": "Knows every episode by heart.",
+				"de_de": "Kennt jede Folge auswendig."
+			},
+			"style": {
+				"gradient": [
+					"#C9A0FF",
+					"#48DBFB"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "anime"
+		},
+		{
+			"id": "merchant_loot.kawaii",
+			"text": {
+				"en_us": "Kawaii",
+				"de_de": "Kawaii"
+			},
+			"description": {
+				"en_us": "Simply adorable.",
+				"de_de": "Einfach entzückend."
+			},
+			"style": {
+				"color": "#FFB6E1"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "anime"
+		},
+		{
+			"id": "merchant_loot.baka",
+			"text": {
+				"en_us": "Baka",
+				"de_de": "Baka"
+			},
+			"description": {
+				"en_us": "It's not like they wanted this title or anything.",
+				"de_de": "Nicht, dass dieser Titel gewollt war oder so."
+			},
+			"style": {
+				"color": "#FF6B6B"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "anime"
+		},
+		{
+			"id": "merchant_loot.tsundere",
+			"text": {
+				"en_us": "Tsundere",
+				"de_de": "Tsundere"
+			},
+			"description": {
+				"en_us": "Cold outside, warm inside. Don't tell anyone.",
+				"de_de": "Außen kalt, innen warm. Nichts verraten."
+			},
+			"style": {
+				"gradient": [
+					"#9AD0FF",
+					"#FF69B4"
+				],
+				"icon": "item/heart_of_the_sea",
+				"animation": "wave"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "anime"
+		},
+		{
+			"id": "merchant_loot.chibi",
+			"text": {
+				"en_us": "Chibi",
+				"de_de": "Chibi"
+			},
+			"description": {
+				"en_us": "Small, round, unstoppable.",
+				"de_de": "Klein, rund, unaufhaltsam."
+			},
+			"style": {
+				"color": "#FFD27F"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "anime"
+		},
+		{
+			"id": "merchant_loot.nyan",
+			"text": {
+				"en_us": "Nyan",
+				"de_de": "Nyan"
+			},
+			"description": {
+				"en_us": "Part cat, part rainbow.",
+				"de_de": "Teils Katze, teils Regenbogen."
+			},
+			"style": {
+				"icon": "item/cod",
+				"animation": "rainbow"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "anime"
+		},
+		{
+			"id": "merchant_loot.plot_armor",
+			"text": {
+				"en_us": "Plot Armor",
+				"de_de": "Plot Armor"
+			},
+			"description": {
+				"en_us": "Should have died ten times. Didn't.",
+				"de_de": "Hätte zehnmal sterben müssen. Ist es nicht."
+			},
+			"style": {
+				"gradient": [
+					"#D8D8D8",
+					"#7A7A7A"
+				],
+				"icon": "item/totem_of_undying"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "gaming"
+		},
+		{
+			"id": "merchant_loot.lore_master",
+			"text": {
+				"en_us": "Lore Master",
+				"de_de": "Lore Master"
+			},
+			"description": {
+				"en_us": "Knows the story behind every block.",
+				"de_de": "Kennt die Geschichte hinter jedem Block."
+			},
+			"style": {
+				"gradient": [
+					"#F2E6C9",
+					"#B08D57"
+				],
+				"icon": "item/book"
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "gaming"
+		},
+		{
+			"id": "merchant_loot.speedrunner",
+			"text": {
+				"en_us": "Speedrunner",
+				"de_de": "Speedrunner",
+				"de_de/female": "Speedrunnerin"
+			},
+			"description": {
+				"en_us": "Any% or nothing.",
+				"de_de": "Any% oder gar nicht."
+			},
+			"style": {
+				"gradient": [
+					"#FFD200",
+					"#FF4E00"
+				],
+				"icon": "item/compass_00",
+				"animation": "wave"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "gaming"
+		},
+		{
+			"id": "merchant_loot.easter_egg",
+			"text": {
+				"en_us": "Easter Egg",
+				"de_de": "Easter Egg"
+			},
+			"description": {
+				"en_us": "Hidden where nobody looks.",
+				"de_de": "Versteckt, wo niemand hinsieht."
+			},
+			"style": {
+				"animation": "rainbow"
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "gaming"
+		},
+		{
+			"id": "merchant_loot.glitch_hunter",
+			"text": {
+				"en_us": "Glitch Hunter",
+				"de_de": "Glitch Hunter"
+			},
+			"description": {
+				"en_us": "Finds the bug before the developers do.",
+				"de_de": "Findet den Bug vor den Entwicklern."
+			},
+			"style": {
+				"gradient": [
+					"#7DFFE0",
+					"#7F00FF"
+				],
+				"icon": "item/echo_shard",
+				"sides": "magic"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "gaming"
+		},
+		{
+			"id": "merchant_loot.one_more_turn",
+			"text": {
+				"en_us": "One More Night",
+				"de_de": "Nur noch eine Nacht"
+			},
+			"description": {
+				"en_us": "Says that every night.",
+				"de_de": "Sagt das jede Nacht."
+			},
+			"style": {
+				"color": "#6C7BD9"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "gaming"
+		},
+		{
+			"id": "merchant_loot.certified_classic",
+			"text": {
+				"en_us": "Certified Classic",
+				"de_de": "Certified Classic"
+			},
+			"description": {
+				"en_us": "Never goes out of style.",
+				"de_de": "Kommt nie aus der Mode."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#C98A1B"
+				],
+				"icon": "item/music_disc_pigstep",
+				"animation": "wave"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "gaming"
+		},
+		{
+			"id": "merchant_loot.respawn_enjoyer",
+			"text": {
+				"en_us": "Respawn Enjoyer",
+				"de_de": "Respawn Enjoyer"
+			},
+			"description": {
+				"en_us": "Death is just a shortcut home.",
+				"de_de": "Der Tod ist nur eine Abkürzung nach Hause."
+			},
+			"style": {
+				"color": "#FF9AA2"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "gaming"
+		},
+		{
+			"id": "merchant_loot.homebody",
+			"text": {
+				"en_us": "Homebody",
+				"de_de": "Stubenhocker",
+				"de_de/female": "Stubenhockerin",
+				"de_de/neutral": "Stubenhockende"
+			},
+			"description": {
+				"en_us": "Rarely leaves the base.",
+				"de_de": "Verlässt selten die Basis."
+			},
+			"style": {
+				"color": "#C8B08A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.night_owl",
+			"text": {
+				"en_us": "Night Owl",
+				"de_de": "Nachteule"
+			},
+			"description": {
+				"en_us": "Plays best after dark.",
+				"de_de": "Spielt am besten nach Einbruch der Dunkelheit."
+			},
+			"style": {
+				"color": "#6C7BD9"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.early_bird",
+			"text": {
+				"en_us": "Early Bird",
+				"de_de": "Frühaufsteher",
+				"de_de/female": "Frühaufsteherin",
+				"de_de/neutral": "Frühaufstehende"
+			},
+			"description": {
+				"en_us": "Up with the sun.",
+				"de_de": "Steht mit der Sonne auf."
+			},
+			"style": {
+				"color": "#FFD27F"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.builder",
+			"text": {
+				"en_us": "Builder",
+				"de_de": "Erbauer",
+				"de_de/female": "Erbauerin",
+				"de_de/neutral": "Erbauende"
+			},
+			"description": {
+				"en_us": "Always has a project going.",
+				"de_de": "Hat immer ein Projekt am Laufen."
+			},
+			"style": {
+				"color": "#D9A066"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.digger",
+			"text": {
+				"en_us": "Digger",
+				"de_de": "Buddler",
+				"de_de/female": "Buddlerin",
+				"de_de/neutral": "Buddelnde"
+			},
+			"description": {
+				"en_us": "Happiest underground.",
+				"de_de": "Am glücklichsten unter Tage."
+			},
+			"style": {
+				"color": "#8B7355"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.farmhand",
+			"text": {
+				"en_us": "Farmhand",
+				"de_de": "Feldarbeiter",
+				"de_de/female": "Feldarbeiterin",
+				"de_de/neutral": "Feldarbeitende"
+			},
+			"description": {
+				"en_us": "Knows every crop by name.",
+				"de_de": "Kennt jede Feldfrucht beim Namen."
+			},
+			"style": {
+				"color": "#A8E07A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.stargazer",
+			"text": {
+				"en_us": "Stargazer",
+				"de_de": "Sterngucker",
+				"de_de/female": "Sternguckerin",
+				"de_de/neutral": "Sternguckende"
+			},
+			"description": {
+				"en_us": "Spends the nights looking up.",
+				"de_de": "Verbringt die Nächte mit Blick nach oben."
+			},
+			"style": {
+				"color": "#B9C7FF"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.hoarder",
+			"text": {
+				"en_us": "Hoarder",
+				"de_de": "Hamsterer",
+				"de_de/female": "Hamsterin",
+				"de_de/neutral": "Hamsternde"
+			},
+			"description": {
+				"en_us": "Never throws anything away.",
+				"de_de": "Wirft nie etwas weg."
+			},
+			"style": {
+				"color": "#C9A0FF"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.tinkerer",
+			"text": {
+				"en_us": "Tinkerer",
+				"de_de": "Tüftler",
+				"de_de/female": "Tüftlerin",
+				"de_de/neutral": "Tüftelnde"
+			},
+			"description": {
+				"en_us": "Redstone is a hobby.",
+				"de_de": "Redstone ist ein Hobby."
+			},
+			"style": {
+				"color": "#FF6B6B"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.wayfarer",
+			"text": {
+				"en_us": "Wayfarer",
+				"de_de": "Reisender",
+				"de_de/female": "Reisende",
+				"de_de/neutral": "Reisende"
+			},
+			"description": {
+				"en_us": "Always on the road.",
+				"de_de": "Immer unterwegs."
+			},
+			"style": {
+				"color": "#9AD0FF"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.fisher",
+			"text": {
+				"en_us": "Fisher",
+				"de_de": "Fischer",
+				"de_de/female": "Fischerin",
+				"de_de/neutral": "Fischende"
+			},
+			"description": {
+				"en_us": "Patient by the water.",
+				"de_de": "Geduldig am Wasser."
+			},
+			"style": {
+				"color": "#7FE3E0"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.lumberjack",
+			"text": {
+				"en_us": "Lumberjack",
+				"de_de": "Holzfäller",
+				"de_de/female": "Holzfällerin",
+				"de_de/neutral": "Holzfällende"
+			},
+			"description": {
+				"en_us": "Has cleared a forest or two.",
+				"de_de": "Hat schon den einen oder anderen Wald gerodet."
+			},
+			"style": {
+				"color": "#B5835A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.cook",
+			"text": {
+				"en_us": "Cook",
+				"de_de": "Koch",
+				"de_de/female": "Köchin",
+				"de_de/neutral": "Kochende"
+			},
+			"description": {
+				"en_us": "Never goes hungry.",
+				"de_de": "Hungert nie."
+			},
+			"style": {
+				"color": "#FFB38A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.florist",
+			"text": {
+				"en_us": "Florist",
+				"de_de": "Florist",
+				"de_de/female": "Floristin",
+				"de_de/neutral": "Blumenkundige"
+			},
+			"description": {
+				"en_us": "Grows flowers for fun.",
+				"de_de": "Zieht Blumen zum Vergnügen."
+			},
+			"style": {
+				"color": "#FF9AA2"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.sleepyhead",
+			"text": {
+				"en_us": "Sleepyhead",
+				"de_de": "Schlafmütze"
+			},
+			"description": {
+				"en_us": "Goes to bed at dusk.",
+				"de_de": "Geht bei Dämmerung ins Bett."
+			},
+			"style": {
+				"color": "#A0A0C8"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.friendly_face",
+			"text": {
+				"en_us": "Friendly Face",
+				"de_de": "Freundliches Gesicht"
+			},
+			"description": {
+				"en_us": "Always says hello.",
+				"de_de": "Grüßt immer."
+			},
+			"style": {
+				"color": "#F7F08A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.scout",
+			"text": {
+				"en_us": "Scout",
+				"de_de": "Kundschafter",
+				"de_de/female": "Kundschafterin",
+				"de_de/neutral": "Kundschaftende"
+			},
+			"description": {
+				"en_us": "First to see what lies behind the next hill.",
+				"de_de": "Sieht als Erstes, was hinter dem nächsten Hügel liegt."
+			},
+			"style": {
+				"color": "#7FDBDA"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.cave_dweller",
+			"text": {
+				"en_us": "Cave Dweller",
+				"de_de": "Höhlenbewohner",
+				"de_de/female": "Höhlenbewohnerin",
+				"de_de/neutral": "Höhlenbewohnende"
+			},
+			"description": {
+				"en_us": "Feels at home in the dark.",
+				"de_de": "Fühlt sich im Dunkeln zu Hause."
+			},
+			"style": {
+				"color": "#9A9A9A"
+			},
+			"rarity": "common",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.trailblazer",
+			"text": {
+				"en_us": "Trailblazer",
+				"de_de": "Pfadfinder",
+				"de_de/female": "Pfadfinderin",
+				"de_de/neutral": "Pfadfindende"
+			},
+			"description": {
+				"en_us": "Goes where nobody went before.",
+				"de_de": "Geht, wo noch niemand war."
+			},
+			"style": {
+				"gradient": [
+					"#7DFFB0",
+					"#17B45B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.night_walker",
+			"text": {
+				"en_us": "Night Walker",
+				"de_de": "Nachtwandler",
+				"de_de/female": "Nachtwandlerin",
+				"de_de/neutral": "Nachtwandelnde"
+			},
+			"description": {
+				"en_us": "Not afraid of the dark.",
+				"de_de": "Hat keine Angst vor der Dunkelheit."
+			},
+			"style": {
+				"gradient": [
+					"#8E7CFF",
+					"#2E2A6B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.treasure_hunter",
+			"text": {
+				"en_us": "Treasure Hunter",
+				"de_de": "Schatzsucher",
+				"de_de/female": "Schatzsucherin",
+				"de_de/neutral": "Schatzsuchende"
+			},
+			"description": {
+				"en_us": "Opens every chest they find.",
+				"de_de": "Öffnet jede Truhe, die sich findet."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#C98A1B"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.architect",
+			"text": {
+				"en_us": "Architect",
+				"de_de": "Architekt",
+				"de_de/female": "Architektin",
+				"de_de/neutral": "Architekturkundige"
+			},
+			"description": {
+				"en_us": "Plans before building.",
+				"de_de": "Plant, bevor gebaut wird."
+			},
+			"style": {
+				"gradient": [
+					"#E0E0E0",
+					"#9AD0FF"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.ironheart",
+			"text": {
+				"en_us": "Ironheart",
+				"de_de": "Eisenherz"
+			},
+			"description": {
+				"en_us": "Hard to scare, harder to beat.",
+				"de_de": "Schwer zu erschrecken, schwerer zu besiegen."
+			},
+			"style": {
+				"gradient": [
+					"#D8D8D8",
+					"#7A7A7A"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.sea_wolf",
+			"text": {
+				"en_us": "Sea Wolf",
+				"de_de": "Seebär",
+				"de_de/female": "Seebärin",
+				"de_de/neutral": "Seefahrende"
+			},
+			"description": {
+				"en_us": "Most at home on the waves.",
+				"de_de": "Auf den Wellen am meisten zu Hause."
+			},
+			"style": {
+				"gradient": [
+					"#48DBFB",
+					"#0A3D62"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.mountaineer",
+			"text": {
+				"en_us": "Mountaineer",
+				"de_de": "Bergsteiger",
+				"de_de/female": "Bergsteigerin",
+				"de_de/neutral": "Bergsteigende"
+			},
+			"description": {
+				"en_us": "Has climbed the highest peaks.",
+				"de_de": "Hat die höchsten Gipfel bestiegen."
+			},
+			"style": {
+				"gradient": [
+					"#FFFFFF",
+					"#8EA6B4"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.desert_rose",
+			"text": {
+				"en_us": "Desert Rose",
+				"de_de": "Wüstenrose"
+			},
+			"description": {
+				"en_us": "Blooms where nothing grows.",
+				"de_de": "Blüht, wo nichts wächst."
+			},
+			"style": {
+				"gradient": [
+					"#F6D6AD",
+					"#E07A5F"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.frostbite",
+			"text": {
+				"en_us": "Frostbite",
+				"de_de": "Frostbeule"
+			},
+			"description": {
+				"en_us": "Loves the cold.",
+				"de_de": "Liebt die Kälte."
+			},
+			"style": {
+				"gradient": [
+					"#E0FFFF",
+					"#7FB7FF"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.wildling",
+			"text": {
+				"en_us": "Wildling",
+				"de_de": "Wildfang"
+			},
+			"description": {
+				"en_us": "Raised by the forest.",
+				"de_de": "Vom Wald großgezogen."
+			},
+			"style": {
+				"gradient": [
+					"#A8E07A",
+					"#2D6A4F"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.lucky_charm",
+			"text": {
+				"en_us": "Lucky Charm",
+				"de_de": "Glücksbringer",
+				"de_de/female": "Glücksbringerin",
+				"de_de/neutral": "Glückbringende"
+			},
+			"description": {
+				"en_us": "Things just tend to work out.",
+				"de_de": "Irgendwie klappt immer alles."
+			},
+			"style": {
+				"gradient": [
+					"#B6FF8A",
+					"#FFD200"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.scholar",
+			"text": {
+				"en_us": "Scholar",
+				"de_de": "Gelehrter",
+				"de_de/female": "Gelehrte",
+				"de_de/neutral": "Gelehrte"
+			},
+			"description": {
+				"en_us": "Has read every book in the library.",
+				"de_de": "Hat jedes Buch der Bibliothek gelesen."
+			},
+			"style": {
+				"gradient": [
+					"#F2E6C9",
+					"#B08D57"
+				],
+				"sides": "runes"
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.redstone_wizard",
+			"text": {
+				"en_us": "Redstone Wizard",
+				"de_de": "Redstone-Zauberer",
+				"de_de/female": "Redstone-Zauberin",
+				"de_de/neutral": "Redstone-Zaubernde"
+			},
+			"description": {
+				"en_us": "Builds machines nobody understands.",
+				"de_de": "Baut Maschinen, die niemand versteht."
+			},
+			"style": {
+				"gradient": [
+					"#FF6B6B",
+					"#8B0000"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.beastmaster",
+			"text": {
+				"en_us": "Beastmaster",
+				"de_de": "Tierbändiger",
+				"de_de/female": "Tierbändigerin",
+				"de_de/neutral": "Tierbändigende"
+			},
+			"description": {
+				"en_us": "Animals follow them anywhere.",
+				"de_de": "Tiere folgen überallhin."
+			},
+			"style": {
+				"gradient": [
+					"#FFB38A",
+					"#A0522D"
+				]
+			},
+			"rarity": "rare",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.dragonheart",
+			"text": {
+				"en_us": "Dragonheart",
+				"de_de": "Drachenherz"
+			},
+			"description": {
+				"en_us": "Fearless as a dragon.",
+				"de_de": "Furchtlos wie ein Drache."
+			},
+			"style": {
+				"gradient": [
+					"#D9B8FF",
+					"#7B4FD1"
+				],
+				"icon": "item/dragon_breath"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.fortunes_favorite",
+			"text": {
+				"en_us": "Fortune's Favorite",
+				"de_de": "Glückskind"
+			},
+			"description": {
+				"en_us": "Fortune smiles on them.",
+				"de_de": "Das Glück lächelt hier."
+			},
+			"style": {
+				"gradient": [
+					"#7DFFB0",
+					"#1FAA59"
+				],
+				"icon": "item/emerald"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.stormcaller",
+			"text": {
+				"en_us": "Stormcaller",
+				"de_de": "Sturmrufer",
+				"de_de/female": "Sturmruferin",
+				"de_de/neutral": "Sturmrufende"
+			},
+			"description": {
+				"en_us": "Thunder answers.",
+				"de_de": "Der Donner antwortet."
+			},
+			"style": {
+				"gradient": [
+					"#9AD0FF",
+					"#2E3A87"
+				],
+				"icon": "item/trident"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.ghost",
+			"text": {
+				"en_us": "Ghost",
+				"de_de": "Geist"
+			},
+			"description": {
+				"en_us": "Seen by few, heard by none.",
+				"de_de": "Von wenigen gesehen, von niemandem gehört."
+			},
+			"style": {
+				"gradient": [
+					"#FFFFFF",
+					"#B0B0C8"
+				],
+				"icon": "item/phantom_membrane",
+				"sides": "magic"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.netherborn",
+			"text": {
+				"en_us": "Netherborn",
+				"de_de": "Netherkind"
+			},
+			"description": {
+				"en_us": "Seems to like the heat.",
+				"de_de": "Scheint die Hitze zu mögen."
+			},
+			"style": {
+				"gradient": [
+					"#FF7A59",
+					"#5A0E0E"
+				],
+				"icon": "item/blaze_powder"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.abyss_walker",
+			"text": {
+				"en_us": "Abyss Walker",
+				"de_de": "Abgrundwanderer",
+				"de_de/female": "Abgrundwanderin",
+				"de_de/neutral": "Abgrundwandernde"
+			},
+			"description": {
+				"en_us": "Has walked where the Warden sleeps.",
+				"de_de": "War dort, wo der Wärter schläft."
+			},
+			"style": {
+				"gradient": [
+					"#2FB8A6",
+					"#052A2B"
+				],
+				"icon": "item/echo_shard"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.star_seeker",
+			"text": {
+				"en_us": "Star Seeker",
+				"de_de": "Sternsucher",
+				"de_de/female": "Sternsucherin",
+				"de_de/neutral": "Sternsuchende"
+			},
+			"description": {
+				"en_us": "Always reaching for more.",
+				"de_de": "Strebt immer nach mehr."
+			},
+			"style": {
+				"gradient": [
+					"#FFF6A0",
+					"#C9A0FF"
+				],
+				"icon": "item/amethyst_shard"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.thunderfist",
+			"text": {
+				"en_us": "Thunderfist",
+				"de_de": "Donnerfaust"
+			},
+			"description": {
+				"en_us": "Hits hard, asks later.",
+				"de_de": "Schlägt hart zu, fragt später."
+			},
+			"style": {
+				"gradient": [
+					"#FFD200",
+					"#FF4E00"
+				],
+				"icon": "item/mace"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.phoenix",
+			"text": {
+				"en_us": "Phoenix",
+				"de_de": "Phönix"
+			},
+			"description": {
+				"en_us": "Always comes back.",
+				"de_de": "Kommt immer zurück."
+			},
+			"style": {
+				"gradient": [
+					"#FFD200",
+					"#FF4E00"
+				],
+				"icon": "block/fire_0",
+				"animation": "pulse"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.wind_whisperer",
+			"text": {
+				"en_us": "Wind Whisperer",
+				"de_de": "Windflüsterer",
+				"de_de/female": "Windflüsterin",
+				"de_de/neutral": "Windflüsternde"
+			},
+			"description": {
+				"en_us": "The breeze carries their voice.",
+				"de_de": "Der Wind trägt die Stimme."
+			},
+			"style": {
+				"gradient": [
+					"#E0FFFF",
+					"#9AD0FF"
+				],
+				"icon": "item/wind_charge"
+			},
+			"rarity": "epic",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.living_legend",
+			"text": {
+				"en_us": "Living Legend",
+				"de_de": "Lebende Legende"
+			},
+			"description": {
+				"en_us": "Stories are told about them.",
+				"de_de": "Über diese Person erzählt man Geschichten."
+			},
+			"style": {
+				"icon": "item/nether_star",
+				"animation": "rainbow"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.worldshaper",
+			"text": {
+				"en_us": "Worldshaper",
+				"de_de": "Weltenformer",
+				"de_de/female": "Weltenformerin",
+				"de_de/neutral": "Weltenformende"
+			},
+			"description": {
+				"en_us": "Leaves a mark wherever they go.",
+				"de_de": "Hinterlässt überall Spuren."
+			},
+			"style": {
+				"gradient": [
+					"#7DFFB0",
+					"#2E86DE"
+				],
+				"icon": "item/diamond_pickaxe",
+				"animation": "wave"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.voidwalker",
+			"text": {
+				"en_us": "Voidwalker",
+				"de_de": "Leerenwanderer",
+				"de_de/female": "Leerenwanderin",
+				"de_de/neutral": "Leerenwandernde"
+			},
+			"description": {
+				"en_us": "Has looked into the void, and came back.",
+				"de_de": "Hat in die Leere geblickt und ist zurückgekehrt."
+			},
+			"style": {
+				"gradient": [
+					"#D9B8FF",
+					"#3B1E6E"
+				],
+				"icon": "item/ender_eye",
+				"animation": "wave"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.timeless",
+			"text": {
+				"en_us": "Timeless",
+				"de_de": "Zeitlos"
+			},
+			"description": {
+				"en_us": "Has been here since the first day.",
+				"de_de": "Ist seit dem ersten Tag hier."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"icon": "item/clock_00",
+				"animation": "pulse"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.sovereign",
+			"text": {
+				"en_us": "Sovereign",
+				"de_de": "Souverän"
+			},
+			"description": {
+				"en_us": "Rules without a crown.",
+				"de_de": "Herrscht ohne Krone."
+			},
+			"style": {
+				"icon": "item/golden_helmet",
+				"animation": "rainbow"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.mythic",
+			"text": {
+				"en_us": "Mythic",
+				"de_de": "Mythisch"
+			},
+			"description": {
+				"en_us": "Half real, half rumour.",
+				"de_de": "Halb Wirklichkeit, halb Gerücht."
+			},
+			"style": {
+				"gradient": [
+					"#FF9AA2",
+					"#C9A0FF"
+				],
+				"icon": "item/heart_of_the_sea",
+				"animation": "wave",
+				"sides": "magic"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"merchant",
+				"loot"
+			],
+			"category": "general"
+		},
+		{
+			"id": "merchant_loot.arcane_word",
+			"text": {
+				"en_us": "Arcane Word",
+				"de_de": "Arkanes Wort"
+			},
+			"description": {
+				"en_us": "A word only the enchanting table knows.",
+				"de_de": "Ein Wort, das nur der Zaubertisch kennt."
+			},
+			"style": {
+				"color": "#B983FF",
+				"font": "alt"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"loot"
+			],
+			"category": "unreadable"
+		},
+		{
+			"id": "merchant_loot.raiders_oath",
+			"text": {
+				"en_us": "Raider's Oath",
+				"de_de": "Plündererschwur"
+			},
+			"description": {
+				"en_us": "Sworn to the illagers, in their own tongue.",
+				"de_de": "Den Illagern geschworen, in ihrer eigenen Sprache."
+			},
+			"style": {
+				"gradient": [
+					"#9AA89A",
+					"#5E6E63"
+				],
+				"font": "illageralt"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"loot"
+			],
+			"category": "unreadable"
+		},
+		{
+			"id": "merchant_loot.forgotten",
+			"text": {
+				"en_us": "Forgotten",
+				"de_de": "Vergessen"
+			},
+			"description": {
+				"en_us": "A name that time has erased.",
+				"de_de": "Ein Name, den die Zeit gelöscht hat."
+			},
+			"style": {
+				"color": "#C8C8C8",
+				"obfuscated": true
+			},
+			"rarity": "legendary",
+			"sources": [
+				"loot"
+			],
+			"category": "unreadable"
+		}
+	]
+}

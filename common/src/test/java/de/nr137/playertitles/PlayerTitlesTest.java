@@ -28,7 +28,7 @@ class PlayerTitlesTest {
 	void theShippedSetsAreWrittenAtTheFirstStart(@TempDir Path dir) {
 		TitleLibrary library = TitleLibrary.load(dir.resolve("titles"));
 		assertTrue(Files.isRegularFile(dir.resolve("titles/examples.json")));
-		assertEquals(13 + 252 + 1, library.all().size());
+		assertEquals(13 + 252 + 159 + 1, library.all().size());
 		Title rainbow = library.get("example_rainbow").orElseThrow();
 		assertEquals("Prismatisch", rainbow.text("de_de"));
 		assertEquals("Prismatic", rainbow.text("fr_fr"), "other languages fall back to English");
@@ -61,7 +61,7 @@ class PlayerTitlesTest {
 		assertFalse(Files.exists(titles.resolve("examples.json")), "a removed set stays removed");
 		assertEquals(126, library.advancementTitles().size());
 		assertEquals(126, library.firstAdvancementTitles().size());
-		assertEquals(List.of("advancements", "first", "special"), library.categories(), "categories from the titles, in their order");
+		assertEquals(List.of("advancements", "first", "trends", "football", "pop_culture", "roles", "anime", "gaming", "general", "unreadable", "special"), library.categories(), "categories from the titles, in their order");
 	}
 
 	@Test
@@ -69,7 +69,7 @@ class PlayerTitlesTest {
 		TitleLibrary library = TitleLibrary.load(dir.resolve("titles"));
 		assertEquals("examples", library.get("example_plain").orElseThrow().category());
 		assertEquals("advancements", library.get("adv.end.kill_dragon").orElseThrow().category());
-		assertEquals(List.of("advancements", "first", "examples", "special"), library.categories());
+		assertEquals("examples", library.categories().get(2), "a file's titles come in the files' order (advancements, examples, merchant, special)");
 		Title first = library.get("first.end.kill_dragon").orElseThrow();
 		assertEquals(List.of("item/nether_star", "item/end_crystal"), first.styleOrPlain().iconList(), "the star and the title's own icon");
 	}

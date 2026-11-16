@@ -36,7 +36,7 @@ stays a valid vanilla world: remove the mod, and at worst the vanilla behaviour 
 ## 🏷️ Title files
 
 Titles are defined in `config/player_titles/titles/*.json`, one set per file. The mod's own sets (`advancements.json`,
-`examples.json`, `special.json`) are written there once, so they can be changed or removed; a removed one stays
+`merchant-and-loot.json`, `examples.json`, `special.json`) are written there once, so they can be changed or removed; a removed one stays
 removed (`.shipped` lists what was written). A server adds its own set by dropping in a file, then `/titles reload`.
 
 ```json
@@ -83,8 +83,9 @@ A text missing in a language falls back to `fallbackLanguage`, then to the first
 | Whole title as magic letters | `{"obfuscated": true}` (unreadable too) |
 | Bold, italic | `{"bold": true}`, `{"italic": true}` (bold makes some letters hard to read) |
 
-The advancement titles are decided in [`docs/titles-advancements.md`](docs/titles-advancements.md) and made from it by
-`scripts/titles/advancement_titles.py`.
+The shipped sets of advancement titles and of merchant and loot titles are made from
+[`docs/titles-advancements.md`](docs/titles-advancements.md) and [`docs/titles-merchant-and-loot.md`](docs/titles-merchant-and-loot.md) by
+`scripts/titles/advancement_titles.py` and `scripts/titles/merchant_and_loot_titles.py`.
 
 ## ⚙️ Options
 
@@ -229,7 +230,7 @@ One codebase builds both loaders (based on [MultiLoader-Template](https://github
 | `build-logic/` | Gradle scripts shared by the three projects |
 | `docker/`, `compose.yaml`, `.devcontainer/` | The dev image, its tasks and the VS Code dev container |
 | `scripts/` | Smoke, vanilla and singleplayer tests, version check ([README](scripts/README.md)), the advancement titles (`titles/`) |
-| `docs/` | The design (`design.md`), the advancement titles (`titles-advancements.md`) |
+| `docs/` | The design (`design.md`), the shipped title sets (`titles-advancements.md`, `titles-merchant-and-loot.md`) |
 
 Loader-specific needs (permissions, the config folder, versions) go through the shared library
 [`libs/nr137-lib`](libs/nr137-lib) (`de.nr137.lib`, mod id `nr137_lib`): built with the mod (a Gradle composite build)
