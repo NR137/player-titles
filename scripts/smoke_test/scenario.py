@@ -58,6 +58,9 @@ def with_client(server, name: str, check) -> None:
 	server.run(f'titles list {name}', r'has 2 titles', 'revoking it takes its title, the first one stays')
 	# A Title Merchant next to the client: a nitwit picks up a name tag. Its title and name above it, and the currency in
 	# its hand, exist only in the packets the client gets.
+	# In a fence pen, so it can't wander out of the force-loaded chunk before the world is saved.
+	server.run('fill 3 -60 3 5 -60 5 minecraft:oak_fence', r'Successfully filled', 'a fence pen for the merchant')
+	server.run('setblock 4 -60 4 minecraft:air', r'Changed the block', 'with room inside')
 	server.run(f'summon minecraft:villager {MERCHANT} {{VillagerData:{{profession:"minecraft:nitwit",type:"minecraft:plains",level:1}},'
 		'CanPickUpLoot:1b,PersistenceRequired:1b,Tags:["smoke_merchant"]}', r'Summoned new', 'a nitwit is summoned')
 	server.run(f'summon minecraft:item {MERCHANT} {{Item:{{id:"minecraft:name_tag",count:1}},PickupDelay:0s}}', r'Summoned new',
