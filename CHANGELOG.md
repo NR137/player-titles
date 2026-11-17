@@ -9,6 +9,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - The shipped set of merchant and loot titles (159): internet, trends and slang, football, pop culture, roles, anime,
   gaming and more, in categories of their own; the example titles are examples only again.
+- Title name tags also from fishing; a chance per source (mineshaft and dungeon chests 85 %, fishing 50 %), the
+  others stay vanilla name tags; 5 % are blank, and the first blank gives "Dud". A title name tag doesn't name mobs
+  and can't go into an anvil. With every other title from name tags, a name tag gives "Completionist".
+- "100%" for completing every advancement, and "100% Speedrunner" for the first on the server.
+- Updates bring their changes to the shipped title sets, title by title, without overwriting the server's own;
+  titles both changed are kept and listed in `/titles updates` (keep or take). `"enabled": false` on single titles.
+  The game's `/reload` reloads the config and titles too. `/titles updates <title>` compares both versions in a dialog.
+- `/titles give`, `take` and `list` work for offline players too (by name, as `/whitelist`).
 
 ### Fixed
 

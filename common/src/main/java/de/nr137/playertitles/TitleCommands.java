@@ -13,6 +13,7 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.SharedSuggestionProvider;
 import net.minecraft.commands.arguments.EntityArgument;
+import net.minecraft.commands.arguments.GameProfileArgument;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.permissions.Permissions;
@@ -69,14 +70,21 @@ final class TitleCommands {
 				.then(Commands.literal("on").executes(context -> animations(context, true)))
 				.then(Commands.literal("off").executes(context -> animations(context, false))))
 			.then(Commands.literal("give").requires(TitleCommands::isAdmin)
-				.then(Commands.argument("players", EntityArgument.players())
+				.then(Commands.argument("players", GameProfileArgument.gameProfile())
 					.then(Commands.argument("title", StringArgumentType.word()).suggests(ALL).executes(context -> giveOrTake(context, true)))))
 			.then(Commands.literal("take").requires(TitleCommands::isAdmin)
-				.then(Commands.argument("players", EntityArgument.players())
+				.then(Commands.argument("players", GameProfileArgument.gameProfile())
 					.then(Commands.argument("title", StringArgumentType.word()).suggests(ALL).executes(context -> giveOrTake(context, false)))))
 			.then(Commands.literal("list").requires(TitleCommands::isAdmin)
-				.then(Commands.argument("player", EntityArgument.player()).executes(TitleCommands::list)))
+				.then(Commands.argument("player", GameProfileArgument.gameProfile()).executes(TitleCommands::list)))
 			.then(Commands.literal("reload").requires(TitleCommands::isAdmin).executes(TitleCommands::reload))
+			.then(Commands.literal("updates").requires(TitleCommands::isAdmin).executes(TitleCommands::updates)
+				.then(Commands.argument("title", StringArgumentType.word())
+					.suggests((context, builder) -> SharedSuggestionProvider.suggest(
+						de.nr137.playertitles.title.ShippedTitles.conflicts().stream().map(de.nr137.playertitles.title.ShippedTitles.Conflict::id), builder))
+					.executes(TitleCommands::compare)
+					.then(Commands.literal("keep").executes(context -> resolve(context, true)))
+					.then(Commands.literal("take").executes(context -> resolve(context, false)))))
 			.then(configCommand().requires(TitleCommands::isAdmin))
 			.then(Commands.literal("first").requires(TitleCommands::isAdmin)
 				.then(Commands.literal("reset").executes(context -> resetFirsts(context, null))
@@ -325,12 +333,18 @@ final class TitleCommands {
 			context.getSource().sendFailure(text(context.getSource(), "command.player_titles.unknown", id));
 			return 0;
 		}
-		Collection<ServerPlayer> players = EntityArgument.getPlayers(context, "players");
-		TitleData data = TitleData.get(context.getSource().getServer());
+		// Online or not (titles are kept by UUID): offline players see the change when they join.
+		var players = GameProfileArgument.getGameProfiles(context, "players");
+		var server = context.getSource().getServer();
+		TitleData data = TitleData.get(server);
 		int changed = 0;
-		for (ServerPlayer player : players) {
-			if (give ? data.give(player.getUUID(), id, "admin") : data.take(player.getUUID(), id)) {
+		for (var profile : players) {
+			if (give ? data.give(profile.id(), id, "admin") : data.take(profile.id(), id)) {
 				changed++;
+				ServerPlayer player = server.getPlayerList().getPlayer(profile.id());
+				if (player == null) {
+					continue;
+				}
 				if (give) {
 					player.sendSystemMessage(PlayerTitles.translations().component(PlayerTitles.uiLanguage(player), "message.player_titles.got").append(styled(player, id)));
 				} else {
@@ -345,9 +359,13 @@ final class TitleCommands {
 	}
 
 	private static int list(CommandContext<CommandSourceStack> context) throws CommandSyntaxException {
-		ServerPlayer player = EntityArgument.getPlayer(context, "player");
-		TitleData.PlayerRecord record = TitleData.get(context.getSource().getServer()).of(player.getUUID());
-		var message = text(context.getSource(), "command.player_titles.list", player.getName().getString(), record.owned().size());
+		var profiles = GameProfileArgument.getGameProfiles(context, "player");
+		if (profiles.size() != 1) {
+			throw EntityArgument.ERROR_NOT_SINGLE_PLAYER.create();
+		}
+		var profile = profiles.iterator().next();
+		TitleData.PlayerRecord record = TitleData.get(context.getSource().getServer()).of(profile.id());
+		var message = text(context.getSource(), "command.player_titles.list", profile.name(), record.owned().size());
 		for (String id : record.owned().keySet()) {
 			message.append("\n ").append(Component.literal(id + (record.worn().filter(id::equals).isPresent() ? " * " : " "))).append(styled(context.getSource(), id));
 		}
@@ -383,8 +401,86 @@ final class TitleCommands {
 
 	private static int reload(CommandContext<CommandSourceStack> context) {
 		PlayerTitles.reload();
-		context.getSource().getServer().getPlayerList().getPlayers().forEach(TitleDisplays::refresh);
+		var server = context.getSource().getServer();
+		server.getPlayerList().getPlayers().forEach(player -> {
+			TitleDisplays.refresh(player);
+			server.getCommands().sendCommands(player); // the permissions may have changed: which commands they have
+		});
 		context.getSource().sendSuccess(() -> text(context.getSource(), "command.player_titles.reloaded", PlayerTitles.titles().all().size()), true);
+		return 1;
+	}
+
+	/** /titles updates: the shipped titles that changed while this server's version changed too, to keep or take. */
+	private static int updates(CommandContext<CommandSourceStack> context) {
+		var conflicts = de.nr137.playertitles.title.ShippedTitles.conflicts();
+		CommandSourceStack source = context.getSource();
+		if (conflicts.isEmpty()) {
+			source.sendSuccess(() -> text(source, "command.player_titles.updates.none"), false);
+			return 0;
+		}
+		source.sendSuccess(() -> text(source, "command.player_titles.updates.header", conflicts.size()), false);
+		for (var conflict : conflicts) {
+			var line = Component.literal("- ").append(Component.literal(conflict.id()).withStyle(net.minecraft.ChatFormatting.YELLOW))
+				.append(Component.literal(" (" + conflict.file().getFileName() + ")").withStyle(net.minecraft.ChatFormatting.GRAY));
+			if (conflict.disabled()) {
+				line.append(" ").append(text(source, "command.player_titles.updates.disabled").withStyle(net.minecraft.ChatFormatting.GRAY));
+			}
+			String command = "/titles updates " + conflict.id();
+			if (source.getPlayer() != null) {
+				line.append(" ").append(button(source, "command.player_titles.updates.compare_button", command,
+					text(source, "command.player_titles.updates.compare_tooltip")));
+			}
+			line.append(" ").append(button(source, "command.player_titles.updates.keep_button", command + " keep",
+					text(source, "dialog.player_titles.updates.keep_tooltip")))
+				.append(" ").append(button(source, "command.player_titles.updates.take_button", command + " take",
+					text(source, "dialog.player_titles.updates.take_tooltip")));
+			source.sendSuccess(() -> line, false);
+		}
+		return conflicts.size();
+	}
+
+	private static Component button(CommandSourceStack source, String key, String command, Component hover) {
+		return Component.literal("[").append(text(source, key)).append("]").withStyle(style -> style.withColor(net.minecraft.ChatFormatting.GREEN)
+			.withClickEvent(new net.minecraft.network.chat.ClickEvent.RunCommand(command))
+			.withHoverEvent(new net.minecraft.network.chat.HoverEvent.ShowText(hover)));
+	}
+
+	/** A title's fields for the hover, without its id and switches. */
+	private static String shown(com.google.gson.JsonObject title) {
+		var copy = title.deepCopy();
+		copy.remove("id");
+		copy.remove("enabled");
+		copy.remove("keep");
+		return de.nr137.lib.config.JsonConfig.GSON.toJson(copy);
+	}
+
+	/** /titles updates <title>: the dialog comparing both versions (in the console: both versions as JSON). */
+	private static int compare(CommandContext<CommandSourceStack> context) {
+		CommandSourceStack source = context.getSource();
+		String id = StringArgumentType.getString(context, "title");
+		var conflict = de.nr137.playertitles.title.ShippedTitles.conflicts().stream().filter(candidate -> candidate.id().equals(id)).findFirst();
+		if (conflict.isEmpty()) {
+			source.sendFailure(text(source, "command.player_titles.updates.unknown", id));
+			return 0;
+		}
+		ServerPlayer player = source.getPlayer();
+		if (player != null) {
+			de.nr137.playertitles.screen.UpdatesDialog.open(player, id);
+		} else {
+			source.sendSuccess(() -> text(source, "command.player_titles.updates.server").append("\n" + shown(conflict.get().server()))
+				.append("\n").append(text(source, "command.player_titles.updates.shipped")).append("\n" + shown(conflict.get().shipped())), false);
+		}
+		return 1;
+	}
+
+	private static int resolve(CommandContext<CommandSourceStack> context, boolean keep) {
+		CommandSourceStack source = context.getSource();
+		String id = StringArgumentType.getString(context, "title");
+		if (!de.nr137.playertitles.screen.UpdatesDialog.resolve(source.getServer(), id, keep)) {
+			source.sendFailure(text(source, "command.player_titles.updates.unknown", id));
+			return 0;
+		}
+		source.sendSuccess(() -> text(source, keep ? "command.player_titles.updates.kept" : "command.player_titles.updates.taken", id), true);
 		return 1;
 	}
 

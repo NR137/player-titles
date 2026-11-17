@@ -22,7 +22,8 @@ No releases needed in between.
 ## Title definitions
 
 - Files in `config/player_titles/titles/*.json`, each one set of titles; the mod ships its sets (English and German)
-  and writes them there at the first start, so they can be changed, replaced or removed. A server adds its own sets by
+  and writes them there, so they can be changed or turned off (`"enabled": false`, per title or set); updates bring
+  their changes title by title without overwriting the server's (README: "Title files"). A server adds its own sets by
   dropping in a file (titles about that server only, its insiders and friends, belong there, never in the
   mod's own sets).
 - A title: `id` (unique), `text` and `description` per language (`en_us`, `de_de`; English or a configured language
@@ -62,6 +63,8 @@ No releases needed in between.
 - **A "first" title stays** once given, even if its holder loses the advancement, and each exists only once: a player
   who completes a changed advancement later doesn't get it, because it already has its holder. Which player holds
   which "first" title is kept in the mod's own file.
+- **All advancements:** a player who has completed every advancement with a title gets "100%" (taken again if they lose
+  one), the first on the server "100% Speedrunner" (kept, backfilled like the others).
 - Getting a title one already has changes nothing (any title, from any source).
 
 ## Title Merchant (phase 2)
@@ -117,11 +120,20 @@ No releases needed in between.
   (weighted like the merchant's), and uses it up; on a mob it names the mob as usual. Its name ("Title Name Tag"),
   lore and glint exist only in the packets, so in vanilla it is an ordinary name tag again.
 
+- **Chances:** a name tag from loot becomes a title name tag with a chance per source (`loot.markChances`: mineshaft
+  and dungeon chests 85 %, fishing 50 %, others 50 %); the others stay vanilla name tags. A title name tag is blank
+  with 5 % (`loot.blankChance`): used up, no title, a message; the first blank gives the title "Dud" / "Niete". A
+  title name tag doesn't name mobs (a crafted name tag does) and can't be used in an anvil.
+- **Having them all:** once a player has every title with the source `loot`, their next title name tag is blank for
+  sure (and so gives "Dud" if they don't have it yet); after that one is blank with 80 % (`loot.lastBlankChance`), or
+  gives "Completionist" / "Titelsammler" (source `loot_complete`, only from name tags, never from the merchant). Then
+  title name tags can't be used any more; they can be kept or given away.
+
 ## Gift titles (phase 3)
 
 - A rare offer or rare loot (e.g. 2 %): a gift title. Using it opens a dialog to write a new title (its text must not
   be one of the existing titles) with a choice of styles. The gift can only be given to other players, not used by
-  the one who made it, and is hidden until redeemed. Admins can block a gift title; it stays in players' lists, marked
+  the one who made it, and is hidden until redeemed. A gift title is never blank. Admins can block a gift title; it stays in players' lists, marked
   as blocked. A word filter for the text.
 
 ## Statistics titles (phase 4)

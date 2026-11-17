@@ -31,13 +31,26 @@ stays a valid vanilla world: remove the mod, and at worst the vanilla behaviour 
   level, prices that follow the villager's gossip about the player, the game's own trading screen. It stays a merchant
   as a zombie villager and after curing; killing one may give a secret title. Bred villagers can become nitwits (1/12,
   vanilla: never), and nitwits can be removed without bad gossip.
-- **Title name tags:** name tags in loot chests collect a random title when used.
+- **Title name tags:** some name tags from loot chests and fishing collect a random title when used (or are blank);
+  they don't name mobs and can't go into an anvil. The first blank gives "Dud"; with every other title from name
+  tags, the next ones give "Completionist" (sometimes).
 
 ## 🏷️ Title files
 
 Titles are defined in `config/player_titles/titles/*.json`, one set per file. The mod's own sets (`advancements.json`,
-`merchant-and-loot.json`, `examples.json`, `special.json`) are written there once, so they can be changed or removed; a removed one stays
-removed (`.shipped` lists what was written). A server adds its own set by dropping in a file, then `/titles reload`.
+`merchant-and-loot.json`, `examples.json`, `special.json`) are written there, so they can be changed. A server adds its
+own set by dropping in a file, then `/titles reload` (or the game's `/reload`).
+
+- **Turning titles off:** `"enabled": false` on a title, or on a whole set, rather than deleting it.
+- **Updates of the mod** bring their changes to the shipped sets, title by title (by `id`), without overwriting the
+  server's own changes. `.last-shipped.json` holds a hash of the last shipped version of each title:
+  - a new title is added to its set's file (a new set's file is written whole);
+  - a title the mod changed is updated if nobody on the server changed it (`enabled` stays as it is);
+  - a title deleted from the files stays deleted, and one with `"keep": true` is never touched;
+  - a title both the mod and the server changed stays as it is, and `/titles updates` lists it (admins are told when
+    they join): keep the server's version (writes `"keep": true`) or take the new one.
+  - `enabled` and `keep` don't count as changes. Deleting `.last-shipped.json` resets: deleted titles come back,
+    changed ones are listed.
 
 ```json
 {
@@ -111,6 +124,9 @@ The shipped sets of advancement titles and of merchant and loot titles are made 
 | `merchant.breedNitwitChance` | `1/12` | Bred villagers become nitwits with this chance (vanilla: 0) |
 | `merchant.nitwitKillsAffectReputation` | `false` | Hurting or killing a nitwit gives bad gossip (vanilla: yes); merchants always do |
 | `merchant.killTitleChance` | `0.02` | The chance of the secret title for killing a merchant, plus 1 % per Looting level |
+| `loot.markChances`, `otherMarkChance` | mineshaft 85 %, dungeon 85 %, fishing 50 %, others 50 % | How many name tags from loot become title name tags; the others stay vanilla name tags |
+| `loot.blankChance` | `0.05` | A title name tag is blank: used up, no title (the first blank gives "Dud") |
+| `loot.lastBlankChance` | `0.8` | The chance of a blank once only "Completionist" is missing |
 | `permissions` | | Who has each permission without a permission mod: `everyone` or `operators` |
 
 ## ⌨️ Commands
@@ -125,6 +141,7 @@ The shipped sets of advancement titles and of merchant and loot titles are made 
 | `/titles give\|take <players> <title>`, `/titles list <player>` | admins | Titles of players |
 | `/titles first reset [advancement]` | admins | "First" titles free again |
 | `/titles config [...]`, `/titles reload` | admins | The options; the config and title files again |
+| `/titles updates [<title> keep\|take]` | admins | Shipped titles changed both by an update and on the server: keep or take |
 
 ## 🔒 Permissions
 

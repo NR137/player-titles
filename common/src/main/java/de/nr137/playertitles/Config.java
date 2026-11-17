@@ -2,6 +2,7 @@ package de.nr137.playertitles;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import de.nr137.playertitles.loot.LootConfig;
 import de.nr137.playertitles.merchant.MerchantConfig;
 
 /**
@@ -25,11 +26,12 @@ import de.nr137.playertitles.merchant.MerchantConfig;
  *                                 list closed, since the server can't tell)
  * @param playerListAnimationTicks how often, in ticks (2 = ten times a second, as above the head)
  * @param merchant         the Title Merchant (MerchantConfig)
+ * @param loot             title name tags (LootConfig)
  * @param permissions      who has each permission without a permission mod: "everyone" or "operators"
  */
 public record Config(boolean aboveHead, boolean playerList, boolean chat, String chatFormat, String language,
 		String fallbackLanguage, String defaultForm, int animationTicks, boolean playerListAnimations, int playerListAnimationTicks,
-		MerchantConfig merchant, Map<String, String> permissions) {
+		MerchantConfig merchant, LootConfig loot, Map<String, String> permissions) {
 	/** The value of {@code language} for each player's own language. */
 	public static final String PER_PLAYER = "player";
 
@@ -38,7 +40,7 @@ public record Config(boolean aboveHead, boolean playerList, boolean chat, String
 		permissions.put("use", "everyone");
 		permissions.put("merchant", "everyone");
 		permissions.put("admin", "operators");
-		return new Config(true, true, true, "[%s] %s", PER_PLAYER, "en_us", "male", 2, false, 2, MerchantConfig.defaults(), permissions);
+		return new Config(true, true, true, "[%s] %s", PER_PLAYER, "en_us", "male", 2, false, 2, MerchantConfig.defaults(), LootConfig.defaults(), permissions);
 	}
 
 	/** Options missing from an older or hand-written file, or not valid, get their defaults. */
@@ -54,60 +56,65 @@ public record Config(boolean aboveHead, boolean playerList, boolean chat, String
 			defaultForm == null || !de.nr137.playertitles.title.Title.FORMS.contains(defaultForm) ? defaults.defaultForm() : defaultForm,
 			animationTicks < 1 ? defaults.animationTicks() : animationTicks, playerListAnimations,
 			playerListAnimationTicks < 1 ? defaults.playerListAnimationTicks() : playerListAnimationTicks,
-			merchant == null ? defaults.merchant() : merchant, merged);
+			merchant == null ? defaults.merchant() : merchant, loot == null ? defaults.loot() : loot, merged);
 	}
 
 	public Config withAboveHead(boolean value) {
-		return new Config(value, playerList, chat, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, permissions);
+		return new Config(value, playerList, chat, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, loot, permissions);
 	}
 
 	public Config withPlayerList(boolean value) {
-		return new Config(aboveHead, value, chat, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, permissions);
+		return new Config(aboveHead, value, chat, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, loot, permissions);
 	}
 
 	public Config withChat(boolean value) {
-		return new Config(aboveHead, playerList, value, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, permissions);
+		return new Config(aboveHead, playerList, value, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, loot, permissions);
 	}
 
 	public Config withChatFormat(String value) {
-		return new Config(aboveHead, playerList, chat, value, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, permissions).completed();
+		return new Config(aboveHead, playerList, chat, value, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, loot, permissions).completed();
 	}
 
 	public Config withLanguage(String value) {
-		return new Config(aboveHead, playerList, chat, chatFormat, value, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, permissions);
+		return new Config(aboveHead, playerList, chat, chatFormat, value, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, loot, permissions);
 	}
 
 	public Config withFallbackLanguage(String value) {
-		return new Config(aboveHead, playerList, chat, chatFormat, language, value, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, permissions);
+		return new Config(aboveHead, playerList, chat, chatFormat, language, value, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, loot, permissions);
 	}
 
 	public Config withDefaultForm(String value) {
 		return new Config(aboveHead, playerList, chat, chatFormat, language, fallbackLanguage, value, animationTicks, playerListAnimations,
-			playerListAnimationTicks, merchant, permissions).completed();
+			playerListAnimationTicks, merchant, loot, permissions).completed();
 	}
 
 	public Config withAnimationTicks(int value) {
-		return new Config(aboveHead, playerList, chat, chatFormat, language, fallbackLanguage, defaultForm, value, playerListAnimations, playerListAnimationTicks, merchant, permissions).completed();
+		return new Config(aboveHead, playerList, chat, chatFormat, language, fallbackLanguage, defaultForm, value, playerListAnimations, playerListAnimationTicks, merchant, loot, permissions).completed();
 	}
 
 	public Config withPlayerListAnimations(boolean value) {
-		return new Config(aboveHead, playerList, chat, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, value, playerListAnimationTicks, merchant, permissions);
+		return new Config(aboveHead, playerList, chat, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, value, playerListAnimationTicks, merchant, loot, permissions);
 	}
 
 	public Config withPlayerListAnimationTicks(int value) {
-		return new Config(aboveHead, playerList, chat, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, value, merchant, permissions)
+		return new Config(aboveHead, playerList, chat, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, value, merchant, loot, permissions)
 			.completed();
 	}
 
 	public Config withPermission(String permission, boolean forEveryone) {
 		Map<String, String> changed = new LinkedHashMap<>(permissions);
 		changed.put(permission, forEveryone ? "everyone" : "operators");
-		return new Config(aboveHead, playerList, chat, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, changed);
+		return new Config(aboveHead, playerList, chat, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations, playerListAnimationTicks, merchant, loot, changed);
 	}
 
 	public Config withMerchant(MerchantConfig value) {
 		return new Config(aboveHead, playerList, chat, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations,
-			playerListAnimationTicks, value, permissions);
+			playerListAnimationTicks, value, loot, permissions);
+	}
+
+	public Config withLoot(de.nr137.playertitles.loot.LootConfig value) {
+		return new Config(aboveHead, playerList, chat, chatFormat, language, fallbackLanguage, defaultForm, animationTicks, playerListAnimations,
+			playerListAnimationTicks, merchant, value, permissions);
 	}
 
 	public boolean perPlayerLanguage() {

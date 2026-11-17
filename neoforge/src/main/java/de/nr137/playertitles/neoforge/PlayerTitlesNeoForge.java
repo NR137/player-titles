@@ -17,6 +17,11 @@ public class PlayerTitlesNeoForge {
 		PlayerTitles.init();
 		NeoForge.EVENT_BUS.addListener(ServerStartingEvent.class, event -> PlayerTitles.onServerStarting(event.getServer()));
 		NeoForge.EVENT_BUS.addListener(ServerStartedEvent.class, event -> PlayerTitles.onServerStarted(event.getServer()));
+		NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.OnDatapackSyncEvent.class, event -> {
+			if (event.getPlayer() == null) { // a /reload, not a player joining
+				PlayerTitles.onDataPackReload(event.getPlayerList().getServer());
+			}
+		});
 		NeoForge.EVENT_BUS.addListener(ServerStoppingEvent.class, event -> PlayerTitles.onServerStopping());
 		NeoForge.EVENT_BUS.addListener(ServerTickEvent.Post.class, event -> PlayerTitles.onServerTick(event.getServer()));
 		NeoForge.EVENT_BUS.addListener(PlayerEvent.PlayerLoggedInEvent.class, event -> {

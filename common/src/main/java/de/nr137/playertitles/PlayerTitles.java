@@ -50,6 +50,7 @@ public final class PlayerTitles {
 	/** Called while the mod initialises (the permissions above must be registered by then). */
 	public static void init() {
 		Dialogs.register(TitlesScreen.SEARCH_ACTION, TitlesScreen::onSearch);
+		Dialogs.register(de.nr137.playertitles.screen.UpdatesDialog.ACTION, de.nr137.playertitles.screen.UpdatesDialog::onChoice);
 		ClientItems.register(TitleTags::forClient);
 		MerchantBadges.init();
 		LOGGER.debug("Permissions {} and {}", USE.node(), ADMIN.node());
@@ -105,10 +106,23 @@ public final class PlayerTitles {
 		return Translations.supported(config.fallbackLanguage());
 	}
 
-	/** Reads the config and the title files again (server start, /titles reload). */
+	/** Reads the config and the title files again (server start, /titles reload, /reload), bringing in the shipped titles. */
 	public static void reload() {
 		config = JsonConfig.load(folder().resolve("config.json"), Config.class, Config.defaults()).completed();
-		titles = TitleLibrary.load(folder().resolve("titles"));
+		titles = TitleLibrary.load(titlesFolder());
+	}
+
+	public static java.nio.file.Path titlesFolder() {
+		return folder().resolve("titles");
+	}
+
+	/** The game's /reload (data packs): our files too, and the advancement titles of the players online. */
+	public static void onDataPackReload(MinecraftServer server) {
+		reload();
+		for (ServerPlayer player : server.getPlayerList().getPlayers()) {
+			AdvancementTitles.onJoin(player);
+			TitleDisplays.refresh(player);
+		}
 	}
 
 	public static void updateConfig(UnaryOperator<Config> change) {
@@ -146,16 +160,23 @@ public final class PlayerTitles {
 	public static void onJoin(ServerPlayer player) {
 		if (isDevServer()) {
 			// Only the dev servers set this (fabric/ and neoforge/build.gradle), to try titles out. Not those from
-			// advancements, merchants, loot and killing merchants: they come from there, to try that out too.
+			// advancements (and all of them), merchants, loot (and blanks, having them all) and killing merchants: they come from there, to try that out too.
 			TitleData data = TitleData.get(player.level().getServer());
 			titles().all().stream()
 				.filter(title -> title.sourcesOrNone().stream().noneMatch(source -> source.startsWith(TitleLibrary.ADVANCEMENT)
 					|| source.startsWith(TitleLibrary.FIRST_ADVANCEMENT) || source.equals(TitleMerchants.SOURCE) || source.equals(TitleTags.SOURCE)
-					|| source.equals(TitleMerchants.KILL_SOURCE)))
+					|| source.equals(TitleMerchants.KILL_SOURCE) || source.startsWith(TitleTags.SOURCE + "_")
+					|| source.endsWith(AdvancementTitles.ALL_SOURCE)))
 				.forEach(title -> data.give(player.getUUID(), title.id(), "admin"));
 		}
 		AdvancementTitles.onJoin(player);
 		TitleDisplays.refresh(player);
+		int open = de.nr137.playertitles.title.ShippedTitles.conflicts().size();
+		if (open > 0 && ADMIN.check(player)) {
+			player.sendSystemMessage(translations().component(uiLanguage(player), "message.player_titles.updates", open)
+				.withStyle(style -> style.withColor(net.minecraft.ChatFormatting.YELLOW)
+					.withClickEvent(new net.minecraft.network.chat.ClickEvent.RunCommand("/titles updates"))));
+		}
 	}
 
 	public static void onLeave(ServerPlayer player) {

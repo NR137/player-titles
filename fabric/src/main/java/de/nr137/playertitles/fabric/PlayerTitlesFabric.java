@@ -13,6 +13,7 @@ public class PlayerTitlesFabric implements ModInitializer {
 		PlayerTitles.init();
 		ServerLifecycleEvents.SERVER_STARTING.register(PlayerTitles::onServerStarting);
 		ServerLifecycleEvents.SERVER_STARTED.register(PlayerTitles::onServerStarted);
+		ServerLifecycleEvents.END_DATA_PACK_RELOAD.register((server, resources, success) -> PlayerTitles.onDataPackReload(server));
 		ServerLifecycleEvents.SERVER_STOPPING.register(server -> PlayerTitles.onServerStopping());
 		ServerTickEvents.END_SERVER_TICK.register(PlayerTitles::onServerTick);
 		ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> PlayerTitles.onJoin(handler.getPlayer()));

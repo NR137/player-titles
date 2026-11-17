@@ -28,7 +28,7 @@ class PlayerTitlesTest {
 	void theShippedSetsAreWrittenAtTheFirstStart(@TempDir Path dir) {
 		TitleLibrary library = TitleLibrary.load(dir.resolve("titles"));
 		assertTrue(Files.isRegularFile(dir.resolve("titles/examples.json")));
-		assertEquals(13 + 252 + 159 + 1, library.all().size());
+		assertEquals(13 + 252 + 159 + 5, library.all().size());
 		Title rainbow = library.get("example_rainbow").orElseThrow();
 		assertEquals("Prismatisch", rainbow.text("de_de"));
 		assertEquals("Prismatic", rainbow.text("fr_fr"), "other languages fall back to English");
@@ -104,7 +104,7 @@ class PlayerTitlesTest {
 
 	@Test
 	void missingConfigOptionsGetTheirDefaults() {
-		Config config = new Config(true, false, true, "%s says", null, null, "unknown", 0, false, 0, null, Map.of("admin", "everyone")).completed();
+		Config config = new Config(true, false, true, "%s says", null, null, "unknown", 0, false, 0, null, null, Map.of("admin", "everyone")).completed();
 		assertEquals("player", config.language());
 		assertEquals("en_us", config.fallbackLanguage());
 		assertEquals("male", config.defaultForm());
@@ -112,6 +112,8 @@ class PlayerTitlesTest {
 		assertEquals(5, config.merchant().offersAfter(15), "a level more at 5 and at 15 trades");
 		assertEquals(7, config.merchant().offersAfter(50), "7 at Master");
 		assertTrue(config.forEveryone("merchant"));
+		assertEquals(0.85, config.loot().markChance("minecraft:chests/abandoned_mineshaft"));
+		assertEquals(0.5, config.loot().markChance("other:chest"), "loot tables not listed");
 		assertEquals("[%s] %s", config.chatFormat(), "a format needs the name and the message");
 		assertEquals(2, config.animationTicks());
 		assertEquals(2, config.playerListAnimationTicks());

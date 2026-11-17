@@ -259,7 +259,11 @@ public final class GameTests {
 	private static void titleTags(GameTestHelper helper) {
 		var container = new net.minecraft.world.SimpleContainer(3);
 		container.setItem(0, new net.minecraft.world.item.ItemStack(Items.NAME_TAG));
-		de.nr137.playertitles.loot.TitleTags.onLootFilled(container);
+		de.nr137.playertitles.loot.TitleTags.markMaybe(container, 1.0, helper.getLevel().getRandom());
+		var notMarked = new net.minecraft.world.SimpleContainer(1);
+		notMarked.setItem(0, new net.minecraft.world.item.ItemStack(Items.NAME_TAG));
+		de.nr137.playertitles.loot.TitleTags.markMaybe(notMarked, 0.0, helper.getLevel().getRandom());
+		helper.assertFalse(de.nr137.playertitles.loot.TitleTags.isTitleTag(notMarked.getItem(0)), "the others stay vanilla name tags");
 		var stack = container.getItem(0);
 		helper.assertTrue(de.nr137.playertitles.loot.TitleTags.isTitleTag(stack), "marked");
 		var shown = de.nr137.lib.item.ClientItems.forClient(stack);
@@ -268,11 +272,46 @@ public final class GameTests {
 			"name and glint only for the client");
 		ServerPlayer player = helper.makeMockServerPlayerInLevel();
 		player.setGameMode(net.minecraft.world.level.GameType.SURVIVAL); // in creative mode items aren't used up
+		var loot = de.nr137.playertitles.PlayerTitles.config().loot();
+		de.nr137.playertitles.PlayerTitles.updateConfig(c -> c.withLoot(new de.nr137.playertitles.loot.LootConfig(loot.markChances(),
+			loot.otherMarkChance(), 0.0, 0.0)));
 		int before = TitleData.get(helper.getLevel().getServer()).of(player.getUUID()).owned().size();
 		player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, stack);
 		helper.assertTrue(de.nr137.playertitles.loot.TitleTags.use(player, player.getMainHandItem()), "using it");
 		helper.assertValueEqual(TitleData.get(helper.getLevel().getServer()).of(player.getUUID()).owned().size(), before + 1, "a new title");
 		helper.assertTrue(player.getMainHandItem().isEmpty(), "used up");
+		// Renamed in an anvil, it still doesn't name a mob.
+		var renamed = new net.minecraft.world.item.ItemStack(Items.NAME_TAG);
+		de.nr137.playertitles.loot.TitleTags.mark(renamed);
+		renamed.set(DataComponents.CUSTOM_NAME, net.minecraft.network.chat.Component.literal("Rex"));
+		player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, renamed);
+		var cow = helper.spawn(net.minecraft.world.entity.EntityTypes.COW, new net.minecraft.core.BlockPos(2, 2, 2));
+		player.interactOn(cow, net.minecraft.world.InteractionHand.MAIN_HAND, cow.position());
+		helper.assertTrue(cow.getCustomName() == null, "a title name tag doesn't name a mob");
+		helper.assertTrue(!player.getMainHandItem().isEmpty(), "and isn't used up");
+		// With every title from name tags: the next one is blank and gives "Dud", then one gives "Completionist", then
+		// they can't be used.
+		var data = TitleData.get(helper.getLevel().getServer());
+		for (var title : de.nr137.playertitles.PlayerTitles.titles().all()) {
+			if (title.sourcesOrNone().contains(de.nr137.playertitles.loot.TitleTags.SOURCE)) {
+				data.give(player.getUUID(), title.id(), "test");
+			}
+		}
+		data.take(player.getUUID(), "special.dud");
+		data.take(player.getUUID(), "special.completionist");
+		for (String expected : new String[] {"special.dud", "special.completionist"}) {
+			var tag = new net.minecraft.world.item.ItemStack(Items.NAME_TAG);
+			de.nr137.playertitles.loot.TitleTags.mark(tag);
+			player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, tag);
+			helper.assertTrue(de.nr137.playertitles.loot.TitleTags.use(player, player.getMainHandItem()), "using it");
+			helper.assertTrue(data.owns(player.getUUID(), expected), expected);
+		}
+		var last = new net.minecraft.world.item.ItemStack(Items.NAME_TAG);
+		de.nr137.playertitles.loot.TitleTags.mark(last);
+		player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, last);
+		helper.assertFalse(de.nr137.playertitles.loot.TitleTags.use(player, player.getMainHandItem()), "nothing left");
+		helper.assertTrue(!player.getMainHandItem().isEmpty(), "the tag stays");
+		de.nr137.playertitles.PlayerTitles.updateConfig(c -> c.withLoot(loot));
 		helper.succeed();
 	}
 

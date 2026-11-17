@@ -2,7 +2,6 @@ package de.nr137.playertitles.title;
 
 import com.google.gson.JsonParseException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collection;
@@ -15,15 +14,11 @@ import de.nr137.lib.config.JsonConfig;
 import de.nr137.playertitles.PlayerTitles;
 
 /**
- * All titles, from the files in config/player_titles/titles/. The mod's own sets are written there once (also sets a
- * new version brings), so a server can change, replace or remove them; {@code .shipped} lists the ones written, so a
- * removed set stays removed. A server's own set is just another file.
+ * All titles, from the files in config/player_titles/titles/. The mod's own sets are brought there and kept up to date
+ * by ShippedTitles, so a server can change or remove them; a server's own set is just another file. A title with
+ * {@code "enabled": false} (or a set with it) is left out.
  */
 public final class TitleLibrary {
-	/** The sets the mod ships (resources under /defaults/titles/). */
-	private static final List<String> SHIPPED = List.of("examples.json", "advancements.json", "merchant-and-loot.json", "special.json");
-	private static final String SHIPPED_LIST = ".shipped";
-
 	private final Map<String, Title> titles;
 	/** A set's file name (without ".json") -> its name, for categories without a name in the language files. */
 	private final Map<String, String> setNames;
@@ -63,13 +58,18 @@ public final class TitleLibrary {
 	}
 
 	public static TitleLibrary load(Path folder) {
-		writeShipped(folder);
+		ShippedTitles.sync(folder);
 		Map<String, Title> titles = new LinkedHashMap<>();
 		Map<String, String> setNames = new LinkedHashMap<>();
 		try (Stream<Path> files = Files.list(folder)) {
-			for (Path file : files.filter(path -> path.toString().endsWith(".json")).sorted().toList()) {
+			for (Path file : files.filter(path -> path.toString().endsWith(".json") && !path.getFileName().toString().startsWith(".")).sorted().toList()) {
 				try {
-					TitleSet set = JsonConfig.GSON.fromJson(Files.readString(file), TitleSet.class);
+					com.google.gson.JsonObject json = com.google.gson.JsonParser.parseString(Files.readString(file)).getAsJsonObject();
+					if (json.get("titles") instanceof com.google.gson.JsonArray array) {
+						array.asList().removeIf(element -> element.isJsonObject() && element.getAsJsonObject().get("enabled") instanceof com.google.gson.JsonPrimitive enabled
+							&& enabled.isBoolean() && !enabled.getAsBoolean());
+					}
+					TitleSet set = JsonConfig.GSON.fromJson(json, TitleSet.class);
 					if (set == null || Boolean.FALSE.equals(set.enabled()) || set.titles() == null) {
 						continue;
 					}
@@ -83,7 +83,7 @@ public final class TitleLibrary {
 							PlayerTitles.LOGGER.warn("{}: the title id {} is used twice; the first one counts", file.getFileName(), title.id());
 						}
 					}
-				} catch (IOException | JsonParseException e) {
+				} catch (IOException | JsonParseException | IllegalStateException e) {
 					PlayerTitles.LOGGER.error("Can't read the title file {}: {}", file, e.toString());
 				}
 			}
@@ -92,27 +92,6 @@ public final class TitleLibrary {
 		}
 		PlayerTitles.LOGGER.info("Loaded {} titles", titles.size());
 		return new TitleLibrary(titles, setNames);
-	}
-
-	private static void writeShipped(Path folder) {
-		try {
-			Files.createDirectories(folder);
-			Path list = folder.resolve(SHIPPED_LIST);
-			java.util.Set<String> written = new java.util.LinkedHashSet<>(Files.isRegularFile(list) ? Files.readAllLines(list) : List.of());
-			for (String name : SHIPPED) {
-				if (!written.add(name) || Files.exists(folder.resolve(name))) {
-					continue;
-				}
-				try (InputStream in = TitleLibrary.class.getResourceAsStream("/defaults/titles/" + name)) {
-					if (in != null) {
-						Files.copy(in, folder.resolve(name));
-					}
-				}
-			}
-			Files.write(list, written);
-		} catch (IOException e) {
-			PlayerTitles.LOGGER.error("Can't write the shipped titles to {}: {}", folder, e.toString());
-		}
 	}
 
 	public Optional<Title> get(String id) {

@@ -23,6 +23,96 @@
 			"sources": [
 				"merchant_kill"
 			]
+		},
+		{
+			"id": "special.completionist",
+			"text": {
+				"en_us": "Completionist",
+				"de_de": "Titelsammler",
+				"de_de/female": "Titelsammlerin",
+				"de_de/neutral": "Titelsammelnde"
+			},
+			"description": {
+				"en_us": "Found every title a name tag can give.",
+				"de_de": "Hat jeden Titel gefunden, den ein Namensschild geben kann."
+			},
+			"style": {
+				"animation": "rainbow",
+				"icons": [
+					"item/nether_star",
+					"item/name_tag"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"loot_complete"
+			]
+		},
+		{
+			"id": "special.dud",
+			"text": {
+				"en_us": "Dud",
+				"de_de": "Niete"
+			},
+			"description": {
+				"en_us": "Opened a title name tag. It was blank.",
+				"de_de": "Hat ein Titel-Namensschild geöffnet. Es war leer."
+			},
+			"style": {
+				"color": "#9A9A9A",
+				"sides": "magic"
+			},
+			"rarity": "rare",
+			"sources": [
+				"loot_blank"
+			]
+		},
+		{
+			"id": "special.all_advancements",
+			"text": {
+				"en_us": "100%",
+				"de_de": "100%"
+			},
+			"description": {
+				"en_us": "Completed every advancement.",
+				"de_de": "Hat jeden Fortschritt erreicht."
+			},
+			"style": {
+				"animation": "rainbow",
+				"icon": "item/nether_star"
+			},
+			"rarity": "legendary",
+			"sources": [
+				"all_advancements"
+			],
+			"category": "advancements"
+		},
+		{
+			"id": "special.first_all_advancements",
+			"text": {
+				"en_us": "100% Speedrunner",
+				"de_de": "100% Speedrunner"
+			},
+			"description": {
+				"en_us": "The first on this server to complete every advancement.",
+				"de_de": "Hat als Erstes auf diesem Server jeden Fortschritt erreicht."
+			},
+			"style": {
+				"gradient": [
+					"#FFE259",
+					"#FFA751"
+				],
+				"animation": "wave",
+				"icons": [
+					"item/nether_star",
+					"item/clock_00"
+				]
+			},
+			"rarity": "legendary",
+			"sources": [
+				"first_all_advancements"
+			],
+			"category": "first"
 		}
 	]
 }
